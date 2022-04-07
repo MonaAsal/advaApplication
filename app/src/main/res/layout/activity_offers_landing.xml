@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="locale"
+    tools:context=".ui.component.congratulations.CongratulationsActivity">
+
+  <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+      android:id="@+id/iv_close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/_16sdp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_close_gray" />
+
+  <TextView
+      android:id="@+id/tv_congratulations"
+      style="@style/textViewStyle.Title.Big"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_32sdp"
+      android:text="@string/discount_card"
+      android:textColor="@color/textColor"
+      android:textSize="@dimen/_20ssp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/iv_close" />
+
+
+  <TextView
+      android:id="@+id/tv_congratulations_text"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_24sdp"
+
+      android:layout_marginEnd="@dimen/_24sdp"
+      android:gravity="center"
+      android:text="@string/offers_landing_text"
+      android:textColor="@color/textColorLight"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tv_congratulations" />
+
+  <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/ic_celebration_up"
+      app:layout_constraintBottom_toTopOf="@id/ll"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+
+  <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/ic_celebration_down"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="@dimen/_145sdp"
+      app:layout_constraintTop_toTopOf="@id/ll" />
+
+
+  <!--    -->
+  <LinearLayout
+      android:id="@+id/ll"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/_170sdp"
+      android:layout_marginStart="@dimen/_16sdp"
+      android:layout_marginEnd="@dimen/_16sdp"
+      android:background="@drawable/bg_shadowed"
+      android:layout_marginTop="@dimen/_32sdp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <include
+        android:id="@+id/card"
+        layout="@layout/layout_offer_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+  </LinearLayout>
+
+  <!--    <com.airbnb.lottie.LottieAnimationView-->
+  <!--        android:id="@+id/progressBar"-->
+  <!--        android:layout_width="wrap_content"-->
+  <!--        android:layout_height="wrap_content"-->
+  <!--        android:layout_gravity="center"-->
+  <!--        android:scaleType="fitXY"-->
+  <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+  <!--        app:layout_constraintEnd_toEndOf="parent"-->
+  <!--        app:layout_constraintStart_toStartOf="parent"-->
+  <!--        app:layout_constraintTop_toTopOf="parent"-->
+  <!--        app:lottie_autoPlay="true"-->
+  <!--        app:lottie_loop="true"-->
+  <!--        app:lottie_rawRes="@raw/congrats" />-->
+
+  <Button
+      android:id="@+id/btn_use_discount"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_16sdp"
+      android:layout_marginEnd="@dimen/_16sdp"
+      android:layout_marginBottom="@dimen/_24sdp"
+      android:text="@string/check_offers"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:alpha=".3"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@id/tv_circle1"
+        app:layout_constraintEnd_toStartOf="@id/tv_circle2"
+        app:layout_constraintStart_toEndOf="@id/tv_circle1"
+        app:layout_constraintTop_toTopOf="@id/tv_circle1" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:alpha=".3"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@id/tv_circle1"
+        app:layout_constraintEnd_toStartOf="@id/tv_circle3"
+        app:layout_constraintStart_toEndOf="@id/tv_circle2"
+        app:layout_constraintTop_toTopOf="@id/tv_circle1" />
+
+    <TextView
+        android:id="@+id/tv_your_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_info"
+        android:visibility="gone"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_circle1"
+        app:layout_constraintStart_toStartOf="@id/tv_circle1"
+        app:layout_constraintTop_toBottomOf="@id/tv_circle1" />
+
+    <TextView
+        android:id="@+id/tv_circle1"
+        style="@style/textViewStyle.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:background="@drawable/ic_oval"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_circle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_circle_orange"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_circle1"
+        app:layout_constraintEnd_toEndOf="@id/tv_circle1"
+        app:layout_constraintStart_toStartOf="@id/tv_circle1"
+        app:layout_constraintTop_toTopOf="@id/tv_circle1" />
+
+
+    <TextView
+        android:id="@+id/tv_circle2"
+        style="@style/textViewStyle.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_circle_orange_light"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_circle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_circle_orange"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_circle2"
+        app:layout_constraintEnd_toEndOf="@id/tv_circle2"
+        app:layout_constraintStart_toStartOf="@id/tv_circle2"
+        app:layout_constraintTop_toTopOf="@id/tv_circle2" />
+
+    <TextView
+        android:id="@+id/tv_provider_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provider_info"
+        android:visibility="gone"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_circle2"
+        app:layout_constraintStart_toStartOf="@id/tv_circle2"
+        app:layout_constraintTop_toBottomOf="@id/tv_circle2" />
+
+    <TextView
+        android:id="@+id/tv_circle3"
+        style="@style/textViewStyle.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:background="@drawable/ic_circle_orange_light"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_circle_orange" />
+
+    <ImageView
+        android:id="@+id/iv_circle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_circle_orange"
+        android:padding="@dimen/_6sdp"
+        android:visibility="gone"
+        android:src="@drawable/ic_tick"
+        app:layout_constraintBottom_toBottomOf="@id/tv_circle3"
+        app:layout_constraintEnd_toEndOf="@id/tv_circle3"
+        app:layout_constraintStart_toStartOf="@id/tv_circle3"
+        app:layout_constraintTop_toTopOf="@id/tv_circle3" />
+
+    <TextView
+        android:id="@+id/tv_payment_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_plan"
+        android:visibility="gone"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_circle3"
+        app:layout_constraintStart_toStartOf="@id/tv_circle3"
+        app:layout_constraintTop_toBottomOf="@id/tv_circle3" />
+
+<!--    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"-->
+<!--        android:id="@+id/iv_next"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/_8sdp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_back_orange" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

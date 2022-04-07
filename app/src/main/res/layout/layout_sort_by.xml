@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:background="@drawable/bg_curved_primary_light"
+    android:padding="@dimen/_8sdp">
+
+    <TextView
+        android:id="@+id/tv_price_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_lbl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_low_to_high"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_low_to_high"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/ic_circle_shadowed"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/iv_high_to_low"
+        app:layout_constraintStart_toEndOf="@id/tv_price_lbl"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_low_to_high" />
+
+    <TextView
+        android:id="@+id/tv_low_to_high"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/low_to_high"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintEnd_toEndOf="@id/iv_low_to_high"
+        app:layout_constraintStart_toStartOf="@id/iv_low_to_high"
+        app:layout_constraintTop_toBottomOf="@id/iv_low_to_high" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_high_to_low"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:background="@drawable/ic_circle_shadowed"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_low_to_high"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_high_to_low" />
+
+    <TextView
+        android:id="@+id/tv_high_to_low"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/high_to_low"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintEnd_toEndOf="@id/iv_high_to_low"
+        app:layout_constraintStart_toStartOf="@id/iv_high_to_low"
+        app:layout_constraintTop_toBottomOf="@id/iv_high_to_low" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

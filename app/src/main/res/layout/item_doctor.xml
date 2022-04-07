@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/corner_small"
+    app:cardElevation="2dp"
+    android:layoutDirection="locale"
+    app:cardUseCompatPadding="true">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingStart="@dimen/_8ssp"
+      android:paddingTop="@dimen/_8ssp"
+      android:paddingEnd="@dimen/_8ssp"
+      android:paddingBottom="@dimen/_8ssp">
+
+    <!--        android:background="@drawable/bg_curved_gray_border"-->
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_doctor_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:srcCompat="@drawable/ic_doctor_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_doctor_name"
+        style="@style/textViewStyle.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:gravity="start"
+        android:text="Ahmed Abdelrehiem"
+        app:layout_constraintStart_toEndOf="@id/iv_doctor_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_doctor_image" />
+
+
+    <RatingBar
+        android:id="@+id/rb_doctor"
+        style="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        app:layout_constraintStart_toStartOf="@+id/tv_doctor_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_doctor_name" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Professor of General Surgery and Endoscopic Surgery, Faculty of Medicine, Kasr Al-Aini University"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_doctor_name"
+        app:layout_constraintTop_toBottomOf="@+id/rb_doctor" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

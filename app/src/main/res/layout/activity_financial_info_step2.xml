@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_next"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/red" />
+
+    <include
+        android:id="@+id/layout_steps"
+        layout="@layout/layout_steps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+    <ScrollView
+        android:id="@+id/main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_steps">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tv_club_member_header"
+                style="@style/textViewStyle.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bg_curved_top_light_blue"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/is_club_member"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_club_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:checked="true"
+                android:theme="@style/switchStyle"
+                app:layout_constraintBottom_toBottomOf="@id/tv_club_member_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_club_member_header" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_club_member"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_curved_bottom_gray_border"
+                android:padding="@dimen/_8sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_club_member_header">
+
+                <TextView
+                    android:id="@+id/tv_club_lbl"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8ssp"
+                    android:text="@string/choose_your_club"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner_clubs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:spinnerMode="dropdown"
+                    android:text="@string/credit_loans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_club_lbl" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                    android:id="@+id/iv_image_club1"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_club_front"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_club_front"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_clubs" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                    android:id="@+id/iv_image_club2"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_club_back"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_club_back"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_clubs" />
+
+                <Button
+                    android:id="@+id/btn_upload_club_front"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/scan_card_front"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toStartOf="@id/btn_upload_club_back"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image_club1" />
+
+                <Button
+                    android:id="@+id/btn_upload_club_back"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:text="@string/scan_card_back"
+                    android:textSize="@dimen/text_size_small"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/btn_upload_club_front"
+                    app:layout_constraintTop_toTopOf="@id/btn_upload_club_front" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tv_car_owner_header"
+                style="@style/textViewStyle.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bg_curved_top_light_blue"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/is_car_owner"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_club_member" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:theme="@style/switchStyle"
+                android:id="@+id/switch_car_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:checked="true"
+                app:layout_constraintBottom_toBottomOf="@id/tv_car_owner_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_car_owner_header"
+                tools:srcCompat="@drawable/ic_plus" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_car_owner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_curved_bottom_gray_border"
+                android:padding="@dimen/_8sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_car_owner_header">
+
+                <TextView
+                    android:id="@+id/tv_car_lbl"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8ssp"
+                    android:text="@string/choose_your_car"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner_cars"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:spinnerMode="dropdown"
+                    android:text="@string/credit_loans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_car_lbl" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                    android:id="@+id/iv_image_car1"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_car_front"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_car_front"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_cars" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                    android:id="@+id/iv_image_car2"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_car_back"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_car_back"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_cars" />
+
+
+                <Button
+                    android:id="@+id/btn_upload_car_front"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/scan_license_face"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toStartOf="@id/btn_upload_car_back"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image_car1" />
+
+                <Button
+                    android:id="@+id/btn_upload_car_back"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/scan_license_back"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/btn_upload_car_front"
+                    app:layout_constraintTop_toTopOf="@id/btn_upload_car_front" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tv_credit_loans_header"
+                style="@style/textViewStyle.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bg_curved_top_light_blue"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/credit_loans_header"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_car_owner" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:theme="@style/switchStyle"
+                android:id="@+id/switch_credit_loans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:checked="true"
+                app:layout_constraintBottom_toBottomOf="@id/tv_credit_loans_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_credit_loans_header"
+                tools:srcCompat="@drawable/ic_plus" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_credit_loans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_curved_bottom_gray_border"
+                android:padding="@dimen/_8sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_credit_loans_header">
+
+                <TextView
+                    android:id="@+id/tv_loan_type_lbl"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8ssp"
+                    android:text="@string/pay_with"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner_loan_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:spinnerMode="dropdown"
+                    android:text="@string/credit_loans"
+                    app:layout_constraintEnd_toStartOf="@id/et_limit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_loan_type_lbl" />
+
+                <TextView
+                    android:id="@+id/tv_limit_lbl"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8ssp"
+                    android:text="@string/your_limit"
+                    app:layout_constraintStart_toStartOf="@id/et_limit"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_limit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:hint="@string/your_limit"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/text_size"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="@id/spinner_loan_type"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/spinner_loan_type"
+                    app:layout_constraintTop_toTopOf="@+id/spinner_loan_type" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_credit_loans" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

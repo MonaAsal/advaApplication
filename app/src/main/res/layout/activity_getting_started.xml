@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_bg"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context=".ui.component.gettingstarted.GettingStartedActivity">
+
+  <TextView
+      android:id="@+id/tv_skip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_16ssp"
+      android:text="@string/skip"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/pager"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:paddingStart="@dimen/_32sdp"
+      android:paddingEnd="@dimen/_32sdp"
+      android:layout_marginTop="@dimen/_8sdp"
+      android:layout_marginBottom="@dimen/_40sdp"
+      app:layout_constraintBottom_toTopOf="@+id/tabDots"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_skip"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tabDots"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="@dimen/_32sdp"
+      android:layout_marginEnd="@dimen/_32sdp"
+      app:tabGravity="start"
+      app:layout_constraintTop_toBottomOf="@+id/pager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:tabBackground="@drawable/tab_selector"
+      android:layout_marginBottom="@dimen/_40sdp"
+      app:tabIndicatorHeight="0dp" />
+
+
+  <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/btn_getting_started"
+      android:layout_width="@dimen/_40sdp"
+      android:layout_height="@dimen/_40sdp"
+      android:text="@string/next"
+      android:layout_marginEnd="@dimen/_32sdp"
+      android:layout_marginBottom="@dimen/_40sdp"
+      android:background="@drawable/bg_curved_primary_light"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/ic_next_arrow"/>
+
+  <TextView
+      android:id="@+id/tv_getting_started"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      android:textColor="@color/colorPrimary"
+      android:textStyle="bold"
+      android:paddingEnd="@dimen/_16sdp"
+      android:paddingStart="@dimen/_16sdp"
+      android:text="@string/start_now"
+      android:layout_marginEnd="@dimen/_32sdp"
+      android:layout_marginBottom="@dimen/_40sdp"
+      android:background="@drawable/bg_curved_primary_light"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/ic_next_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

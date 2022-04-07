@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_50sdp">
+
+            <include
+                android:id="@+id/toolbar_layout"
+                layout="@layout/toolbar_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_financial_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layoutDirection="locale"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/corner_large"
+                app:cardElevation="@dimen/_6sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/main_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_financial_bg"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_8sdp">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="@dimen/_7sdp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="@dimen/_7sdp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_financial_txt"
+                        style="@style/textViewStyle.Title.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/financial_profile"
+                        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_financial_info"
+                        android:layout_width="0pt"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:lineHeight="@dimen/_14ssp"
+                        android:lineSpacingExtra="0dp"
+                        android:textSize="@dimen/text_size_small"
+                        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_financial_txt" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progress_completion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        app:indicatorColor="@color/darkBlue"
+                        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                        app:layout_constraintTop_toBottomOf="@id/tv_financial_info"
+                        app:trackThickness="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_complition"
+                        style="@style/textViewStyle.Title.Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:gravity="end"
+                        android:includeFontPadding="false"
+                        android:lineHeight="@dimen/_12sdp"
+                        android:padding="0dp"
+                        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                        app:layout_constraintTop_toBottomOf="@id/progress_completion"
+                        tools:text="60%" />
+
+                    <TextView
+                        android:id="@+id/tv_continue_profile"
+                        style="@style/textViewStyle.Title.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="start"
+                        android:lineHeight="@dimen/_12sdp"
+                        android:text="@string/continue_your_financial_profile"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                        app:layout_constraintTop_toTopOf="@+id/tv_complition" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/cl_Advertisments"
+                app:layout_constraintTop_toBottomOf="@+id/cv_financial_profile"
+                android:layout_height="wrap_content">
+                <com.smarteist.autoimageslider.SliderView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:id="@+id/sv_Advertisements"
+                    app:layout_constraintDimensionRatio="H,3:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingClass" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_FeaturedCategories"
+                style="@style/textViewStyle.Title.Huge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/featured_categories"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_Advertisments" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_FeaturedCategories"
+                style="@style/recyclerStyle"
+                android:layout_width="0dp"
+                tools:itemCount="1"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_FeaturedCategories"
+                app:spanCount="2"
+                tools:listitem="@layout/item_featured_categories" />
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:foregroundGravity="center"-->
+<!--                android:layoutDirection="locale"-->
+<!--                app:cardCornerRadius="@dimen/corner_ads"-->
+<!--                app:cardElevation="@dimen/_2sdp"-->
+<!--                app:layout_constraintDimensionRatio="H,4:2"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/rv_FeaturedCategories">-->
+
+<!--                <com.smarteist.autoimageslider.SliderView-->
+<!--                    android:id="@+id/sv_Promotions"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    app:sliderAnimationDuration="600"-->
+<!--                    app:sliderAutoCycleDirection="back_and_forth"-->
+<!--                    app:sliderAutoCycleEnabled="true"-->
+<!--                    app:sliderIndicatorAnimationDuration="600"-->
+<!--                    app:sliderIndicatorGravity="center|bottom"-->
+
+<!--                    app:sliderIndicatorMarginBottom="@dimen/_16sdp"-->
+<!--                    app:sliderIndicatorOrientation="horizontal"-->
+<!--                    app:sliderIndicatorSelectedColor="@color/textColor"-->
+<!--                    app:sliderIndicatorUnselectedColor="@color/separator"-->
+<!--                    app:sliderScrollTimeInSec="4"-->
+<!--                    app:sliderStartAutoCycle="true" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/card"
+                app:layout_constraintTop_toBottomOf="@+id/rv_FeaturedCategories"
+                android:layout_height="wrap_content">
+                <com.smarteist.autoimageslider.SliderView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:id="@+id/sv_Promotions"
+                    app:layout_constraintDimensionRatio="H,4:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingClass" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_rv_TopProviders"
+                style="@style/textViewStyle.Title.Huge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/top_providers"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_TopProviders"
+                style="@style/recyclerStyle"
+                tools:itemCount="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rv_TopProviders"
+                tools:listitem="@layout/item_top_provider" />
+
+            <TextView
+                android:id="@+id/tv_notFeaturedCategories"
+                style="@style/textViewStyle.Title.Huge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/you_may_also_need"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_TopProviders" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_notFeaturedCategories"
+                style="@style/recyclerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:itemCount="1"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_notFeaturedCategories"
+                tools:listitem="@layout/item_featured_categories" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_notFeaturedCategories">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layoutDirection="locale"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="@dimen/corner_small"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="locale">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/data_cardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:layoutDirection="locale"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardCornerRadius="@dimen/corner_small"
+                            app:cardElevation="2dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_300sdp"
+                                android:background="@drawable/ic_search_bg"
+                                android:paddingBottom="@dimen/_4sdp"
+                                app:cardBackgroundColor="@android:color/transparent">
+
+                                <View
+                                    android:id="@+id/emptyView"
+                                    android:layout_width="1dp"
+                                    android:layout_height="@dimen/_48sdp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/lb_cant_find"
+                                    style="@style/textViewStyle.Title.Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_20sdp"
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:text="@string/can_t_find_what_you_re_looking_for"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/emptyView" />
+
+                                <TextView
+                                    android:id="@+id/lb_service_category"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_20sdp"
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:gravity="start"
+                                    android:maxLines="2"
+                                    android:padding="0dp"
+                                    android:text="@string/service_category"
+                                    android:textColor="@color/steel"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/lb_cant_find" />
+
+                                <Spinner
+                                    android:id="@+id/spinner_services"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_16sdp"
+                                    android:layout_marginEnd="@dimen/_16sdp"
+                                    android:spinnerMode="dropdown"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/lb_service_category" />
+
+                                <EditText
+                                    android:id="@+id/et_error"
+                                    android:layout_width="@dimen/_32sdp"
+                                    android:layout_height="0dp"
+                                    android:background="@android:color/transparent"
+                                    app:layout_constraintBottom_toBottomOf="@id/spinner_services"
+                                    app:layout_constraintEnd_toEndOf="@id/spinner_services"
+                                    app:layout_constraintTop_toTopOf="@id/spinner_services" />
+                                <Button
+                                    android:id="@+id/btn_Request"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:text="@string/start"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/spinner_services" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_percent="0.1" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_250sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

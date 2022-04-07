@@ -1,0 +1,852 @@
+<resources>
+    <string name="app_name">أدڤا</string>
+
+    <string name="no_data">لا يوجد نتائج</string>
+    <string name="search_salamtak">ابحث...</string>
+    <string name="egp">مصري/</string>
+    <string name="cart">العربة</string>
+
+    <string name="search_error"> برجاء المحأولة مرة أخرى </string>
+    <string name="no_internet"> الرجاء التأكد من اتصال الانترنت</string>
+    <string name="network_error">برجاء التأكد من اتصال الانترنت والمحأولة مرة أخرى</string>
+    <string name="get_started"> إبدأ </string>
+    <string name="offers_and_discounts"> العروض والخصومات </string>
+    <string name="about_the_course">معلومات عن الكورس</string>
+    <string name="course_fees">مصاريف الكورس</string>
+    <string name="onboarding_home_visits_text">قسط عمليتك بأقل الاجراءات وفي خلال ٤٨ ساعة وأنظمة سداد تصل إلى ٦٠ شهر</string>
+    <string name="onboarding_discounts_text"> إستمتع بعروض وخصومات حصرية تقدر تستخدمها في أي وقت </string>
+    <string name="ask_for_a_home_visit"> اختار نظام التقسيط</string>
+    <string name="search_doctors_and_medical_services"> العروض والخصومات </string>
+    <string name="choose_ur_installment_plan">قسط عمليتك</string>
+    <string name="home">الرئيسية</string>
+    <string name="settings"> الإعدادات </string>
+    <string name="installment">تقسيط خدمات</string>
+    <string name="surgical_procedures_paid_on_installments">إختار العملية ونظام التقسيط اللي يناسبك</string>
+    <string name="discounts">كارت الخصومات</string>
+    <string name="the_best_deals_just_for_you"> أحسن العروض ليك أنت بس </string>
+    <string name="home_visits">كشف منزلي</string>
+    <string name="a_specialist_consultation_in_the_comfort_of_your_own_home">اكشف وأطمن من البيت</string>
+
+    <string name="title_activity_login"> تسجيل الدخول </string>
+    <string name="prompt_email"> البريد الالكتروني </string>
+    <string name="prompt_password"> كلمة المرور </string>
+    <string name="prompt_password_r"> كلمة المرور*</string>
+    <string name="action_sign_in"> تسجيل الدخول </string>
+    <string name="action_sign_in_short"> تسجيل الدخول </string>
+    <string name="welcome">أهلاً بيك مع ادڤا</string>
+    <string name="invalid_first_name"> الاسم الأول غير صحيح </string>
+    <string name="invalid_last_name"> اللقب غير صحيح </string>
+    <string name="invalid_username"> أسم المستخدم غير صحيح، برجاء إدخاله مرة أخرى </string>
+    <string name="invalid_password_lenght"> كلمة المرور يجب أن تكون >%1$d رمز </string>
+    <string name="invalid_password">كلمة السر غير صحيحة</string>
+
+    <string name="required_password">كلمة السر مطلوبة</string>
+    <string name="required_first_name"> الاسم الأول مطلوب </string>
+    <string name="required_last_name">اللقب مطلوب</string>
+    <string name="required_username"> إسم المستخدم مطلوب، برجاء إدخاله مرة أخرى </string>
+    <string name="required_mobile_number">رقم الهاتف مطلوب</string>
+    <string name="required_email_address"> البريد إلكتروني مطلوب</string>
+
+
+    <string name="login_failed">" لا يمكن تسجيل الدخول، برجاء المحأولة مرة أخرى "</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="sign_up_underlined"><u>إنشاء حساب</u></string>
+    <string name="welcome_to_salamtak"> أهلاً بيك في أدڤا </string>
+    <string name="enter_cred"> برجاء ادخال اسم المستخدم وكلمة المرور</string>
+    <string name="invalid_mobile_number"> رقم التليفون غير صحيح</string>
+    <string name="required"> مطلوب </string>
+    <string name="email_r"> البريد الالكتروني </string>
+    <string name="invalidEmailAddress"> البريد إلكتروني غير صحيح </string>
+    <string name="require_field"> برجاء إدخال هذه الخانة </string>
+    <string name="require_name_grade">الإسم و الصف مطلوبين</string>
+    <string name="NewPasswordLessThan4"> كلمة المرور يجب أن تكون اكثر من ٨ حروف </string>
+    <string name="forget_pass_underlined"><u> نسيت كلمة المرور؟ </u></string>
+    <string name="forget_pass">نسيت كلمة المرور؟</string>
+    <string name="or"> أو </string>
+    <string name="continue_with_gmail"> تسجيل الدخول بGmail </string>
+    <string name="continue_with_facebook">"> تسجيل الدخول ب facebook</string>
+    <string name="title_activity_login2">تسجيل</string>
+    <string name="home_page">الرئيسية</string>
+    <string name="all_categories">جميع التخصصات</string>
+    <string name="monthly_installment"> القسط الشهري </string>
+    <string name="from"> من </string>
+    <string name="book_now"> احجز الآن </string>
+    <string name="filter_results"> نتائج البحث</string>
+    <string name="select_category"> اختار التخصص </string>
+    <string name="search_by_hospital_or_dr"> البحث بالعملية أو المستشفى أو الدكتور </string>
+    <string name="choose_location"> اختار المكان </string>
+    <string name="search"> البحث </string>
+    <string name="_12_36_months_conditions_apply">%1$s-%2$s Months-conditions apply</string>
+    <string name="location">العنوان</string>
+    <string name="locations">العناوين</string>
+
+    <string name="view_location"> عرض المكان على الخريطة</string>
+    <string name="overview"> التفاصيل </string>
+    <string name="load_more"> تحميل المزيد </string>
+    <!--    <string name=" بالمستشفى ">By: %1$s</string>-->
+    <string name="with_dr"> بالدكتور: %1$s</string>
+    <string name="price">%1$s جنيه </string>
+    <string name="expect_call">شكرًا لتقديم طلب التقسيط مع ادڤا، هيتم التواصل في خلال ٤٨ ساعة. لمزيد من الاستفسارات برجاء الاتصال على <b>١٥٨٦٤</b>
+    </string>
+    <string name="request_submitted">  تم ارسال طلبك بنجاح!</string>
+    <string name="complete_your_profile"> أكمل المعلومات المالية </string>
+    <string name="Egp"> جنيه </string>
+    <string name="months"> شهور </string>
+    <string name="your_booking"> عملياتك المحجوزة </string>
+    <string name="down_payment_min"> مقدم - حد أدنى</string>
+    <string name="monthly_amount">%1$s/ شهر </string>
+    <string name="egp_amount">%1$s جنيه</string>
+    <string name="payment_plans_may_vary_depending_on_your_lending_ability">قيمة الأقساط قد تختلف بناءً على المعلومات المالية الخاصة بالعميل</string>
+    <string name="submit">أضف الى العربة</string>
+    <string name="mark_your_preferred_plan"> اختار نظام التقسيط المناسب ليك </string>
+    <string name="search_by_price"> البحث بالسعر </string>
+    <string name="sign_in">يرجى إدخال إسم المستخدم وكلمة المرور</string>
+    <string name="sign_in_underlined"><u> تسجيل الدخول </u></string>
+    <string name="welcome_wink"> اهلا بيك في أدڤا</string>
+    <string name="sign_up_to_continue"> تسجيل </string>
+    <string name="full_name"> الاسم بالكامل </string>
+    <string name="agree_to_our_terms_amp_conditions">أوافق على</string>
+    <string name="register"> تسجيل </string>
+    <string name="password_dont_match"> كلمة المرور غير متطابقة </string>
+    <string name="invalid_email"> البريد إلكتروني غير صحيح </string>
+    <string name="looking_for_available_dr"> بندور على اقرب دكتور ليك وهنرجعلك علي طول</string>
+    <string name="go_to_home_page"> الرجوع للصفحة الرئيسية</string>
+    <string name="financial_info"> المعلومات المالية </string>
+    <string name="bank"> البنك </string>
+    <string name="work"> المهنة</string>
+    <string name="id"> البطاقة </string>
+    <string name="credit_card"> بطاقة الائتمان</string>
+    <string name="bank_info"> المعلومات البنكية</string>
+    <string name="my_profile"> حسابي</string>
+    <string name="operation_Installment_cost">%1$s جنيه - %2$s جنيه </string>
+    <string name="phone"> رقم التليفون </string>
+    <string name="phone_r"> رقم التليفون*</string>
+    <string name="confirm_password"> تأكيد كلمة المرور </string>
+    <string name="confirm_password_r"> تأكيد كلمة المرور *</string>
+    <string name="must_agree_on_terms"> برجاء الموافقة على الشروط والأحكام </string>
+    <string name="next"> التالي </string>
+    <string name="company_name_required">اسم الشركة*</string>
+    <string name="hiring_date"> تاريخ التعيين</string>
+    <string name="net_salary"> المرتب صافي</string>
+    <string name="building"> رقم المبنى</string>
+    <string name="street"> الشارع</string>
+    <string name="district"> المنطقة </string>
+    <string name="profession"> المهنة  </string>
+    <string name="number_of_children">عدد الأطفال</string>
+    <string name="marital_status">الحالة الإجتماعية*</string>
+    <string name="club_membership">عضوية نادي</string>
+    <string name="are_you_egyptian"> هل انت مصري؟</string>
+    <string name="yes"> نعم</string>
+    <string name="provide_us_with_your_passport_or_national_id"> برجاء ارفاق صورة البطاقة او جواز السفر</string>
+    <string name="national_id"> البطاقة الشخصية*</string>
+    <string name="passport_number"> جواز السفر </string>
+    <string name="id_number"> رقم البطاقة</string>
+    <string name="expiry_date">تاريخ الانتهاء</string>
+    <string name="gender"> النوع</string>
+    <string name="residential_status"> موقف السكن </string>
+    <string name="second_name"> اسم  الأب</string>
+    <string name="first_name"> الاسم الأول</string>
+    <string name="first_name_r"> الاسم *</string>
+    <string name="last_name"> اسم العائلة *</string>
+    <string name="last_name_r"> اسم العائلة*</string>
+    <string name="address"> العنوان </string>
+    <string name="username"> اسم المستخدم </string>
+    <string name="invalid_car_year"> سنة الصنع غير صحيحة </string>
+    <string name="invalid_children_number"> عدد الاطفال غير صحيح </string>
+    <string name="employment_info_updated_successfully"> تم تحديث بيانات العمل بنجاح </string>
+    <string name="bank_info_updated_successfully">تم تحديث المعلومات المالية بنجاح </string>
+    <string name="basic_info_updated_successfully">تم تحديث بياناتك بنجاح </string>
+    <string name="third_name">اسم الجد</string>
+    <string name="chronic_diseases"> الأمراض المزمنة</string>
+    <string name="select_all"> اختار الكل</string>
+    <string name="medical_history"> تاريخك الطبي</string>
+
+    <string-array name="profile_names">
+        <item> البنك </item>
+        <item> المهنة</item>
+        <item> البطاقة </item>
+    </string-array>
+
+
+    <string-array name="gender">
+        <item> ذكر </item>
+        <item> أنثى</item>
+    </string-array>
+
+    <string-array name="paymentMethods">
+        <item> كاش</item>
+        <item> بطاقة الائتمان </item>
+    </string-array>
+
+    <string name="date_time_value">%1$d/%2$d/%3$d</string>
+    <string name="passport_type"> جواز السفر</string>
+    <string name="edit"> تعديل</string>
+    <string name="favourites">الإهتمامات</string>
+    <string name="interests">Interests</string>
+    <string name="discount_card"> كارت الخصومات</string>
+    <string name="payments"> المدفوعات</string>
+    <string name="booked_operations"> العمليات المحجوزة</string>
+    <string name="change_password"> تغيير كلمة المرور</string>
+    <string name="sign_out"> <u>خروج</u> </string>
+    <string name="first_name_error"> برجاء إدخال الاسم الأول</string>
+    <string name="second_name_error"> برجاء إدخال اسم الأب</string>
+    <string name="third_name_error"> برجاء إدخال اسم الجد </string>
+    <string name="last_name_error"> برجاء إدخال اسم العائلة </string>
+    <string name="national_id_erorr"> رقم البطاقة غير صحيح </string>
+    <string name="national_id_expire_date_error">تاريخ انتهاء البطاقة مطلوب</string>
+    <string name="passport_number_error"> رقم جواز السفر غير صحيح </string>
+    <string name="passport_expire_date_error"> برجاء إدخال تاريخ جواز السفر </string>
+    <string name="street_address_error"> برجاء إدخال الشارع </string>
+    <string name="building_num_error"> برجاء إدخال رقم المبنى </string>
+    <string name="no"> لا </string>
+    <string name="completed"> تمت </string>
+    <string name="calceled"> ملغاة </string>
+    <string name="in_progress"> جارية </string>
+    <string name="submitted"> تحت الطلب</string>
+    <string name="scan_your_id">صورة البطاقة الأمامية</string>
+    <string name="done">تم</string>
+    <string name="cancel_request">إلغاء الطلب</string>
+    <string name="are_you_sure_you_want_to_cancel_your_orderd_home_visit_request">هل انت متأكد انك تريد إلغاء الكشف المنزلي؟</string>
+    <string name="sure_cancel_booking"> هل انت متأكد انك تريد إلغاء طلب تقسيط العملية؟</string>
+    <string name="back">الرجوع</string>
+    <string name="cancel">إلغاء</string>
+    <string name="cancel_booking">إلغاء الحجز</string>
+    <string name="make_review"> رأيك يهمنا!</string>
+    <string name="visit_price">سعر الكشف</string>
+    <string name="booking_details"> تفاصيل الحجز</string>
+    <string name="home_visit_cannot_be_canceled"> لا يمكنك إلغاء الكشف المنزلي حيث أن الدكتور في الطريق إليك </string>
+    <string name="please_enter_your_verification_code"> الرجاء إدخال رمز التحقق الخاص بك </string>
+    <string name="verify"> تحقق</string>
+    <string name="invalid_verification_code"> رمز التحقق غير صحيح </string>
+    <string name="cash"> كاش </string>
+    <string name="credit_debit_card"> بطاقة الائتمان </string>
+    <string name="confirm"> تأكيد </string>
+    <string name="service_name"> اسم الخدمة:</string>
+    <string name="customer_name"> اسم العميل:</string>
+    <string name="payment_method"> طريقة الدفع:</string>
+    <string name="who_is_the_visit_for"> بتحجز الكشف لمين؟ </string>
+    <string name="for_me"> لنفسي </string>
+    <string name="for_other"> لشخص أخر</string>
+    <string name="floor"> الدور</string>
+    <string name="preferred_time"> الوقت المفضل</string>
+    <string name="date_of_birth"> تاريخ الميلاد </string>
+    <string name="doctor_speciality"> تخصص الدكتور* </string>
+    <string name="book"> حجز</string>
+    <string name="tell_us_what_you_feel"> بتشتكي من ايه؟</string>
+    <string name="e_g_i_have_a_fever"> مثال: عندي حرارة</string>
+    <string name="patient_name"> اسم المريض</string>
+    <string name="age"> السن </string>
+    <string name="tell_us_symptoms"> ما هي الأعراض؟ </string>
+    <string name="invalid_profession"> المهنة غير صحيحة </string>
+    <string name="invalid_company_name"> اسم الشركة غير صحيحة </string>
+    <string name="card"> بطاقة الائتمان </string>
+    <string name="flat"> الشقة </string>
+    <string name="hospital_doctor"> طبيب المستشفى </string>
+    <string name="num_reviews">%1$d تقييم </string>
+    <string name="review">تقييم</string>
+
+    <string name="contacts">للتواصل</string>
+    <string name="operations">عمليات</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_the_doctor"> أعرف أكتر عن الدكتور </string>
+    <string name="overall_rating"> التقييم </string>
+    <string name="excellent"> ممتاز </string>
+    <string name="moderate"> معتدل </string>
+    <string name="fair"> مقبول </string>
+    <string name="contacts_information"> معلومات الاتصال </string>
+    <string name="phone_number_r"> رقم التليفون </string>
+    <string name="website"> الموقع الالكتروني </string>
+    <string name="fax">  الفاكس </string>
+    <string name="social"> الموقع الاجتماعي </string>
+    <string name="branches"> الفرع </string>
+    <string name="reviews"> التقييمات </string>
+    <string name="doctors"> الدكاترة </string>
+    <string name="hospital_branches"> فروع المستشفى </string>
+    <string name="contact_info"> معلومات التواصل </string>
+    <string name="clinic"> العيادة </string>
+    <string name="profile_verify_email"> اضغط هنا لتأكيد حسابك </string>
+    <string name="no_home_viaits_yet">لا يوجد كشوفات منزلية!</string>
+    <string name="your_home_visits_will_appear_here"> محتاج كشف منزلي؟ احجز الان</string>
+    <string name="no_bookings_yet">لا يوجد حجوزات!</string>
+    <string name="your_operations_bookings_will_appaer_here">محتاج تقسط خدمة؟احجز الآن</string>
+    <string name="monthly"> شهريا</string>
+    <string name="enter_your_email"> أدخل بريدك الإلكتروني</string>
+    <string name="email_or_mobile">رقم التليفون</string>
+    <string name="mobile1">رقم التليفون</string>
+    <string name="resend_verification_code"><u> إعادة إرسال رمز التحقق </u></string>
+    <string name="terms_and_conditions"> الشروط والأحكام </string>
+    <string name="skip"><u>تخطى</u></string>
+    <string name="by">بواسطة</string>
+    <string name="car_model"> نوع العربية </string>
+    <string name="monthly_bank_installment"> قسط البنك الشهري</string>
+    <string name="date_is"> التاريخ</string>
+    <string name="bank_installment"> قسط البنك</string>
+    <string name="work_address"> عنوان العمل</string>
+    <string name="write_year"> اكتب سنة صنع السيارة</string>
+    <string name="finish"> إنهاء</string>
+    <string name="more_reviews"> مزيد من التقييمات</string>
+    <string name="more"> المزيد </string>
+    <string name="version_number"> إصدار %1$s</string>
+    <string name="my_bookings">الحجوزات</string>
+    <string name="booking_status"> مرحلة الحجز </string>
+    <string name="missing_documents"><b> المستندات الغير مكتملة: </b>%1$s</string>
+    <string name="home_visit"> الكشف المنزلي</string>
+    <string name="your_review_will_be_highly_appreciated"> رأيك يهمنا!</string>
+    <string name="the_doctor"> الدكتور</string>
+    <string name="your_feedback"> تعليقاتك</string>
+    <string name="this_operation"> العملية </string>
+    <string name="_1_s_hospital">%1$s المستشفى </string>
+    <string name="no_operations"> لا يوجد عمليات </string>
+    <string name="the_operations_will_appear_here"> حجز اي عملية هيبان هنا</string>
+    <string name="choose_category"> اختار التخصص</string>
+    <string name="no_search_results"> لا يوجد نتائج</string>
+    <string name="default_notification_channel_id">Default FCM Number</string>
+    <string name="weight"> الوزن </string>
+    <string name="height"> الطول </string>
+    <string name="current_diseases"> الأمراض الحالية </string>
+    <string name="update"> تحديث </string>
+    <string name="change_language"> تغيير اللغة</string>
+    <string name="who_we_are"> عن أدڤا</string>
+    <string name="online_support"> المساعدة    </string>
+    <string name="arabic"><u>العربية</u>  </string>
+    <string name="english"> <u>English</u> </string>
+    <string name="choose_language"> اختار اللغة</string>
+    <string name="confirm_change_lang">هل أنت متأكد أنك تريد تغيير اللغة الى  %1$s؟</string>
+    <string name="confirm_change_language"> تأكيد تغيير اللغة </string>
+    <string name="please_enter_a_new_password"> برجاء إدخال كلمة المرور </string>
+    <string name="new_password"> كلمة المرور الجديدة </string>
+    <string name="re_enter_password"> تأكيد كلمة المرور </string>
+    <string name="old_password"> كلمة المرور الحالية </string>
+    <string name="enter_your_email_address_and_we_will_send_you_a_link_to_reset_your_password"> برجاء إدخال رقم الهاتف وسنرسل لك رابطًا لتغيير كلمة المرور الخاصة بك </string>
+    <string name="what_is_your_email"> ما هو بريدك الإلكتروني؟ </string>
+    <string name="reset"> إعادة تعيين </string>
+    <string name="doctor_profile"> الملف الشخصي للطبيب </string>
+    <string name="medical_provider_profile"> الملف الشخصي لمقدم الخدمات الطبية </string>
+    <string name="specialities_number">%1$d تخصصات طبية </string>
+    <string name="doctors_number">%1$d دكاترة </string>
+    <string name="about_the_medical_provider"> معلومات عن مقدم الخدمات الطبية </string>
+    <string name="profile_updated_successfully">تم تعديل معلوماتك الشخصية بنجاح</string>
+    <string name="add_card">أضف بطاقة</string>
+    <string name="filter">التصفية</string>
+    <string name="payment_done_successfully">تم الدفع بنجاح</string>
+    <string name="payment_methods">طرق الدفع</string>
+    <string name="default_card">الكارت الأساسي</string>
+    <string name="the_payment_will_be_processed_after_the_visit">سيتم المحاسبة بعد إنتهاء الكشف</string>
+    <string name="medical_specialities">التخصصات</string>
+    <string name="confirm_logout">تأكيد الخروج</string>
+    <string name="confirm_logout_message">هل انت متأكد انك تريد الخروج؟</string>
+    <string name="search_result">نتائج البحث</string>
+    <string name="add_payment_method">اضافة بطاقة ائتمان</string>
+
+    <string name="working_hours">مواعيد العمل</string>
+    <string name="redeem_a_discount">إستخدام</string>
+    <string name="view_review">شاهد تقييمك</string>
+    <string name="num_more">+%1$d تقييم اضافي</string>
+    <string name="all_reviews">التقييمات</string>
+    <string name="ok">موافق</string>
+    <string name="error">خطأ</string>
+    <string name="alert">تنبيه</string>
+    <string name="thank_you">شكراً</string>
+    <string name="for_completing_your_financial_profile">لاستكمال معلوماتك المالية</string>
+    <string name="ago">منذ</string>
+    <string name="no_reviews_yet">لا يوجد تقييمات</string>
+    <string name="offers_amp_discounts_coming_soon">قريبا, احسن العروض والخصومات</string>
+    <string name="booking_submitted"> تم ارسال طلبك بنجاح!</string>
+    <string name="your_message">الرسالة</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="message_sent_successfully">تم ارسال الرسالة</string>
+    <string name="terms_url">https://advaeg.com/ar/terms-conditions-ar/</string>
+    <string name="faqs_url">https://advaeg.com/ar/faqs-ar/</string>
+    <string name="privacy_policy_url">https://advaeg.com/ar/privacy-policy-ar/</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="no_notifications_yet">لا يوجد اشعارات</string>
+    <string name="password_changed_successfully">تم تغير كلمة المرور بنجاح</string>
+    <string name="invalid_build_number">رقم المبني غير صحيح</string>
+    <string name="no_results_match_your_filters">لا يوجد نتائج</string>
+    <string name="send">ابعت</string>
+    <string name="send_your_message">ابعت رسالتك</string>
+    <string name="not_yet">ليس بعد</string>
+    <string name="not_reviewed_yet">لم يتم التقييم</string>
+    <string name="or_call_us_01202777705">أو اتصل بنا: 15864</string>
+    <string name="faq_s">الأسئلة الشائعة</string>
+    <string name="delete">حذف</string>
+    <string name="no_credit_cards">لا يوجد بطاقات ائتمان</string>
+    <string name="no_favourites">لا يوجد عمليات مفضلة!</string>
+    <string name="booked_home_visits">الكشوفات المنزلية المحجوزة</string>
+    <string name="and">و</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="operations_installments">تقسيط عمليات</string>
+    <string name="our_network">وسائل التواصل</string>
+    <string name="about_us_title">أسرع قسط لأي خدمة في مصر</string>
+    <string name="worry_less_your_health_matters">ماتشلش هم... صحتك أهم</string>
+    <string name="worry_less_your_health_matters2">ماتشلش هم... صحتك أهم</string>
+    <string name="about_us_text">ابلكيشن أدڤا مُصمم بذكاء عشان يغطي كل الخدمات اللي تهمك في الحياة بالتقسيط على فترات مرنة. هدفنا تقليل الأعباء على عملائنا وتقديم أفضل الخدمات في مصر بطرق سهلة ومريحة. أدڤا بيضمن حياة أفضل للعملاء بتوفير خدمة التقسيط على الخدمات في مجال الصحة، التعليم والتأمين.
+
+أدڤا بيقدم أقوى شبكة لتقسيط أفضل الخدمات في مصر في مجالات متنوعة، بأقل الإجراءات وفي أسرع وقت وبضغطة زرار من على الأبلكيشن.
+</string>
+    <string name="more_details">مزيد من التفاصيل</string>
+    <string name="usage_history">العروض المستخدمة</string>
+    <string name="card_benefits">مزايا الكارت</string>
+    <string name="num_discount">%1$d% خصم</string>
+    <string name="discount">خصم</string>
+    <string name="offers">عرض</string>
+    <string name="you_used">تم استخدام</string>
+    <string name="update_version">Google Play يوجد إصدار جديد على</string>
+    <string name="update_your_app_text">برجاء تحديث التطبيق</string>
+    <string name="home_visits_text_1">صحتك من البيت من خلال خدمة الكشف المنزلي، والدكتور هيجيلك في أي وقت وفي أي مكان</string>
+    <string name="home_visiit_text2">تقدر تحجز الكشف المنزلي لنفسك أو لشخص أخر, سعر الكشف يتراوح ما بين 400-600 جنيه وتقدر تدفعه كاش أو بالكريديت كارد من خلال التطبيق بعد الزيارة</string>
+    <string name="home_visit_text3">احجز التخصص اللي محتاجه من التخصصات المختلفة المتوفرة وأقرب دكتور هيجيلك في خلال 2-4 ساعات</string>
+    <string name="doctor_name">اسم الطبيب</string>
+    <string name="operation_name">اسم العملية</string>
+    <string name="doctor_name_r">اسم الطبيب*</string>
+    <string name="operation_name_r">اسم العملية*</string>
+    <string name="hospital_name_r">اسم المستشفى*</string>
+    <string name="operation_price_r">تكلفة العملية*</string>
+    <string name="down_payment_r">المقدم*</string>
+    <string name="down_payment">المقدم</string>
+    <string name="underlined_text"><u>%1$s</u></string>
+    <string name="custom_operation_button_text">قسط مع دكتورك</string>
+    <string name="general">عام</string>
+    <string name="custom_operation_text">قسط عمليتك مع دكتورك المفضل</string>
+    <string name="medical_network">شبكتنا الطبية</string>
+    <string name="default_error">حدث خطأ ما, برجاء المحأولة مرة اخرى</string>
+    <string name="use_it_now">استخدم الاّن</string>
+    <string name="congratulations">مبروك</string>
+    <string name="congratulations_text">استمتع بأحسن العروض مع أول كارت خصومات رقمي في مصر</string>
+    <string name="check_offers">اكتشف العروض</string>
+    <string name="offers_landing_text">استمتع بأحسن العروض مع أول كارت خصومات رقمي في مصر</string>
+    <string name="details">التفاصيل</string>
+    <string name="discount_up_to">خصم يصل الى</string>
+    <string name="back_to_offers">الرجوع للعروض</string>
+    <string name="have_active_offer">لديك كود لم يستخدم</string>
+    <string name="hospitals_clinics">مستشفيات وعيادات</string>
+    <string name="check_your_card">برجاء التحقق من الكارت لمعرفة رقم الكود</string>
+    <string name="redemption_code">كود الإستخدام:</string>
+    <string name="enjoy_the_best_deals_with_salamtak_discount_card">إستمتع بأحسن العروض بكارت الخصومات</string>
+    <string name="enjoy_the_best_offers_with_the_1st_free_digital_discount_card">استمتع بأحسن العروض مع أول كارت خصومات رقمي مجاني في مصر</string>
+    <string name="thank_you_for_joining_salamtak">شكرا لتسجيلك مع أدڤا</string>
+    <string name="please_agree">برجاء الموافقة على الشروط والاحكام</string>
+    <string name="attach_missing_document">Attach missing document</string>
+    <string name="pay_your_monthly_installment_at_any_of_aman_stores_incase_you_are_an_aman_customer">Pay your monthly installment at any of Aman stores incase you are an Aman customer</string>
+    <string name="choose_your_type">اختر مصدر الدخل</string>
+    <string name="business_owners">أصحاب الأعمال الحرة</string>
+    <string name="commercial_record">السجل التجاري</string>
+    <string name="tax_card">البطاقة الضريبية</string>
+    <string name="bank_account_statement">كشف حساب بنكي</string>
+    <string name="notes">ملاحظات</string>
+    <string name="write_your_notes_here">أضف ملاحظاتك</string>
+    <string name="pay_with">الدفع عن طريق*</string>
+    <string name="aman">امان</string>
+    <string name="valu">فاليو</string>
+    <string name="your_mobile">رقم التليفون</string>
+    <string name="job_required">الوظيفة*</string>
+    <string name="salary">الراتب*</string>
+    <string name="your_salary">الراتب*</string>
+    <string name="your_guarantor_national_id">صورة من بطاقة الضامن </string>
+    <string name="your_national_id">البطاقة الشخصية*</string>
+    <string name="Guarantor_id">صورة من بطاقة الضامن</string>
+    <string name="credit_loans">بطاقة ائتمان أو قروض</string>
+    <string name="credit_loans_r">بطاقة ائتمان أو قروض*</string>
+    <string name="limit">الحد</string>
+    <string name="scan_id_back">صورة البطاقة الخلفية</string>
+    <string name="bank_certificates">شهادات بنكية</string>
+    <string name="business_owner">أصحاب الأعمال الحرة</string>
+    <string name="property_renter">تأجير ممتلكات</string>
+    <string name="pension">أصحاب المعاشات</string>
+    <string name="employee">موظف</string>
+    <string name="car_owner">مالك سيارة</string>
+    <string name="net_income_required">صافي الدخل*</string>
+    <string name="company_address_required">عنوان العمل*</string>
+    <string name="pension_net_amount_r">قيمة المعاش*</string>
+    <string name="pension_net_amount">قيمة المعاش</string>
+    <plurals name="months1">
+        <item quantity="zero"></item>
+        <item quantity="one"> شهر</item>
+        <item quantity="two">شهران</item>
+        <item quantity="few">%1$s شهور</item>
+        <item quantity="many">%1$s شهر</item>
+        <item quantity="other">شهر %1$s</item>
+    </plurals>
+
+    <string name="more_images">يمكنك اختيار %d صور فقط</string>
+    <string name="select_image">اختر الصور</string>
+    <string name="select_docs">اختر الملفات</string>
+    <string name="total_cost">التكلفة الكلية</string>
+    <string name="installment_plan">خطة التقسيط</string>
+    <string name="operation_request">طلب إجراء عملية</string>
+    <string name="_10_min">(الحد الادنى 10%)</string>
+    <string name="_15_min">(الحد الادنى 15%)</string>
+    <string name="operation_added_successfully">تم اضافة العملية بنجاح</string>
+    <string name="financial_rejected">مرفوض ماليا</string>
+    <string name="pending">تحت الطلب</string>
+    <string name="cancelled">ملغاة</string>
+    <string name="processing">جارية</string>
+    <string name="rate_operation">قيم العملية</string>
+    <string name="gallery">ملف الصور</string>
+    <string name="camera">كاميرا</string>
+    <string name="starts_from">يبدأ من</string>
+    <string name="num_more_doctor">+%1$d دكتور</string>
+    <string name="more_doctor">+ المزيد</string>
+    <string name="egp_nmonthly">ج.م/شهريا</string>
+
+    <string name="about_the_operation">معلومات عن العملية</string>
+    <string name="choose_hospital_branch">إختار فرع المستشفى</string>
+    <string name="ids_images_error">يجب ان تقوم بتحميل صورة بطاقتك الوجه والظهر</string>
+    <string name="ids_images_error_guarantor">يجب ان تقوم بتحميل صورة بطاقة الضامن الوجه والظهر</string>
+    <string name="credit_card_limit">الحد الائتماني</string>
+    <string name="loan_monthly_amount">القسط الشهري</string>
+    <!--    <string name="your_limit">الحد الائتماني</string>-->
+    <string name="your_limit">الحد الائتماني</string>
+    <string name="browse">اختر</string>
+    <string name="big_file_message">يجب ان يكون حجم الملف اقل من 5 ميجا</string>
+    <string name="image_uploaded_successfully">تم تحميل الصورة بنجاح</string>
+    <string name="invalid_date">تاريخ الإصدار لا يمكن ان يكون تاريخ مستقبلي</string>
+    <string name="invalid_date2">تاريخ غير صحيح</string>
+    <string name="data_not_saved">لن يتم حفظ هذه البيانات</string>
+    <string name="uploading_wait">يتم التحميل, برجاء الانتظار</string>
+    <string name="choose">إختر الخدمة</string>
+    <string name="choosecar">نوع السيارة</string>
+    <string name="chooseclub">إختر </string>
+
+    <string name="confirm_delete_file">هل تريد حذف هذا الملف؟</string>
+    <string name="complete_fin_profile">برجاء إستكمال معلوماتك المالية أولا لإمكانية فتح الملف الذي يتم رفعه</string>
+    <string name="health">الصحة</string>
+    <string name="insurance">التأمين</string>
+    <string name="education">التعليم</string>
+    <string name="health_desc">قسط العمليات الجراحية</string>
+    <string name="education_desc">قسط مصاريف المدرسة، الجامعة أو الدراسات العليا</string>
+    <string name="insurance_desc">قسط التأمين الصحي أو التأمين على عربيتك</string>
+    <string name="about_us_title_text">أسرع قسط لأي خدمة في مصر.</string>
+    <string name="see_more">المزيد</string>
+    <string name="view_less">أقل</string>
+    <string name="onboarding_first_title">قسط أي خدمة محتاجها</string>
+    <string name="onboarding_first_text">قسط فواتيرك، التأمين، الخدمات الطبية،
+مصاريف التعليم، صيانة السيارات، الأفراح،
+التشطيبات، السفر، وأكتر على فترات
+سداد مريحة.</string>
+    <string name="onboarding_title_second">خطط سداد ذكية تناسب
+احتياجاتك</string>
+    <string name="onboarding_text_second">قسط أي خدمة باختيار فترة السداد
+المناسبة حتى ٦٠ شهر.</string>
+    <string name="onboarding_title_third">أقوى شبكة مقدمي خدمات</string>
+    <string name="onboarding_text_third">اختر مقدم الخدمة المفضل لك من
+أقوى شبكة في مختلف المجالات.</string>
+    <string name="onboarding_title_fourth">أسرع خدمة في مصر</string>
+    <string name="onboaring_text_fourth">استمتع بخدمتنا بأسرع وأقل الإجراءات؛
+خدمة عملاء متاحة طوال أيام الأسبوع.</string>
+    <string name="onboarding_title_fifth">أسرع تمويل في مصر</string>
+    <string name="onboarding_text_fifth">تقدر تستمتع بخدمتنا في أسرع وقت وأقل الإجراءات.</string>
+    <string name="insurance_request">طلب التأمين</string>
+    <string name="install_with_your_service">قسط الخدمة اللي تختارها</string>
+    <string name="your_name">الاسم بالكامل*</string>
+    <string name="installment_type">نظام التأمين*</string>
+    <string name="insurance_company_name">اسم شركة التأمين</string>
+    <string name="education_request">طلب مصاريف التعليم</string>
+    <string name="education_entity_name">اسم الجهة التعليمية</string>
+    <string name="branch">الفرع</string>
+    <string name="grade">المرحلة التعليمية</string>
+    <string name="type_of_education">نظام التعليم.</string>
+    <string name="student_name">اسم الطالب</string>
+    <string name="student_id">بطاقة الطالب</string>
+    <string name="education_fees">مصاريف التعليم</string>
+    <string name="bus_fees">مصاريف الباص</string>
+    <string name="insurance_type">نوع التأمين</string>
+    <string name="greater_than_0">يجب أن تكون أكبر من 0</string>
+    <string name="booked_services">الحجوزات</string>
+    <string name="customized_operation">اضف دكتورك</string>
+    <string name="your_favourites_will_appear_here">سيتم إضافة الإهتمامات هنا</string>
+    <string name="search_by_operation_doctor_or_hospital">البحث بالمستشفى, الدكتور, العملية</string>
+    <string name="our_categories">الخدمات: </string>
+    <string name="gym">جيم</string>
+    <string name="weddings">الفرح</string>
+    <string name="comming_soon_title">قريباً مع أدڤا، انتظرونا!</string>
+    <string name="wedding_soon_text">قسط مصاريف الفرح</string>
+    <string name="gym_coming_soon_text">قسط اشتراك الجيم</string>
+    <string name="other_soon_text">خدمات جديدة</string>
+    <string name="latest_added">أفضل شركاء</string>
+    <string name="num_more_records"> باقي %1$s</string>
+    <string name="no_more_records">لا يوجد المزيد</string>
+    <string name="subcategory">العملية</string>
+    <string name="medical_provider">مقدم الخدمة الطبية</string>
+    <string name="city">المحافظة</string>
+    <string name="operation_price">سعر العملية الجراحية</string>
+    <string name="wedding_request">طلب لتقسيط الافراح </string>
+    <string name="venue">مقدم الخدمة</string>
+    <string name="invitees_number">عدد المدعوين</string>
+    <string name="wedding_request_note">قيمة الأقساط قد تختلف بناء علي المعلومات المالية الخاصة بالعميل</string>
+    <string name="insurance_request_note">قيمة الأقساط قد تختلف بناء علي المعلومات المالية الخاصة بالعميل</string>
+
+    <string name="to">حتى:</string>
+    <string name="suggestions">لا توجد نتائج مطابقة ولكن يمكنك اكتشاف التالي</string>
+    <string name="speciality">التخصص</string>
+    <string name="all">الكل</string>
+    <string name="all_schools">جميع المدارس</string>
+    <string name="no_schools">لا يوجد مدارس </string>
+    <string name="about_the_school">معلومات عن المدرسة</string>
+    <string name="student1_details">تفاصيل الطالب</string>
+    <string name="student_2_details">تفاصيل الطالب</string>
+    <string name="student_3_details">تفاصيل الطالب</string>
+    <string name="add_another_student">إضافة طالب آخر</string>
+    <string name="school_fees">مصاريف المدرسة</string>
+    <string name="monthly_installment_fees">القسط الشهري</string>
+    <string name="all_universities">جميع الجامعات</string>
+    <string name="all_institutes">جميع المعاهد</string>
+    <string name="about_the_university">معلومات عن الجامعة</string>
+    <string name="about_the_institute">معلومات عن المعهد</string>
+    <string name="choose_your_department">اختر القسم</string>
+    <string name="finishing">التشطيبات</string>
+    <string name="finishing_coming_soon_text">تقسيط التشطيبات</string>
+    <string name="about_the_department">معلومات عن القسم</string>
+    <string name="disclaimer_message">القيمة المذكورة هي المعلن عنها، وقد تختلف القيمة حسب بيانات العميل.</string>
+    <!--    <string name="prompt_info_description">Adva is using Android biometric authentication</string>-->
+    <string name="prompt_info_title">تسجيل الدخول ل ادڤا</string>
+    <string name="prompt_info_subtitle">تسجيل الدخول باستخدام البصمة</string>
+    <string name="prompt_info_use_app_password">استخدام كلمة المرور</string>
+    <string name="enable_biometric_login">تفعيل استخدام البصمة</string>
+    <string name="desc_biometrics_authorization">ادخل الإسم وكلمة المرور لتفعيل استخدام البصمة</string>
+    <string name="use_biometrics">استخدام البصمة</string>
+    <string name="resend_premium_code">لم يتم الحصول على كود؟ احصل على كود آخر</string>
+    <string name="premium_status"></string>
+    <string name="pay_with_premium">بريميوم كارد</string>
+    <string name="premium_invalid_date">رقم الكارت أو تاريخ الإنتهاء غير صحيح</string>
+    <string name="premium_card_expired">تاريخ الإنتهاء غير صحيح برجاء التواصل مع خدمه عملاء بريميوم كارد</string>
+    <string name="premium_no_mobile_number">رقم الهاتف غير متوفر في الملف الشخصي، برجاء التواصل مع خدمة عملاء بريميوم كارد</string>
+    <string name="premium_error">حدث عطل من قِبل بريميوم كارد، برجاء التواصل مع خدمة عملاء بريميوم كارد</string>
+    <string name="premium_transaction_declined">تم رفض العملية</string>
+    <string name="premium_otp_expired">الرقم السري منتهي الصلاحية</string>
+    <string name="premium_wrong_otp">رمز التحقق غير صحيح</string>
+    <string name="payment_summery">ملخص عملية الدفع</string>
+    <string name="premium_card">بريميوم كارد</string>
+    <string name="amount_to_be_deducted">سيتم خصم القيمة المالية</string>
+    <string name="premium_status_text">المبلغ: %1$s\nالحالة: %2$s\nالتاريخ: %3$s</string>
+    <string name="date_expired">تاريخ الإنتهاء منتهي</string>
+    <string name="invalid_card_number">رقم الكارت غير صحيح</string>
+    <string name="resend_in">إعادة إرسال خلال</string>
+    <string name="seconds">ثانية</string>
+    <string name="car_service">صيانة العربيات</string>
+    <string name="car_service_info">لطلب تقسيط صيانة العربية</string>
+    <string name="please_contact_us_on_15864">برجاء التواصل معنا على 15864</string>
+    <string name="finishing_desc">لطلب تقسيط التشطيبات</string>
+    <string name="guarantor_national_id">بطاقة الضامن</string>
+    <string name="scan_card_front">صورة العضوية من الوجه</string>
+    <string name="scan_card_back">صورة العضوية من الخلف</string>
+    <string name="choose_your_club">اختر النادي</string>
+    <string name="choose_your_car">اختر السيارة</string>
+    <string name="prove_of_income">اثبات مصدر الدخل</string>
+    <string name="rental_amount_r">قيمة الإيجار</string>
+    <string name="monthly_income_r">الدخل الشهري*</string>
+    <string name="registered_name_r">*الاسم المسجل</string>
+    <string name="valu_customer">عميل فاليو</string>
+    <string name="confirm_losing_data">سوف تفقد البيانات اذا اخترت اوافق</string>
+    <string name="is_club_member">هل لديك عضوية نادي؟</string>
+    <string name="is_car_owner">هل لديك سيارة؟</string>
+    <string name="credit_loans_header">هل لديك أي قروض أو أقساط؟</string>
+    <string name="club_front_required">وجه كارنيه النادي مطلوب</string>
+    <string name="club_back_required">ظهر كارنيه النادي مطلوب</string>
+    <string name="car_back_required">ظهر رخصة السيارة مطلوب</string>
+    <string name="car_fron_required">وجه رخصة القيادة مطلوب</string>
+    <string name="none">لا شيء</string>
+    <string name="add_other">مصدر دخل آخر</string>
+    <string name="to_increase_your_limit">لزيادة الحد الإئتماني</string>
+    <string name="scan_license_face">صورة الرخصة من الوجه</string>
+    <string name="scan_license_back">صورة الرخصة من الخلف</string>
+    <string name="job">الوظيفة</string>
+    <string name="net_income">صافي الدخل</string>
+    <string name="company_name">اسم الشركة</string>
+    <string name="company_address">عنوان العمل</string>
+    <string name="rental_amount">قيمة الإيجار</string>
+    <string name="monthly_income">الدخل الشهري</string>
+    <string name="registered_name">الاسم المسجل</string>
+    <string name="email_address">البريد الالكتروني</string>
+    <string name="bank_statement">كشف حساب بنكي يفيد تحويل الراتب عن اخر 6 شهور / مفردات مرتب </string>
+    <string name="utility_bill">ايصال مرافق حديث</string>
+    <string name="pension1">بيان معاش 1</string>
+    <string name="pension2">بيان معاش 2</string>
+    <string name="asset_contract">عقد الملكية</string>
+    <string name="leasing_contract">عقد الايجار</string>
+    <string name="tax_id">بطاقه ضريبيه</string>
+    <string name="commercial_register">مستخرج السجل التجاري</string>
+    <string name="tax_return">اقرار ضريبي عن اخر عام</string>
+    <string name="bank_certificate">بيان بنكى يفيد قيمة الشهادات والودائع مع بيان العائد الشهرى</string>
+    <string name="bank_statement2">كشف سحاب بنكي عن اخر 6 شهور</string>
+    <string name="complete_fp">برجاء اكمال المعلومات !</string>
+    <string name="complete_fp_message">يلزم اختار اثبات لمصدر دخل واحد على الأقل</string>
+
+    <string name="all_finishing_providers">المكاتب الهندسية</string>
+    <string name="provider_name">إسم مقدم الخدمة</string>
+    <string name="finishing_request">طلب خدمة تقسيط</string>
+    <string name="about">عن مقدم الخدمة</string>
+    <string name="starting_from">يبدأ من</string>
+    <string name="num_egp_m2">%1$s جم / م²</string>
+    <string name="price_lbl">السعر</string>
+    <string name="low_to_high">الأقل - الأعلى</string>
+    <string name="filter_by">التصفية: %1$s</string>
+    <string name="sort_1_s">الترتيب: %1$s</string>
+    <string name="clear_all">مسح الكل</string>
+    <string name="add_your_own_provider">أضف مقدم خدمة جديد</string>
+    <string name="high_to_low">الأعلى - الأقل</string>
+    <string name="sort">الترتيب</string>
+    <string name="type">النوع</string>
+    <string name="egp_m">جم / م²</string>
+    <string name="available_plans">خطط الأقساط</string>
+    <string name="available_packages">الباقات المتاحة</string>
+    <string name="package_detaisl">تفاصيل الباقة</string>
+    <string name="provider_info">مقدم الخدمة</string>
+
+    <string name="your_info">معلوماتك الشخصية</string>
+    <string name="payment_plan">نظام الدفع</string>
+    <string name="additional_info">معلومات إضافية</string>
+    <string name="type_of_services_provided">نوع الخدمة المقدمة</string>
+    <string name="previous">السابق</string>
+    <string name="no_results_found">لا يوجد نتائج</string>
+    <string name="num_branch">%1$d فروع</string>
+    <string name="apply">تنفيذ</string>
+    <string name="car_service_request">تقسيط صيانة العربية</string>
+    <string name="services">الخدمات</string>
+    <string name="bills">فواتير</string>
+    <string name="travel">سفر</string>
+    <string name="for_installing_travel">لطلب تقسيط السفر</string>
+    <string name="for_installing_your_bills">لطلب تقسيط الفواتير</string>
+    <string name="clear">مسح</string>
+    <string name="car_brands">نوع العربية</string>
+    <string name="service_center">مركز الخدمة</string>
+    <string name="Verified">موثق</string>
+    <string name="total_amount">القيمة الكلية</string>
+    <string name="total_amount_hint">يرجى ادخال الكمية التى ستدفع عنها </string>
+    <string name="car_disclaimer">قد تختلف خطط الدفع حسب أهليتك</string>
+    <string name="phone_numbers">رقم الهاتف</string>
+    <string name="mobile">الهاتف</string>
+    <string name="mobilenumber">رقم التليفون</string>
+    <string name="no_result_found">لا يوجد نتيجة</string>
+    <string name="car_no_results_text">برجاء تغير التصفية أو إضافة مقدم خدمة الخاص بك من هنا</string>
+    <string name="bookings">الحجوزات</string>
+    <string name="profile">الحساب</string>
+    <string name="Myprofile">الحساب الشخصي</string>
+    <string name="account_setting">إعدادات الحساب</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="already_have_an_account">هل لديك حساب ؟</string>
+    <string name="phone_verification">التحقق من الهاتف</string>
+    <string name="verification_code_will_send">تم ارسال رمز التحقق علي رقم الهاتف</string>
+    <string name="send_code">إرسال رمز التحقق</string>
+    <string name="don_t_have_account">ليس لديك حساب ؟</string>
+    <string name="featured_categories">يمكنك تقسيط</string>
+    <string name="you_may_also_need">قد تحتاج أيضًا</string>
+    <string name="home_welcome">أهلاً وسهلاً،</string>
+    <string name="requests">الحجوزات</string>
+    <string name="top_providers">أفضل شركاء</string>
+    <string name="financial_profile">الملف المالي</string>
+    <string name="continue_your_financial_profile"><u>أكمل ملفك المالى لتحصل علي الموافقة</u></string>
+    <string name="all_courses">الدورات</string>
+    <string name="mmonths">شهور</string>
+    <string name="searchservicesorproviders">ابحث عن خدمة او مقدم خدمة</string>
+    <string name="yourservicesneed">ماقد تحتاجه لخدماتك</string>
+    <string name="comma">,</string>
+    <string name="findwhatyouneedeasier">احصل علي ماتريد بشكل أسرع</string>
+    <string name="letshelpyou">دعنا نساعدك للوصول لنتائج أفضل</string>
+    <string name="no_notification_added">الإشعارات</string>
+
+    <string name="viewAll"><u>إظهار الكل</u></string>
+    <string name="complete_zero_financial_profile">"لقد أتممت ٠٪ من ملفك المالي، \nأكمل ملفك الآن لتحصل على الموافقة. "</string>
+    <string name="complete_thirty_financial_profile">"لقد أتممت ٣٣٪ من ملفك المالي، \nأكمل ملفك الآن لتحصل على الموافقة. "</string>
+    <string name="complete_sixty_financial_profile">"لقد أتممت ٦٦٪ من ملفك المالي، \nأكمل ملفك الآن لتحصل على الموافقة. "</string>
+    <string name="complete_all_financial_profile">"لقد أتممت ١٠٠٪ من ملفك المالي"</string>
+    <string name="help">مساعدة</string>
+    <string name="area">منطقة</string>
+    <string name="about_adva">عن ادڤا</string>
+    <string name="lestgo">Let\'s Go</string>
+    <string name="my_wishlist">قائمة الرغبات</string>
+    <string name="my_installments">الحجوزات</string>
+    <string name="start_now">Start Now</string>
+    <string name="edit_profile">تعديل الملف</string>
+    <string name="zero">٠٪</string>
+    <string name="thirtyThree">٣٣٪</string>
+    <string name="sixtySix">٦٦٪</string>
+    <string name="hundred">١٠٠٪</string>
+    <string name="more_info">المزيد</string>
+
+    <string name="building_finance"> رقم المبنى*</string>
+    <string name="street_finance"> الشارع*</string>
+    <string name="city_finance">المحافظة*</string>
+    <string name="area_finance">منطقة*</string>
+    <string name="providers">مقدم الخدمة</string>
+    <string name="can_t_find_what_you_re_looking_for">لم تستطيع الوصول\nلما تريد ؟</string>
+    <string name="service_category">الخدمة المطلوبة</string>
+    <string name="request">طلب الخدمة</string>
+    <string name="start">ابدأ</string>
+
+    <string name="service_request_added">تم إضافة الخدمة</string>
+    <string name="continue_browsing">أكمل البحث</string>
+    <string name="checkout_now">إنتقل إلى العربة</string>
+    <string name="remove_service_from_list">إزالة الخدمة من العربة</string>
+    <string name="are_you_sure_you_want_to_remove_this_service_request_from_the_list">هل بالفعل تريد إزالة هذا الطلب من العربة ؟</string>
+    <string name="remove_service">إزالة الطلب</string>
+    <string name="booked_service">الخدمة المحجوزة</string>
+    <string name="choose_the_service">اختر</string>
+    <string name="checkout">تقديم الطلب للمراجعة</string>
+    <string name="no_items_in_cart">العربة فارغة</string>
+    <string name="choose_service_error">برجاء اختيار الخدمة المطلوبة لإستكمال الطلب</string>
+    <string name="your_cart">العربة</string>
+    <string name="you_cart_is_empty">العربة فارغة</string>
+    <string name="install_now_any_service_with_adva">قسط أي خدمة مع ادڤا</string>
+    <string name="browse_now">ابحث الآن</string>
+    <string name="you_will_receive_all_your_notifications_from_adva_here">ستصلك هنا جميع إشعاراتك من ادڤا</string>
+    <string name="no_requests_yet">لا يوجد أي حجوزات حتى الآن</string>
+    <string name="you_don_t_have_any_requests_yet_browse_our_services_and_let_us_help_you_get_what_you_need">ليس لديك أي طلبات حتى الآن ، تصفح خدماتنا ودعنا نساعدك في الحصول على ما تحتاجه.</string>
+    <string name="double_check_your_spelling_use_more_generic_terms_try_different_keywords_and_you_can_refine_your_search_later">برجاء مراجعة الكلمات المستخدمة أو استخدام كلمات أخرى</string>
+    <string name="empty_wishlist">لا يوجد خدمات مفضلة</string>
+    <string name="you_don_t_have_any_providers_saved_yet_on_your_wishlist_browse_now_and_add_them_to_your_list">سيتم إضافة الخدمة المفضلة هنا.</string>
+    <string name="egp_per">ج.م/</string>
+    <string name="month">شهريا</string>
+    <string name="negative_button_text"><![CDATA[<font color=\'#0d143d\'>تخطى</font>]]></string>
+
+    <plurals name="number_branches">
+        <item quantity="one">فرع واحد</item>
+        <item quantity="two">2 فرع</item>
+        <item quantity="other">%1$s فرع</item>
+        <item quantity="few">%1$s فروع</item>
+        <item quantity="many">%1$s فرع</item>
+    </plurals>
+
+    <string-array name="operation_status">
+        <item>تحت الطلب</item>
+        <item>جارية</item>
+        <item>جارية</item>
+        <item>جارية</item>
+        <item>جارية</item>
+        <item>جارية</item>
+        <item>تمت</item>
+        <item>ملغاة</item>
+        <item>ملغاة</item>
+        <item>جارية</item>
+        <item>ملغاة</item>
+        <item>عملية خاصة</item>
+    </string-array>
+
+    <string-array name="loan_types">
+        <item>بطاقة ائتمان</item>
+        <item>قروض</item>
+        <!--        <item>لا يوجد</item>-->
+    </string-array>
+
+    <string-array name="insurance_types">
+        <item>التأمين الصحي</item>
+        <item>التأمين على العربية</item>
+    </string-array>
+
+    <string-array name="education_types">
+        <item>جامعة</item>
+        <item>معهد</item>
+        <item>مدرسة</item>
+    </string-array>
+
+    <string-array name="Services_types">
+        <item>الصحة</item>
+        <item>التعليم</item>
+        <item>التأمين</item>
+        <item>خدمات السيارات</item>
+        <item>التشطيبات</item>
+        <item>السفر</item>
+        <item>الفواتير</item>
+        <item>المناسبات</item>
+    </string-array>
+</resources>

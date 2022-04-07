@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    android:scrollbars="vertical"
+    tools:context=".ui.component.finishing.custom.CustomFinishingStep2Fragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="locale"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.component.finishing.custom.CustomFinishingStep2Fragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tv_lbl_provider_name"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/provider_name"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/et_provider_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/et_provider_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toTopOf="@id/tv_lbl_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_lbl_provider_name" />
+
+            <TextView
+                android:id="@+id/tv_lbl_phone"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/phone_r"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/et_phone_step2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_provider_name" />
+
+            <!--            android:text="e.mohamed"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phone_step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toTopOf="@id/tv_lbl_more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl_phone" />
+
+
+            <TextView
+                android:id="@+id/tv_lbl_more"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/additional_info"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/et_more_into"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_phone_step2" />
+
+            <!--            android:text="e.mohamed"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_more_into"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="60"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toTopOf="@id/tv_filter_type_lbl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl_more" />
+
+            <TextView
+                android:id="@+id/tv_filter_type_lbl"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/type_of_services_provided"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/rv_filter_types"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toBottomOf="@id/et_more_into" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_filter_types"
+                style="@style/recyclerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/et_provider_name"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_filter_type_lbl"
+                tools:listitem="@layout/type_services" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/orange"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/et_provider_name"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_note"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                android:text="@string/custom_finishing_step2_disclaimer"-->
+            <!--                android:textColor="@color/textColorLight"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:textAlignment="viewStart"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/rv_filter_types" />-->
+
+
+            <!--        <Button-->
+            <!--            android:id="@+id/btn_next"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="@dimen/_4sdp"-->
+            <!--            android:layout_marginTop="@dimen/_50ssp"-->
+            <!--            android:text="@string/next"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/rv_filter_types" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/btn_next"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="@dimen/_32sdp"-->
+    <!--        app:backgroundTint="@color/colorPrimary"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:srcCompat="@drawable/ic_next" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

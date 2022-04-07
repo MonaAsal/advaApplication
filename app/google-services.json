@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "153962926905",
+    "firebase_url": "https://salamtakapp-9bd63.firebaseio.com",
+    "project_id": "salamtakapp-9bd63",
+    "storage_bucket": "salamtakapp-9bd63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153962926905:android:e0603c325641233fdccee8",
+        "android_client_info": {
+          "package_name": "com.salamtak.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153962926905-e1594u018g1cq0r6enr8e622ucah1oqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salamtak.app",
+            "certificate_hash": "789053aea4912a61d33bab1bf141d9f433e7b3d2"
+          }
+        },
+        {
+          "client_id": "153962926905-bsfrvhgnjr7n9tg6jg0nval2d7g8lpj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0YByUc_ETarHmJmrK4T7JbInKKU2bln0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153962926905-bsfrvhgnjr7n9tg6jg0nval2d7g8lpj3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "153962926905-5bj06okag8j62mvqlnabedigh4eo3rl1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.salamtakapp.PatientApp14",
+                "app_store_id": "1508916888"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

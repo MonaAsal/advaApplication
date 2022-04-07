@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    android:layoutDirection="locale"
+    android:layout_margin="@dimen/_16ssp"
+    app:cardCornerRadius="@dimen/corner_ads"
+    app:cardElevation="@dimen/_2sdp">
+    <!--    app:cardUseCompatPadding="true"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <!--        android:paddingStart="@dimen/_8ssp"-->
+        <!--        android:paddingTop="@dimen/_24ssp"-->
+        <!--        android:paddingEnd="@dimen/_8ssp"-->
+        <!--        android:paddingBottom="@dimen/_24ssp"-->
+        <!--        android:background="@drawable/bg_curved_gray_border"-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/ImageViewStyle"
+            android:id="@+id/iv_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ad_default" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

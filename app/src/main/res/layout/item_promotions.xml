@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_margin="@dimen/_16ssp"
+    android:layoutDirection="locale"
+    app:cardCornerRadius="@dimen/corner_ads"
+    app:cardElevation="@dimen/_2sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <!--        android:paddingStart="@dimen/_8ssp"-->
+        <!--        android:paddingTop="@dimen/_24ssp"-->
+        <!--        android:paddingEnd="@dimen/_8ssp"-->
+        <!--        android:paddingBottom="@dimen/_24ssp"-->
+        <!--        android:background="@drawable/bg_curved_gray_border"-->
+        <TextView
+            android:id="@+id/tv_promotion_title"
+            style="@style/textViewStyle.Title.Normal"
+            android:layout_width="0pt"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:gravity="start"
+            android:text="title"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/iv_Promotions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_promotion_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:gravity="start"
+            android:text="sub dlkmdslkdlvlkvsd title"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/iv_Promotions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_promotion_title" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_Promotions"
+            style="@style/ImageViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ad_default" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layoutDirection="locale"-->
+    <!--    app:cardCornerRadius="@dimen/corner"-->
+    <!--    app:cardElevation="@dimen/_2sdp">-->
+    <!--    &lt;!&ndash;    app:cardUseCompatPadding="true"&ndash;&gt;-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

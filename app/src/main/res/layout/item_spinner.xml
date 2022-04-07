@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_spinner_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:fontFamily="@font/cairosemibold"
+    android:textColor="@color/darkgray"
+    android:paddingEnd="@dimen/_2sdp"
+    android:paddingTop="@dimen/_2sdp"
+    android:paddingBottom="@dimen/_2sdp"
+    android:textAlignment="viewStart" />
+<!--    android:paddingTop="@dimen/_8sdp"-->
+<!--    android:paddingBottom="@dimen/_8sdp"-->
+    <!--    android:paddingStart="@dimen/_8sdp"-->

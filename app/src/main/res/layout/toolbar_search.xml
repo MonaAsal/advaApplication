@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/_16sdp"
+android:background="@android:color/transparent"
+android:gravity="center_horizontal"
+android:layoutDirection="locale"
+android:padding="@dimen/_8sdp"
+android:theme="@style/AppTheme.AppBarOverlay"
+app:contentInsetEnd="0dp"
+app:contentInsetLeft="0dp"
+app:contentInsetRight="0dp"
+app:contentInsetStart="0dp"
+app:elevation="0dp"
+app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/ImageViewStyle"
+        android:id="@+id/iv_toolbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_toolbar_title"
+        style="@style/textViewStyle.Title.ToolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:maxLines="5"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@+id/iv_toolbar_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

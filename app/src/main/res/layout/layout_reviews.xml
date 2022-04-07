@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_reviews"
+    android:background="@drawable/bg_shadowed_curved_more"
+    android:layoutDirection="locale">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="rv_reviews,v_complete_top_of_rounding,iv_user1,iv_user2,iv_user3" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="iv_user3,iv_user2,iv_user1,tv_load_more,tv_num_more" />
+
+    <View
+        android:id="@+id/v_load_more_reviews"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_curved_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_load_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_reviews" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        style="@style/recyclerStyle"
+        android:id="@+id/rv_reviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_curved_more_gray_border"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_review" />
+
+    <View
+        android:id="@+id/v_complete_top_of_rounding"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:background="@color/grayBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_reviews" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_user1"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:srcCompat="@drawable/ic_avatar"
+        app:layout_constraintEnd_toStartOf="@id/iv_user2"
+        app:layout_constraintStart_toStartOf="@id/iv_user2"
+        app:layout_constraintTop_toTopOf="@id/iv_user3" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_user2"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:srcCompat="@drawable/ic_avatar"
+        app:layout_constraintEnd_toStartOf="@id/iv_user3"
+        app:layout_constraintStart_toStartOf="@id/iv_user3"
+        app:layout_constraintTop_toTopOf="@id/iv_user3" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_user3"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:srcCompat="@drawable/ic_avatar"
+        app:layout_constraintBottom_toBottomOf="@id/tv_num_more"
+        app:layout_constraintEnd_toStartOf="@id/tv_num_more" />
+
+    <TextView
+        android:id="@+id/tv_num_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num_more"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="@id/v_load_more_reviews"
+        app:layout_constraintStart_toStartOf="@id/v_load_more_reviews"
+        app:layout_constraintTop_toBottomOf="@id/rv_reviews" />
+
+    <TextView
+        android:id="@+id/tv_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more_reviews"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_num_more" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

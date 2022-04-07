@@ -1,0 +1,903 @@
+<resources>
+    <string name="app_name">ADVA</string>
+    <string name="facebook_app_id" translatable="false">272708674036239</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb272708674036239s</string>
+    <string name="fb_secret" translatable="false">9037133f5c7225fab58e7c3bb0a3cab5</string>
+    <string name="no_data">No data</string>
+    <string name="search_salamtak">Search ...</string>
+    <string name="search_error">Search error</string>
+    <string name="no_internet">Please check your internet connection and try again</string>
+    <string name="network_error">Network error, couldn\'t get data,please try again!</string>
+    <string name="get_started">Get started</string>
+    <string name="offers_and_discounts">Offers and discounts</string>
+    <string name="onboarding_home_visits_text">You can install your operation with the least procedures, within 48 hours and up to 60 months.</string>
+    <string name="onboarding_discounts_text">Enjoy our exclusive offers from our different medical providers and redeem your voucher at anytime</string>
+    <string name="ask_for_a_home_visit">Tailored Installment Plans</string>
+    <string name="search_doctors_and_medical_services">Offers and discounts</string>
+    <string name="choose_ur_installment_plan">Install Your Operation</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="installment">Installments</string>
+    <string name="surgical_procedures_paid_on_installments">Pay your operation on flexible installment plans</string>
+    <string name="discounts">Discount Card</string>
+    <string name="the_best_deals_just_for_you">The best deals just for you in consultaions, labs and scans</string>
+    <string name="home_visits">Home Visits</string>
+    <string name="a_specialist_consultation_in_the_comfort_of_your_own_home">A specialist\'s consultation in the comfort of your home.</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_r">Password*</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Signin</string>
+    <string name="welcome">Welcome to ADVA</string>
+
+    <string name="invalid_password_lenght">Password must be >%1$d characters</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="invalid_first_name">Invalid first name</string>
+    <string name="invalid_last_name">Invalid last name</string>
+    <string name="invalid_username">Invalid username</string>
+
+    <string name="required_password">Password is required</string>
+    <string name="required_first_name">First name is required</string>
+    <string name="required_last_name">Last name is required</string>
+    <string name="required_username">Username is required</string>
+    <string name="required_mobile_number">Phone number is required</string>
+    <string name="required_email_address">Email address is required</string>
+
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="sign_up">Signup</string>
+    <string name="sign_up_underlined"><u>Signup</u></string>
+    <string name="welcome_to_salamtak">Welcome to ADVA</string>
+    <string name="enter_cred">Enter your username and password</string>
+    <string name="invalid_mobile_number">Phone number is invalid</string>
+    <string name="required">Required</string>
+    <string name="email_r">Email Address</string>
+    <string name="invalidEmailAddress">Email address is invalid</string>
+    <string name="require_field">This field is required</string>
+    <string name="require_name_grade">Name and grade are required</string>
+    <string name="NewPasswordLessThan4">Password must be at least 8 characters</string>
+    <string name="forget_pass_underlined"><u>Forgot your password?</u></string>
+    <string name="forget_pass">Forgot your password?</string>
+    <string name="or">Or</string>
+    <string name="continue_with_gmail">Continue with Gmail</string>
+    <string name="continue_with_facebook">Continue with facebook</string>
+    <string name="title_activity_login2">Signin</string>
+    <string name="home_page">Home</string>
+    <string name="all_categories">All categories</string>
+    <string name="monthly_installment">Monthly Installment</string>
+    <string name="from">from</string>
+    <string name="book_now">Book now</string>
+    <string name="filter_results">Filter results</string>
+    <string name="select_category">Select category</string>
+    <string name="search_by_hospital_or_dr">Search by operation, hospital or doctor</string>
+    <string name="choose_location">Choose location</string>
+    <string name="search">Search</string>
+    <string name="_12_36_months_conditions_apply">%1$s-%2$s Months-conditions apply</string>
+    <string name="location">Location</string>
+    <string name="locations">Locations</string>
+
+    <string name="view_location">View location</string>
+    <string name="overview">Overview</string>
+    <string name="load_more">Load more</string>
+    <!--    <string name="by_hospital">By: %1$s</string>-->
+    <string name="with_dr">With DR: %1$s</string>
+    <string name="price">%1$s EGP</string>
+    <string name="expect_call">Thank you for booking with ADVA, we will contact you within 48 hours. For further inquiries, please call <b>15864</b>
+
+</string>
+    <string name="request_submitted">Request submitted!</string>
+    <string name="complete_your_profile">Complete your financial information</string>
+    <string name="Egp">EGP</string>
+    <string name="months">Months</string>
+    <string name="your_booking">Your Booking</string>
+    <string name="down_payment_min">Down Payment (min)</string>
+    <string name="monthly_amount">%1$s/month</string>
+    <string name="egp_amount">%1$s EGP</string>
+    <string name="payment_plans_may_vary_depending_on_your_lending_ability">Installments amount may vary according to customer’s financial information</string>
+    <string name="submit">Add to Cart</string>
+    <string name="mark_your_preferred_plan">Choose your preferred plan</string>
+    <string name="search_by_price">Search by price</string>
+    <string name="sign_in">Login</string>
+    <string name="sign_in_underlined"><u>Login</u></string>
+    <string name="welcome_wink">Welcome to ADVA</string>
+    <string name="sign_up_to_continue">Signup</string>
+    <string name="full_name">Full name</string>
+    <string name="agree_to_our_terms_amp_conditions">I agree on the</string>
+    <string name="register">Register</string>
+    <string name="password_dont_match">Passwords don\'t match</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="looking_for_available_dr">Looking for an available doctor, and we\'ll get back to you.</string>
+    <string name="go_to_home_page">Go to home page</string>
+    <string name="financial_info">Financial Information</string>
+    <string name="bank">Bank</string>
+    <string name="work">Work</string>
+    <string name="id">ID</string>
+    <string name="credit_card">Credit card</string>
+    <string name="bank_info">Bank info</string>
+    <string name="my_profile">My Profile</string>
+    <string name="operation_Installment_cost">%1$s EGP - %2$s EGP</string>
+    <string name="phone">Phone Number</string>
+    <string name="phone_r">Phone Number*</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="confirm_password_r">Confirm Password*</string>
+    <string name="must_agree_on_terms">You must accept terms amp conditions</string>
+    <string name="next">Next</string>
+    <string name="company_name_required">Company Name*</string>
+    <string name="hiring_date">Hiring date</string>
+    <string name="net_salary">Net salary</string>
+    <string name="building">Building number</string>
+    <string name="street">Street</string>
+    <string name="district">District</string>
+    <string name="profession">Profession</string>
+    <string name="number_of_children">Number of childrens</string>
+    <string name="marital_status">Marital status*</string>
+    <string name="club_membership">Club Membership</string>
+    <string name="are_you_egyptian">Egyptian?</string>
+    <string name="yes">yes</string>
+    <string name="provide_us_with_your_passport_or_national_id">Provide us with Your Passport or National ID</string>
+    <string name="national_id">National ID</string>
+    <string name="passport_number">Passport number</string>
+    <string name="id_number">ID Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="gender">Gender</string>
+    <string name="residential_status">Residential Status</string>
+    <string name="second_name">Second Name</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_r">First Name*</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_r">Last Name*</string>
+    <string name="address">Address</string>
+    <string name="username">Username</string>
+    <string name="invalid_car_year">Invalid Car Manufacturing Year</string>
+    <string name="invalid_children_number">Number Of Children Required</string>
+    <string name="employment_info_updated_successfully">Employment info updated successfully</string>
+    <string name="bank_info_updated_successfully">Bank financial info updated successfully</string>
+    <string name="basic_info_updated_successfully">Basic profile info updated successfully</string>
+    <string name="third_name">Third name</string>
+    <string name="chronic_diseases">Chronic diseases</string>
+    <string name="select_all">Select all</string>
+    <string name="medical_history">Medical History</string>
+    <string name="please_agree">Please agree on the terms and conditions</string>
+
+    <string-array name="profile_names">
+        <item>Bank</item>
+        <item>Work</item>
+        <item>Id</item>
+    </string-array>
+
+    <string-array name="years">
+        <!--        <item>before 2016</item>-->
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="paymentMethods">
+        <item>Cash</item>
+        <item>Card</item>
+    </string-array>
+
+    <string name="date_time_value">%1$d/%2$d/%3$d</string>
+    <string name="passport_type">Passport</string>
+    <string name="edit">Edit</string>
+    <string name="favourites">Favourites</string>
+    <string name="interests">Interests</string>
+    <string name="discount_card">Discount Card</string>
+    <string name="payments">Payments</string>
+    <string name="booked_operations">Booked Operations</string>
+    <string name="change_password">Change Password</string>
+    <string name="sign_out"><u>Logout</u></string>
+    <string name="first_name_error">First name required</string>
+    <string name="second_name_error">second name required</string>
+    <string name="third_name_error">Third name required</string>
+    <string name="last_name_error">Last name required</string>
+    <string name="national_id_erorr">Invalid national id</string>
+    <string name="national_id_expire_date_error">ID expiry date required</string>
+    <string name="passport_number_error">Invalid passport number</string>
+    <string name="passport_expire_date_error">Passport expiry date required</string>
+    <string name="street_address_error">Street required</string>
+    <string name="building_num_error">Building number required</string>
+    <string name="ids_images_error">You must upload your ID image face and back</string>
+    <string name="ids_images_error_guarantor">You must upload your guarantor ID image face and back</string>
+    <string name="no">No</string>
+    <string name="completed">Completed</string>
+    <string name="calceled">Canceled</string>
+    <string name="in_progress">In Progress</string>
+    <string name="submitted">Submitted</string>
+    <string name="scan_your_id">Scan ID Face</string>
+    <string name="done">Done</string>
+    <string name="cancel_request">Cancel request</string>
+    <string name="are_you_sure_you_want_to_cancel_your_orderd_home_visit_request">Are you sure you want to cancel your request?</string>
+    <string name="sure_cancel_booking">Are you sure you want to cancel your request?</string>
+    <string name="back">Go Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="make_review">Make Review</string>
+    <string name="visit_price">Visit price</string>
+    <string name="booking_details">Booking details</string>
+    <string name="home_visit_cannot_be_canceled">Home visit already in progress</string>
+    <string name="please_enter_your_verification_code">Sent a verification code to the phone number %1$s</string>
+    <string name="verify">Verify</string>
+    <string name="Verified">Verified</string>
+
+    <string name="invalid_verification_code">Invalid verification code</string>
+    <string name="cash">Cash</string>
+    <string name="credit_debit_card">Credit/Debit card</string>
+    <string name="confirm">Confirm</string>
+    <string name="service_name">Service name:</string>
+    <string name="customer_name">Customer name:</string>
+    <string name="payment_method">Payment method:</string>
+    <string name="who_is_the_visit_for">Who is the visit for?</string>
+    <string name="for_me">For me</string>
+    <string name="for_other">For someone else</string>
+    <string name="floor">Floor</string>
+    <string name="preferred_time">Preferred time</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="doctor_speciality">Doctor speciality*</string>
+    <string name="book">Book</string>
+    <string name="tell_us_what_you_feel">Tell us how do you feel?</string>
+    <string name="e_g_i_have_a_fever">e.g I have a fever</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="age">Age</string>
+    <string name="tell_us_symptoms">Tell us The Symptoms</string>
+    <string name="invalid_profession">Invalid profession</string>
+    <string name="invalid_company_name">Invalid company name</string>
+    <string name="card">Card</string>
+    <string name="flat">Flat</string>
+    <string name="hospital_doctor">Hospitals &amp; clinics</string>
+    <string name="num_reviews">%1$d reviews</string>
+    <string name="review">Reviews</string>
+
+    <string name="contacts">Contacts</string>
+    <string name="operations">Operations</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_the_doctor">About the doctor</string>
+    <string name="overall_rating">Overall rating</string>
+    <string name="excellent">Excellent</string>
+    <string name="moderate">Moderate</string>
+    <string name="fair">Fair</string>
+    <string name="contacts_information">Contacts information</string>
+    <string name="phone_number_r">Phone Number</string>
+    <string name="website">Website</string>
+    <string name="fax">Fax</string>
+    <string name="social">Social</string>
+    <string name="general">General</string>
+    <string name="branches">Branches</string>
+    <string name="reviews">Reviews</string>
+    <string name="doctors">Doctors</string>
+    <string name="hospital_branches">Hospital branches</string>
+    <string name="contact_info">Contacts info</string>
+    <string name="clinic">Clinic</string>
+    <string name="profile_verify_email">Press here to verify your account</string>
+    <string name="no_home_viaits_yet">No Home Visits</string>
+    <string name="your_home_visits_will_appear_here">Your home visit requests will be displayed here</string>
+    <string name="no_bookings_yet">No Bookings</string>
+    <string name="your_operations_bookings_will_appaer_here">Your booked services will be displayed here</string>
+    <string name="monthly">Monthly</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email_or_mobile">Mobile</string>
+    <string name="mobile1">Mobile Number</string>
+    <string name="resend_verification_code"><u>Re-send verification code</u></string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="skip"><u>SKIP</u></string>
+    <string name="by">By</string>
+    <string name="car_model">Car Brand</string>
+    <string name="monthly_bank_installment">Monthly bank installment</string>
+    <string name="date_is">Date is</string>
+    <string name="bank_installment">Bank installment</string>
+    <string name="work_address">Work address</string>
+    <string name="write_year">Write year</string>
+    <string name="finish">Finish</string>
+    <string name="more_reviews">More reviews</string>
+    <string name="more">More</string>
+    <string name="version_number">Version %1$s</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="booking_status">Booking status</string>
+    <string name="missing_documents"><b>Missing documents: </b>%1$s</string>
+    <string name="home_visit">Home visit</string>
+    <string name="your_review_will_be_highly_appreciated">Your review will be highly appreciated!</string>
+    <string name="the_doctor">The doctor</string>
+    <string name="your_feedback">Your feedback</string>
+    <string name="this_operation">This operation</string>
+    <string name="_1_s_hospital">%1$s hospital</string>
+    <string name="no_operations">No operations</string>
+    <string name="the_operations_will_appear_here">Your selected operations will appear here</string>
+    <string name="choose_category">Choose category</string>
+    <string name="no_search_results">No Result Found</string>
+    <string name="default_notification_channel_id">Default FCM Number</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="current_diseases">Current diseases</string>
+    <string name="update">Update</string>
+    <string name="change_language">Change language</string>
+    <string name="who_we_are">Who we are?</string>
+    <string name="online_support">Online support</string>
+    <string name="arabic"><u>العربية</u></string>
+    <string name="english"><u>English</u></string>
+    <string name="choose_language">Choose language</string>
+    <string name="confirm_change_lang">Are you sure you want to change your language to %1$s ?</string>
+    <string name="confirm_change_language">Confirm change language</string>
+    <string name="please_enter_a_new_password">Please enter your new password</string>
+    <string name="new_password">New Password*</string>
+    <string name="re_enter_password">Re-enter Password*</string>
+    <string name="old_password">Old Password*</string>
+    <string name="enter_your_email_address_and_we_will_send_you_a_link_to_reset_your_password">Please enter your phone number to receive an SMS to reset your password</string>
+    <string name="what_is_your_email">What is your email?</string>
+    <string name="reset">Reset</string>
+    <string name="doctor_profile">Doctor Profile</string>
+    <string name="medical_provider_profile">Medical provider profile</string>
+    <string name="specialities_number">%1$d medical specialities</string>
+    <string name="doctors_number">%1$d doctors</string>
+    <string name="about_the_medical_provider">About the medical provider</string>
+    <string name="profile_updated_successfully">Your profile was updated successfully</string>
+    <string name="add_card">Add Card</string>
+    <string name="filter">Filter</string>
+    <string name="payment_done_successfully">Payment done successfully</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="default_card">Default card</string>
+    <string name="the_payment_will_be_processed_after_the_visit">Payment will be processed upon completion of the home visit</string>
+    <string name="medical_specialities">Medical specialities</string>
+    <string name="confirm_logout">Confirm logout</string>
+    <string name="confirm_logout_message">Are you sure you want to logout?</string>
+    <string name="search_result">Search results</string>
+    <string name="add_payment_method">Add payment method</string>
+    <string name="working_hours">Working hours</string>
+    <string name="redeem_a_discount">Redeem</string>
+    <string name="view_review">View Review</string>
+    <string name="num_more">+%1$d more</string>
+    <string name="all_reviews">All reviews</string>
+    <string name="ok">Ok</string>
+    <string name="error">Error</string>
+    <string name="alert">Alert</string>
+    <string name="thank_you">Thank you</string>
+    <string name="for_completing_your_financial_profile">Your financial information is now completed</string>
+    <string name="ago">Ago</string>
+    <string name="no_reviews_yet">no reviews yet</string>
+    <string name="offers_amp_discounts_coming_soon"><![CDATA[Offers & discounts coming soon]]></string>
+    <string name="booking_submitted">Booking submitted</string>
+    <string name="your_message">Your message</string>
+    <string name="contact_us">Contact us</string>
+    <string name="message_sent_successfully">Thank You,\n\n We will contact you soon</string>
+    <string name="terms_url">https://advaeg.com/en/terms-conditions/</string>
+    <string name="faqs_url">https://advaeg.com/en/faqs/</string>
+    <string name="privacy_policy_url">https://advaeg.com/en/privacy-policy/</string>
+    <string name="notifications">Notifications</string>
+    <string name="no_notifications_yet">No Notifications yet!</string>
+    <string name="password_changed_successfully">Your password has been changed successfully</string>
+    <string name="invalid_build_number">invalid build number</string>
+    <string name="no_results_match_your_filters">No results match your filters</string>
+    <string name="send">Send</string>
+    <string name="send_your_message">Your message</string>
+    <string name="not_yet">Not yet</string>
+    <string name="not_reviewed_yet">Not reviewed yet</string>
+    <string name="or_call_us_01202777705">Or Call us: 15864</string>
+    <string name="faq_s">FAQ\'s</string>
+    <string name="delete">Delete</string>
+    <string name="no_credit_cards">No credit cards</string>
+    <string name="no_favourites">No favourites added</string>
+    <string name="booked_home_visits">Booked Home Visits</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="operations_installments">Operations</string>
+    <string name="our_network">Our social network</string>
+    <string name="about_us_title">Fastest Installment for Any Service in Egypt</string>
+    <string name="about_us_text">ADVA is designed in a smart way to help everyone install any needed service with installment plans tailored for the customer\'s needs. Our mission is to have accessible and affordable services for everyone, so ADVA is enabling every person to live a better life by offering installment payment method on the best services in health, education, and insurance.
+ADVA offers the best and the strongest network in all the essential services through an easy and simple process to reduce the financial burdens on everyone with just one click on the application.
+    </string>
+    <string name="worry_less_your_health_matters">Worry less… \n Your health matters</string>
+    <string name="worry_less_your_health_matters2">Worry less… Your health matters</string>
+    <string name="more_details">More Info</string>
+    <string name="usage_history">Usage History</string>
+    <string name="card_benefits">Card Benefits</string>
+    <string name="num_discount">%1$d% discount</string>
+    <string name="discount">Discount</string>
+    <string name="offers">Offers</string>
+    <string name="you_used">You have redeemed</string>
+    <string name="update_version">New version</string>
+    <string name="update_your_app_text">A newer version is on the store, Please update your application</string>
+    <string name="home_visits_text_1"><![CDATA[Enjoy a hassle-free doctor Home Visit through our service to check up on your health at anytime & wherever you are.]]></string>
+    <string name="home_visiit_text2">Request the doctor specialty you need from the different specialties we offer. It takes us 2-4 hours only to get you the nearest Doctor.</string>
+    <string name="home_visit_text3">Book for yourself or for someone a doctor visit at the comfort of your home. The service fees range from EGP 400-600 and you can pay it in cash or by credit card through the application after the visit.</string>
+    <string name="operation_name">Operation name</string>
+    <string name="doctor_name_r">Doctor name*</string>
+    <string name="doctor_name">Doctor name</string>
+    <string name="operation_name_r">Operation name*</string>
+    <string name="hospital_name_r">Hospital name*</string>
+    <string name="operation_price_r">Operation Price*</string>
+    <string name="down_payment_r">Down payment*</string>
+    <string name="down_payment">Down payment</string>
+    <string name="underlined_text"><u>%1$s</u></string>
+    <string name="custom_operation_button_text">Choose your own doctor</string>
+    <string name="custom_operation_text">Request to operate with your own doctor</string>
+    <string name="medical_network">Our medical network</string>
+    <string name="providers">Providers</string>
+
+    <string name="default_error">Something went wrong, please try again</string>
+    <string name="use_it_now">Try it now</string>
+    <string name="congratulations">Congratulations</string>
+    <!--    <string name="congratulations_text">Enjoy our free medical discount card in all medical fields and save more money!</string>-->
+    <string name="congratulations_text">Enjoy the best offers with the 1st digital discount card in Egypt</string>
+    <string name="check_offers">Check offers</string>
+    <string name="offers_landing_text">Enjoy the best offers with the 1st digital discount card in Egypt</string>
+
+    <string name="details">Details</string>
+    <string name="discount_up_to">discount up to</string>
+    <string name="back_to_offers">Back to offers</string>
+    <string name="have_active_offer">You have an active code</string>
+    <string name="hospitals_clinics"><![CDATA[Hospitals & clinics]]></string>
+    <string name="check_your_card">check your discount card to to get the code</string>
+    <string name="redemption_code">Redemption code:</string>
+    <string name="enjoy_the_best_deals_with_salamtak_discount_card">Enjoy the best deals with ADVA Discount Card</string>
+    <string name="enjoy_the_best_offers_with_the_1st_free_digital_discount_card">Enjoy the best offers with the 1st free digital discount card</string>
+    <string name="thank_you_for_joining_salamtak">Thank You for joining ADVA</string>
+    <string name="attach_missing_document">Attach missing document</string>
+    <string name="pay_your_monthly_installment_at_any_of_aman_stores_incase_you_are_an_aman_customer">Pay your monthly installment at any of Aman stores incase you are an Aman customer</string>
+    <string name="choose_your_type">Choose Your Type</string>
+    <string name="business_owners">Business owners</string>
+    <string name="commercial_record">Commercial Registry</string>
+    <string name="tax_card">Tax ID</string>
+    <string name="bank_account_statement">Bank Statement</string>
+    <string name="notes">Notes</string>
+    <string name="write_your_notes_here">Write your notes here</string>
+    <string name="pay_with">Pay with</string>
+    <string name="aman">Aman</string>
+    <string name="valu">Valu</string>
+    <string name="your_mobile">Your mobile</string>
+    <string name="job_required">Job*</string>
+    <string name="salary">Salary*</string>
+    <string name="your_salary">Your salary*</string>
+    <string name="your_guarantor_national_id">Your Guarantor National ID*</string>
+    <string name="your_national_id">Your National ID*</string>
+    <string name="Guarantor_id">Guarantor ID</string>
+    <string name="credit_loans"><![CDATA[Credit & Loans]]></string>
+    <string name="credit_loans_r"><![CDATA[Credit & Loans*]]></string>
+    <string name="limit">Your limit*</string>
+    <string name="scan_id_back">Scan ID Back</string>
+    <string name="bank_certificates">Bank Certificates</string>
+    <string name="business_owner">Business Owner</string>
+    <string name="property_renter">Property Renter</string>
+    <string name="pension">Pension</string>
+    <string name="employee">Employee</string>
+    <string name="car_owner">Car Owner</string>
+    <string name="net_income_required">Net Income*</string>
+    <string name="company_address_required">Company Address*</string>
+    <string name="pension_net_amount_r">Pension Amount*</string>
+    <string name="pension_net_amount">Pension Amount</string>
+    <plurals name="months1">
+        <item quantity="one">Month</item>
+        <item quantity="few">Month</item>
+        <item quantity="many">Months</item>
+        <item quantity="other">Month</item>
+    </plurals>
+    <string name="more_images">You Cannot Select More than %d image.</string>
+    <string name="select_image">Select Image</string>
+    <string name="select_docs">Select Docs</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="installment_plan">Installment Plan</string>
+    <string name="operation_request">Request an Operations</string>
+    <string name="_10_min">(10% min)</string>
+    <string name="_15_min">(15% min)</string>
+    <string name="operation_added_successfully">Operation added successfully</string>
+    <string name="financial_rejected">Financial rejected</string>
+    <string name="pending">Pending</string>
+    <string name="cancelled">cancelled</string>
+    <string name="processing">In Progress</string>
+    <string name="rate_operation">Rate Operation</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="starts_from">Starts from</string>
+    <string name="num_more_doctor">+%1$d more doctor</string>
+    <string name="more_doctor">+more</string>
+    <string name="egp_nmonthly">EGP/Month</string>
+    <string name="egp">Egp</string>
+
+    <!--    <string name="egp_nmonthly">EGP<br/>Monthly</string>-->
+    <string name="about_the_operation">About The Operation</string>
+    <string name="choose_hospital_branch"><![CDATA[Choose hospital & Branch]]></string>
+    <string name="credit_card_limit">Credit card limit</string>
+    <string name="loan_monthly_amount">Loan Monthly amount</string>
+    <string name="your_limit">Your limit</string>
+    <string name="browse">browse</string>
+    <string name="big_file_message">File size cannot exceed 5MB</string>
+    <string name="image_uploaded_successfully">Image Uploaded Successfully</string>
+    <string name="invalid_date">Expiry date cannot be a previous date</string>
+    <string name="invalid_date2">Invalid date</string>
+    <string name="data_not_saved">Data will not be saved</string>
+    <string name="uploading_wait">Uploading.. please wait</string>
+    <string name="choose">Choose</string>
+    <string name="choosecar">Car Type</string>
+    <string name="chooseclub">Choose</string>
+
+    <string name="confirm_delete_file">Are you sure you want to delete this file</string>
+    <string name="complete_fin_profile">Please Complete your financial information to view the uploaded files</string>
+    <string name="health">Health</string>
+    <string name="insurance">Insurance</string>
+    <string name="education">Education</string>
+    <string name="health_desc">Install any surgical operation</string>
+    <string name="education_desc">Install the tuition fees whether school, university or post graduate programs.</string>
+    <string name="insurance_desc">Pay your health or car insurance on installments</string>
+    <string name="about_us_title_text"><![CDATA[Fastest Application for Installments of Services in Egypt.]]></string>
+    <string name="see_more">more...</string>
+    <string name="view_less">less</string>
+    <string name="onboarding_first_title">Install Any Service You Need</string>
+    <string name="onboarding_first_text">Pay your Bills, Insurance, Medical
+Services, Education Tuitions, Car
+Services, Wedding, Finishing,
+Travel, and more on flexible
+Installments. </string>
+    <string name="onboarding_title_second">Smartest Installment Plans,
+Tailored For Your Needs</string>
+    <string name="onboarding_text_second">Install any service by choosing
+your preferred installment plan up
+to 60 months</string>
+    <string name="onboarding_title_third">Strongest Network</string>
+    <string name="onboarding_text_third">Choose your preferred service
+provider from the strongest
+network in different fields</string>
+    <string name="onboarding_title_fourth">Fastest Process in Egypt</string>
+    <string name="onboaring_text_fourth">Enjoy our service with the least
+procedures and in the shortest
+time; our customer support is
+available all days of the week.</string>
+
+    <string name="onboarding_title_fifth">Fastest process in Egypt.</string>
+    <string name="onboarding_text_fifth">You can enjoy our service with the least procedures and shortest time.</string>
+    <string name="insurance_request">Insurance Request</string>
+    <string name="install_with_your_service">Install your chosen service</string>
+    <string name="your_name">Your Name*</string>
+    <string name="installment_type">Installment type*</string>
+    <string name="insurance_company_name">Insurance Company Name</string>
+    <string name="education_request">Education Request</string>
+    <string name="education_entity_name">Education entity name</string>
+    <string name="branch">Branch</string>
+    <string name="grade">Grade</string>
+    <string name="type_of_education">Type Of Education</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="education_fees">Fees</string>
+    <string name="bus_fees">Bus fees</string>
+    <string name="insurance_type">Insurance Type</string>
+    <string name="greater_than_0">value should be greater than 0</string>
+    <string name="booked_services">Booked Services</string>
+    <string name="customized_operation">Add your own doctor</string>
+    <string name="your_favourites_will_appear_here">Your favourites will appear here</string>
+    <string name="search_by_operation_doctor_or_hospital">Search by operation, doctor or hospital</string>
+    <string name="our_categories">Our Services :</string>
+    <string name="gym">Gym</string>
+    <string name="weddings">Weddings</string>
+    <string name="comming_soon_title">Coming soon, Stay Tuned!</string>
+    <string name="wedding_soon_text">Wedding Expenses Installment</string>
+    <string name="gym_coming_soon_text">Gym Subscription Installment</string>
+    <string name="other_soon_text">New Services with ADVA</string>
+    <string name="latest_added">Top Partners </string>
+    <string name="num_more_records">%1$s More Records</string>
+    <string name="no_more_records">No More Records</string>
+    <string name="subcategory">Operation Category</string>
+    <string name="medical_provider">Medical Provider</string>
+    <string name="city">City</string>
+    <string name="operation_price">Operation Price</string>
+    <string name="wedding_request">Wedding Request</string>
+    <string name="venue">The Service Provider</string>
+    <string name="invitees_number">Invitees number</string>
+    <string name="wedding_request_note">Installments amount may vary according to the customer’s financial information.</string>
+    <string name="insurance_request_note">Installments amount may vary according to the customer’s financial information.</string>
+
+    <string name="to">to:</string>
+    <string name="suggestions">No matching results but you can check the below</string>
+    <string name="speciality">Speciality</string>
+    <string name="all">All</string>
+    <string name="all_schools">All Schools</string>
+    <string name="no_schools">No Schools</string>
+    <string name="about_the_school">About the School</string>
+    <string name="student1_details">Student Details</string>
+    <string name="student_2_details">Student Details</string>
+    <string name="student_3_details">Student Details</string>
+    <string name="add_another_student">Add Another Student</string>
+    <string name="school_fees">School Fees</string>
+    <string name="monthly_installment_fees">Monthly Installment Fees</string>
+    <string name="all_universities">All Universities</string>
+    <string name="all_institutes">All Institutes</string>
+    <string name="about_the_university">About the University</string>
+    <string name="about_the_institute">About the Institute</string>
+    <string name="choose_your_department">Choose Your Department</string>
+    <string name="finishing">Finishing</string>
+    <string name="finishing_coming_soon_text">Finishing Installment</string>
+    <string name="about_the_department">About The Department</string>
+    <string name="disclaimer_message">The above amount is the announced one, amount might vary according to the customer’s information.</string>
+    <string name="negative_button_text"><![CDATA[<font color=\'#0d143d\'>Skip</font>]]></string>
+
+    <!--    <string name="prompt_info_description">Adva is using Android biometric authentication</string>-->
+    <string name="prompt_info_title">ADVA Authentication</string>
+    <string name="prompt_info_subtitle">Login using your biometric</string>
+    <string name="prompt_info_use_app_password">Use app password</string>
+    <string name="enable_biometric_login">Enable Biometric Login</string>
+    <string name="desc_biometrics_authorization">Enter your login ID and password to confirm activation of Biometric Login.</string>
+    <string name="use_biometrics">Use biometrics</string>
+    <string name="resend_premium_code">No code? Resend code</string>
+    <string name="premium_status">Payment Status</string>
+    <string name="pay_with_premium">Premium Payment</string>
+    <string name="premium_invalid_date">Card Number or expiry date is invalid.</string>
+    <string name="premium_card_expired">Card Expired. Please contact Premium Card Customer Service.</string>
+    <string name="premium_no_mobile_number">Your profile doesn’t include a mobile number, please contact Premium.</string>
+    <string name="premium_error">An error occurred from Premium Card side, please contact Premium Card Customer Service</string>
+    <string name="premium_transaction_declined">Transaction declined</string>
+    <string name="premium_otp_expired">OTP Expired</string>
+    <string name="premium_wrong_otp">Wrong OTP</string>
+    <string name="payment_summery">Payment summery</string>
+    <string name="premium_card">Premium Card</string>
+    <string name="amount_to_be_deducted">Amount to be deducted</string>
+    <string name="premium_status_text">Amount: %1$s\nStatus: %2$s\nDate: %3$s</string>
+    <string name="date_expired">Date Expired</string>
+    <string name="invalid_card_number">Invalid card number</string>
+    <string name="resend_in">Resend in</string>
+
+    <string name="seconds">second</string>
+    <string name="car_service">Car Service</string>
+    <string name="car_service_info">For Installing your Car Service</string>
+    <string name="please_contact_us_on_15864">Please Contact us on  <b>15864 </b></string>
+    <string name="finishing_desc">For Installing your Home Finishing</string>
+    <string name="guarantor_national_id">Guarantor National ID</string>
+    <string name="scan_card_front">Scan Card Front</string>
+    <string name="scan_card_back">Scan Card Back</string>
+    <string name="choose_your_club">Choose Your Club*</string>
+    <string name="choose_your_car">Choose Your Car*</string>
+    <string name="prove_of_income">Prove Of Income</string>
+    <string name="rental_amount_r">Rental Amount</string>
+    <string name="monthly_income_r">Monthly Income*</string>
+    <string name="registered_name_r">Registered Name</string>
+    <string name="valu_customer">ValU Customer</string>
+    <string name="confirm_losing_data">You will lose your data if you clicked Ok</string>
+    <string name="is_club_member">Are you a Club Member?</string>
+    <string name="is_car_owner">Are you a Car Owner?</string>
+    <string name="credit_loans_header">Do you have a Credit or Loans?</string>
+    <string name="club_front_required">Club card front required</string>
+    <string name="club_back_required">Club card back required</string>
+    <string name="car_back_required">Car licence back required</string>
+    <string name="car_fron_required">Car licence front required</string>
+    <string name="none">None</string>
+    <string name="all_finishing_providers">All Consultancy Providers</string>
+    <string name="provider_name">Provider Name</string>
+    <string name="finishing_request">Finishing Request</string>
+    <string name="about">About</string>
+    <string name="scan_license_face">Scan License Face</string>
+    <string name="scan_license_back">Scan License Back</string>
+    <string name="job">job</string>
+    <string name="net_income">Net income</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_address">Company Address</string>
+    <string name="rental_amount">Rental Amount</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="registered_name">Registered Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="starting_from">Starting from</string>
+    <string name="num_egp_m2">%1$s EGP/m²</string>
+    <string name="price_lbl">Price:</string>
+    <string name="low_to_high">Low to High</string>
+    <string name="filter_by">Filter: %1$s</string>
+    <string name="sort_1_s">Sort: %1$s</string>
+    <string name="clear_all">Clear All</string>
+    <string name="add_your_own_provider">Add Your Own Provider</string>
+    <string name="high_to_low">High to Low</string>
+    <string name="add_other">Add Other</string>
+    <string name="to_increase_your_limit">To Increase Your Limit</string>
+    <string name="bank_statement">Bank statement for the last 6 months</string>
+    <string name="utility_bill">Utility Bill</string>
+    <string name="pension1">Pension 1</string>
+    <string name="pension2">Pension 2</string>
+    <string name="asset_contract">Asset contract</string>
+    <string name="leasing_contract">Leasing contract</string>
+    <string name="tax_id">Tax ID</string>
+    <string name="commercial_register">Commercial Register</string>
+    <string name="tax_return">Tax Return</string>
+    <string name="bank_certificate">Bank Certificate</string>
+    <string name="bank_statement2">Bank statement for the last 6 months</string>
+    <string name="complete_fp">Please Complete your Information!</string>
+    <string name="complete_fp_message">Obligatory to choose at least 1 proof of income</string>
+    <string name="sort">Sort</string>
+    <string name="type">Type:</string>
+    <string name="egp_m">EGP/m²</string>
+    <string name="available_plans">Available Plans</string>
+    <string name="available_packages">Available Packages</string>
+    <string name="package_detaisl">Package Details</string>
+    <string name="provider_info">Provider info</string>
+    <string name="your_info">Your info</string>
+    <string name="payment_plan">Payment Plan</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="type_of_services_provided">Type of Services Provided</string>
+    <string name="previous">Previous</string>
+    <string name="sss" translatable="false">
+        *The company specializing in interior and exterior finishes, decoration works, modern and classic housing units, offices, buildings, lakes, fountains, swimming pools and all kinds of carpentry, modern furniture, kitchens, doors and alumetal works.
+*our experienced designers who specializing in interior design to maintain accurate and professional approach to the needs of our clients to meet thier privacy and psychological comfort.
+*Our Vision and Mission
+We have continuous engineering supervision with every item executed to ensure the quality of finishing.
+Process We Follow:
+our interior package include
+*Define Brief
+Developing the project brief where key objectives are outlined, design and construction programmers are formed, and a budget is agreed upon.
+*Schematic Design
+Gathering and refining initial ideas to form a unique design concept, sketches and material swatches are presented to communicate design .
+*Design Development
+Overseeing the construction phase once build in underway to receive any issues that arise. We conduct regular site meetings tracking progress against agreed timeframes and documentation
+    </string>
+    <string name="no_results_found">No Results Found</string>
+    <string name="num_branch">%1$d branch</string>
+    <string name="apply">Apply</string>
+    <string name="car_service_request">Car Service Request</string>
+    <string name="services">Services</string>
+    <string name="requests">Requests</string>
+    <string name="cart">Cart</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="choose_service_error">Please choose the service to proceed with the request.</string>
+
+
+    <string name="bills">Bills</string>
+    <string name="travel">Travel</string>
+    <string name="for_installing_travel">For Installing your Travel Service</string>
+    <string name="for_installing_your_bills">For Installing your Bills</string>
+    <string name="clear">Clear</string>
+    <string name="car_brands">Car Brands</string>
+    <string name="service_center">Service Center</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="total_amount_hint">Enter the amount you are willing to pay</string>
+    <string name="car_disclaimer">Payment plans may vary according to your eligibility</string>
+    <string name="phone_numbers">Phone Numbers</string>
+    <string name="mobile">mobile :</string>
+    <string name="mobilenumber">Mobile Number</string>
+
+    <string name="no_result_found">No Result Found</string>
+    <string name="car_no_results_text">Please change your filter or add your own provider from below</string>
+    <string name="bookings">Bookings</string>
+    <string name="profile">Profile</string>
+    <string name="Myprofile">Personal Profile</string>
+
+    <string name="account_setting">Account Setting</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="verification_code_will_send">You will receive a verification code on this number</string>
+    <string name="send_code">Send Verification Code</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="don_t_have_account">Don\'t have an account?</string>
+    <string name="featured_categories">You Can Install</string>
+    <string name="you_may_also_need">You May Also Need</string>
+    <string name="home_welcome">Welcome,</string>
+    <string name="top_providers">Top Partners</string>
+    <string name="financial_profile">Financial Profile</string>
+    <string name="continue_your_financial_profile"><u>Complete your financial profile</u></string>
+    <string name="mmonths">months</string>
+    <string name="searchservicesorproviders">Search services or providers</string>
+    <string name="yourservicesneed">Your Services needs</string>
+    <string name="comma">,</string>
+    <string name="all_courses">All Courses</string>
+    <string name="viewAll"><u>View All</u></string>
+    <string name="findwhatyouneedeasier">Find what you need easier</string>
+    <string name="letshelpyou">Lets help you narrow down your results</string>
+    <string name="complete_zero_financial_profile">"You’ve finished 0% of your financial profile, \ncomplete it now to get approval."</string>
+    <string name="complete_thirty_financial_profile">"You’ve finished 33% of your financial profile, \ncomplete it now to get approval."</string>
+    <string name="complete_sixty_financial_profile">"You’ve finished 66% of your financial profile, \ncomplete it now to get approval."</string>
+    <string name="complete_all_financial_profile">"You’ve finished 100% of your financial profile."</string>
+    <string name="help">Help</string>
+    <string name="area">Area</string>
+    <string name="about_adva">About ADVA</string>
+    <string name="lestgo">Let\'s Go</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="my_installments">My Requests</string>
+    <string name="start_now">Start Now</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="zero">0%</string>
+    <string name="thirtyThree">33%</string>
+    <string name="sixtySix">66%</string>
+    <string name="hundred">100%</string>
+    <string name="more_info">more info</string>
+    <string name="building_finance">Building Number *</string>
+    <string name="street_finance">Street *</string>
+    <string name="city_finance">City *</string>
+    <string name="area_finance">Area *</string>
+    <string name="can_t_find_what_you_re_looking_for">Can’t find what you’re \nlooking for?</string>
+    <string name="service_category">Service Category</string>
+    <string name="request">Request</string>
+    <string name="start">Start</string>
+
+    <string name="service_request_added">Service request added</string>
+    <string name="continue_browsing">Continue browsing</string>
+    <string name="checkout_now">Checkout Now</string>
+    <string name="remove_service_from_list">Remove Service From Cart</string>
+    <string name="are_you_sure_you_want_to_remove_this_service_request_from_the_list">Are you sure you want to remove this request?</string>
+    <string name="remove_service">Remove Request</string>
+    <string name="booked_service">Booked Service</string>
+    <string name="choose_the_service">Choose the service</string>
+    <string name="checkout">Checkout</string>
+    <string name="no_items_in_cart">No items in Cart</string>
+    <string name="about_the_course">About the course</string>
+    <string name="course_fees">Course fees</string>
+    <string name="you_cart_is_empty">You Cart Is Empty</string>
+    <string name="install_now_any_service_with_adva">Install now any service with ADVA</string>
+    <string name="browse_now">Browse Now</string>
+    <string name="no_notification_added">No Notification Added</string>
+    <string name="you_will_receive_all_your_notifications_from_adva_here">You will receive all your notifications from ADVA here</string>
+    <string name="no_requests_yet">No Requests Yet</string>
+    <string name="you_don_t_have_any_requests_yet_browse_our_services_and_let_us_help_you_get_what_you_need">You don’t have any requests, browse our services now and install with ADVA.</string>
+    <string name="double_check_your_spelling_use_more_generic_terms_try_different_keywords_and_you_can_refine_your_search_later">Try changing the filter or search terms</string>
+    <string name="empty_wishlist">No Favourites Added</string>
+    <string name="you_don_t_have_any_providers_saved_yet_on_your_wishlist_browse_now_and_add_them_to_your_list">Your Favourites will appear here.</string>
+    <string name="egp_per">EGP/</string>
+    <string name="month">Month</string>
+
+
+    <plurals name="number_branches">
+        <item quantity="one">1 Branch</item>
+        <item quantity="two">2 Branches</item>
+        <item quantity="other">%1$s Branches</item>
+        <item quantity="few">%1$s Branches</item>
+        <item quantity="many">%1$s Branch</item>
+    </plurals>
+
+    <string-array name="operation_status">
+        <item>Submitted</item>
+        <item>In Progress</item>
+        <item>In Progress</item>
+        <item>In Progress</item>
+        <item>In Progress</item>
+        <item>In Progress</item>
+        <item>Done</item>
+        <item>Cancelled</item>
+        <item>Cancelled</item>
+        <item>In Progress</item>
+        <item>Cancelled</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="loan_types">
+        <item>Credit</item>
+        <!--        1-->
+        <item>Loan</item>
+        <!--        2-->
+        <!--        <item>None</item>-->
+        <!--&lt;!&ndash;        4&ndash;&gt;-->
+    </string-array>
+
+    <string-array name="insurance_types">
+        <item>Health Insurance</item>
+        <item>Motor Insurance</item>
+    </string-array>
+
+    <string-array name="education_types">
+        <item>University</item>
+        <item>Institute</item>
+        <item>School</item>
+    </string-array>
+
+    <string-array name="Services_types">
+        <item>Health</item>
+        <item>Education</item>
+        <item>Insurance</item>
+        <item>Car Service</item>
+        <item>Finishing</item>
+        <item>Travel</item>
+        <item>Bill payment</item>
+        <item>Wedding</item>
+    </string-array>
+</resources>

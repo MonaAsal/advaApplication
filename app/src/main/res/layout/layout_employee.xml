@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_employee_header, iv_delete_employee, layout_employee" />
+
+    <TextView
+        android:id="@+id/tv_employee_header"
+        style="@style/textViewStyle.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_curved_top_light_blue"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/employee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_delete_employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_employee_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_employee_header"
+        app:srcCompat="@drawable/ic_close" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_employee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_curved_bottom_gray_border"
+        android:padding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_employee_header">
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/job_required"
+            app:layout_constraintEnd_toStartOf="@+id/tv_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/job"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@+id/et_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_job" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@string/net_income_required"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_job"
+            app:layout_constraintTop_toTopOf="@+id/tv_job" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_income"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:hint="@string/net_income"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_job"
+            app:layout_constraintTop_toTopOf="@id/et_job" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/company_name_required"
+            app:layout_constraintEnd_toStartOf="@+id/tv_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_job" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_company_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:hint="@string/company_name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@+id/et_income"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company" />
+
+        <TextView
+            android:id="@+id/tv_company_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/company_address_required"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_income"
+            app:layout_constraintTop_toTopOf="@+id/tv_company" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_company_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:hint="@string/company_address"
+            android:inputType="text"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_company_name"
+            app:layout_constraintTop_toTopOf="@id/et_company_name" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_attachments_employee"
+            style="@style/recyclerStyle"
+            tools:listitem="@layout/item_attchments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_company_address" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

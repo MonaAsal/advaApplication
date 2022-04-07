@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale">
+
+    <TextView
+        android:id="@+id/tv_rating_lbl"
+        style="@style/textViewStyle.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overall_rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_rate"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:srcCompat="@drawable/ic_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rating_lbl" />
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75%"
+        app:layout_constraintBottom_toBottomOf="@id/iv_rate"
+        app:layout_constraintEnd_toEndOf="@id/iv_rate"
+        app:layout_constraintStart_toStartOf="@id/iv_rate"
+        app:layout_constraintTop_toTopOf="@id/iv_rate" />
+
+    <ProgressBar
+        android:id="@+id/pb_excellent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:progress="33"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:progressTint="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@id/tv_excellent_percent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/iv_rate"
+        app:layout_constraintTop_toTopOf="@+id/iv_rate" />
+
+    <TextView
+        android:id="@+id/tv_excellent_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="33%"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/tv_excellent"
+        app:layout_constraintStart_toEndOf="@+id/pb_excellent"
+        app:layout_constraintTop_toTopOf="@id/pb_excellent" />
+
+    <TextView
+        android:id="@+id/tv_excellent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/excellent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_excellent_percent"
+        app:layout_constraintTop_toTopOf="@id/pb_excellent" />
+
+    <ProgressBar
+        android:id="@+id/pb_moderate"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="33"
+        android:progressTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@id/pb_excellent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/pb_excellent"
+        app:layout_constraintTop_toTopOf="@+id/tv_moderate_percent" />
+
+    <TextView
+        android:id="@+id/tv_moderate_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="33%"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/tv_excellent_percent"
+        app:layout_constraintStart_toStartOf="@id/tv_excellent_percent"
+        app:layout_constraintTop_toBottomOf="@id/tv_excellent_percent" />
+
+    <TextView
+        android:id="@+id/tv_moderate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_excellent"
+        app:layout_constraintTop_toBottomOf="@id/tv_excellent" />
+
+    <ProgressBar
+        android:id="@+id/pb_fair"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="33"
+        android:progressTint="@color/red"
+        app:layout_constraintEnd_toEndOf="@id/pb_excellent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/pb_excellent"
+        app:layout_constraintTop_toTopOf="@+id/tv_fair_percent" />
+
+    <TextView
+        android:id="@+id/tv_fair_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3%"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/tv_excellent_percent"
+        app:layout_constraintStart_toStartOf="@id/tv_excellent_percent"
+        app:layout_constraintTop_toBottomOf="@id/tv_moderate_percent" />
+
+    <TextView
+        android:id="@+id/tv_fair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_excellent"
+        app:layout_constraintTop_toBottomOf="@id/tv_moderate" />
+
+
+    <include
+        layout="@layout/layout_reviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fair" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

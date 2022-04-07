@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#273175</color>-->
+    <color name="colorPrimary">#2B3471</color>
+    <color name="colorPrimaryDark">#0d143d</color>
+    <color name="colorPrimaryLight">#F5FBFF</color>
+    <color name="lightBlue">#f0f6fa</color>
+    <color name="blue2">#5bc4bb</color>
+    <color name="orange">#f89e51</color>
+
+    <color name="hintColor">#80273175</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+    <color name="colorBackGround">#ffffff</color>
+    <color name="colorBackGroundDark">#000000</color>
+    <!--    <color name="textColor">#030303</color>-->
+    <color name="textColor">@color/colorPrimary</color>
+    <!--    <color name="textColorLight">#808080</color>-->
+    <color name="textColorLight">@color/steel</color>
+    <color name="lightBackground">#f3f4f6</color>
+    <!--    <color name="background">#FEFEFE</color>-->
+    <color name="grayBg">#f2f3f5</color>
+    <color name="background">#fbfbfc</color>
+    <color name="toolbarColor">@color/transparent</color>
+    <color name="border">#BBBBBB</color>
+    <color name="separator">#EEEEEE</color>
+    <color name="red">#dd4e50</color>
+    <color name="blue">#5bc4bb</color>
+    <color name="yellowLight">#FFF6E9</color>
+    <color name="infoBgColor">#FDF5F5</color>
+    <!--    <color name="separatorLight">#FFDCDCDC</color>-->
+    <!--    <color name="separator">#B2B2BB</color>-->
+    <color name="gmail">#4285f4</color>
+    <color name="yellow">#f59c55</color>
+    <color name="transparentBg">#77000000</color>
+    <color name="transparentOverlay">#55000000</color>
+    <color name="lightorange">#B9F1C39F</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkBlue">#263A7D</color>
+    <color name="palyGray">#dce4e9</color>
+    <color name="palyGray2">#dde6ec</color>
+    <color name="lightGray">#EEEDED</color>
+    <color name="seafoamBlue">#5bc4bb</color>
+    <color name="iceBlue">#f7f9ff</color>
+    <color name="steel">#73789d</color>
+    <color name="iconsGrayColor">#AAACBE</color>
+    <color name="palgray">#e9eaf0</color>
+
+    <color name="darkgray">#8F9093</color>
+
+    <color name="paleGrey">#e9eaf0</color>
+    <color name="lightGrey">#d7d4d0</color>
+    <color name="blueGrey">#8085aa</color>
+    <color name="greenyBlue">#5dbcae</color>
+    <color name="paleGreySprators">#e1e3eb</color>
+    <color name="paleRed">#d9514e</color>
+
+    <color name="lightTeal">#66dcd2</color>
+    <color name="BlueLight">#eef8f6</color>
+    <color name="coolGray">#9093a6</color>
+    <color name="lightTan">#fadddc</color>ث
+    <color name="darkGreyBlue">#2b2f5c</color>
+    <color name="reddish">#d2302d</color>
+    <color name="transparentOverlayblue">#732B2F5C</color>
+</resources>

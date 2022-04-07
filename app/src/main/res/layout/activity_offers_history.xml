@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.component.offers.OffersHistoryActivity">
+
+  <include
+      android:id="@+id/view_toolbar"
+      layout="@layout/toolbar_transparent"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/tv_num"
+      style="@style/textViewStyle.Title.Big"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/_8sdp"
+      android:text="1"
+      android:textColor="@color/colorPrimary"
+      android:textSize="@dimen/_24ssp"
+      app:layout_constraintEnd_toStartOf="@id/tv_offer"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tv_you_used" />
+
+  <TextView
+      android:id="@+id/tv_offer"
+      style="@style/textViewStyle.Title.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/offers"
+      app:layout_constraintBottom_toBottomOf="@id/tv_num"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/tv_num"
+      app:layout_constraintTop_toTopOf="@+id/tv_num" />
+
+
+  <TextView
+      android:id="@+id/tv_you_used"
+      style="@style/textViewStyle.Title.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_16sdp"
+      android:text="@string/you_used"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/view_toolbar" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      style="@style/recyclerStyle"
+      android:id="@+id/rv_offers_history"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="@dimen/_16sdp"
+      android:layout_marginBottom="@dimen/_8sdp"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_offer"
+      tools:listitem="@layout/item_offer_history" />
+
+  <ProgressBar
+      android:id="@+id/progress_bar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:indeterminate="true"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

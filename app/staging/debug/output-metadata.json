@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.salamtak.app",
+  "variantName": "stagingDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 58,
+      "versionName": "6.0",
+      "outputFile": "app-staging-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

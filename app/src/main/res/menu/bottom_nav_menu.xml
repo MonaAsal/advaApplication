@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/servicesFragment"
+        android:icon="@drawable/ic_iconservices"
+        android:title="@string/services"
+        app:showAsAction="withText"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/requestsFragment"-->
+<!--        android:icon="@drawable/ic_home"-->
+<!--        android:title="@string/requests"-->
+<!--        app:showAsAction="withText"-->
+<!--        />-->
+    <item
+        android:id="@+id/requestsFragment"
+        android:title="@string/cart"
+        />
+
+    <item
+        android:id="@+id/bookingFragment"
+        android:icon="@drawable/ic_iconbookings"
+        android:title="@string/requests"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_iconprofile"
+        android:title="@string/profile"
+        app:showAsAction="withText"
+        />
+</menu>

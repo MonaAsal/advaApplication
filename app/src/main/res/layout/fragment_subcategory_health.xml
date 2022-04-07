@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackground"
+  >
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar_back_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_add_financial_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:drawablePadding="@dimen/_16ssp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_16ssp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:text="@string/complete_your_profile"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/ic_back_notifications"
+        app:drawableStartCompat="@drawable/ic_notification_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+
+    <EditText
+        android:background="@drawable/gray_borded_background"
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8ssp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:drawableStartCompat="@drawable/ic_search_new"
+        android:visibility="gone"
+        android:drawablePadding="@dimen/_8sdp"
+        android:hint="@string/search_by_operation_doctor_or_hospital"
+        android:imeOptions="actionSearch"
+        android:inputType="textAutoComplete"
+        android:elevation="0dp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_financial_profile" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/paleGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            style="@style/NavigationTab2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@drawable/gray_borded_background"
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_search"-->
+<!--        android:background="@drawable/bg_curved_gray_border_small"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/_8sdp"-->
+<!--        android:layout_marginTop="@dimen/_8ssp"-->
+<!--        android:layout_marginEnd="@dimen/_8sdp"-->
+<!--        android:drawablePadding="@dimen/_8sdp"-->
+<!--        android:hint="@string/search_salamtak"-->
+<!--        android:imeOptions="actionSearch"-->
+<!--        android:inputType="textAutoComplete"-->
+<!--        android:maxLines="1"-->
+<!--        android:visibility="gone"-->
+<!--        app:drawableStartCompat="@drawable/ic_search"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tabs" />-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPagerr"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layoutDirection="locale"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card_tabs"-->
+<!--     />-->
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_120sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_tabs"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

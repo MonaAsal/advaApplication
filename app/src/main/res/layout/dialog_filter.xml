@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentBg"
+    android:gravity="center"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/bg_curved_filter"
+        android:layoutDirection="locale"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+
+        <TextView
+            style="@style/textViewStyle.Title.Big"
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_16sdp"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/filter"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat"
+            app:drawableEndCompat="@drawable/ic_close" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="tv_select_category,spinner_categories,tv_operation,et_operation" />
+
+        <TextView
+            android:id="@+id/tv_select_category"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speciality"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+        <!--            android:background="@android:drawable/btn_dropdown"-->
+        <Spinner
+            android:id="@+id/spinner_categories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_select_category" />
+
+        <TextView
+            android:id="@+id/tv_select_subcategory"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/subcategory"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_categories" />
+        <!--            android:background="@android:drawable/btn_dropdown"-->
+        <Spinner
+            android:id="@+id/spinner_subcategories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_select_subcategory" />
+
+        <TextView
+            android:id="@+id/tv_select_provider"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/medical_provider"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_subcategories" />
+
+
+        <!--            android:background="@android:drawable/btn_dropdown"-->
+        <AutoCompleteTextView
+            android:id="@+id/et_provider"
+            style="@style/editTextStyle.Bordered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_select_provider" />
+
+        <!--        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+        <!--            app:srcCompat="@drawable/ic_spinner_arrow"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/spinner_categories"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/spinner_categories"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/spinner_categories" />-->
+
+        <TextView
+            android:id="@+id/tv_operation"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/operation_name"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/et_provider" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_operation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:lines="1"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_operation" />
+
+
+        <TextView
+            android:id="@+id/tv_choose_location"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/city"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/et_operation" />
+
+        <Spinner
+            android:id="@+id/spinner_cities"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_choose_location" />
+
+        <Spinner
+            android:id="@+id/spinner_areas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/spinner_cities" />
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/operation_price"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_cities" />
+
+        <!--        app:rsb_trackSelectedColor="@color/colorPrimary"-->
+        <!--        app:rsb_initialMinThumbValue="3000"-->
+        <!--        app:rsb_initialMaxThumbValue="100000"-->
+
+        <com.jaygoo.widget.RangeSeekBar
+            android:id="@+id/rangeBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price"
+            app:rsb_indicator_background_color="@color/colorPrimary"
+            app:rsb_indicator_height="wrap_content"
+            app:rsb_indicator_padding_bottom="0dp"
+            app:rsb_indicator_padding_left="@dimen/_8sdp"
+            app:rsb_indicator_padding_right="@dimen/_8sdp"
+            app:rsb_indicator_padding_top="@dimen/_8sdp"
+            app:rsb_indicator_show_mode="alwaysHide"
+            app:rsb_indicator_text_color="@color/white"
+            app:rsb_indicator_text_size="@dimen/text_size_small"
+            app:rsb_indicator_width="wrap_content"
+            app:rsb_mode="range"
+            app:rsb_progress_color="@color/colorPrimary"
+            app:rsb_progress_height="4dp"
+            app:rsb_step_auto_bonding="true"
+            app:rsb_step_color="@color/colorPrimary" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_min"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/rangeBar"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/rangeBar" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_max"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/rangeBar"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/rangeBar" />-->
+        <!--        android:valueFrom="3000"-->
+        <!--        android:valueTo="100000"-->
+
+        <TextView
+            android:id="@+id/tv_start_price"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintBottom_toBottomOf="@id/rangeBar" />
+
+        <TextView
+            android:id="@+id/tv_end_price"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintBottom_toBottomOf="@id/tv_start_price" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="@string/search"
+            android:layout_marginBottom="@dimen/_32sdp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_start_price" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

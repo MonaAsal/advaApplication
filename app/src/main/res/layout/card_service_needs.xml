@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layoutDirection="locale"
+    app:cardBackgroundColor="@color/paleGrey"
+    app:cardCornerRadius="@dimen/_25sdp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_operation_favorite"
+            style="@style/ImageViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="-6dp"
+            android:background="@drawable/bg_curved_primary_small"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_edit_white"
+
+            />
+
+        <TextView
+            android:id="@+id/services"
+            style="@style/textViewStyle.Title.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="@string/yourservicesneed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_operation_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="lasik and laser surgery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <TextView
+            android:id="@+id/tv_price_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="1000"
+            app:layout_constraintStart_toEndOf="@id/tv_operation_name"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <TextView
+            android:id="@+id/tv_price_dash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="-"
+            app:layout_constraintStart_toEndOf="@id/tv_price_from"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <TextView
+            android:id="@+id/tv_price_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="3000"
+            app:layout_constraintStart_toEndOf="@id/tv_price_dash"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="@string/Egp"
+            app:layout_constraintStart_toEndOf="@id/tv_price_to"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <TextView
+            android:id="@+id/tv_comma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="@string/comma"
+            app:layout_constraintStart_toEndOf="@id/tv_currency"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="Cairo"
+            app:layout_constraintStart_toEndOf="@id/tv_comma"
+            app:layout_constraintTop_toBottomOf="@id/services" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_operation_name,tv_price_from,services,tv_price_dash,tv_price_to,tv_currency,tv_comma,tv_location" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

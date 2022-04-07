@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_next"
+        style="@style/ImageViewStyle"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/red" />
+
+    <include
+        android:id="@+id/layout_steps"
+        layout="@layout/layout_steps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+    <ScrollView
+        android:id="@+id/main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_steps"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8ssp"
+                android:text="@string/pay_with"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_payment_methods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:text="@string/credit_loans"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/tv_sub_title" />
+
+            <EditText
+                android:id="@+id/et_payment_method"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_payment_methods"
+                app:layout_constraintEnd_toEndOf="@id/spinner_payment_methods"
+                app:layout_constraintTop_toTopOf="@id/spinner_payment_methods" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toEndOf="@id/tv_sub_title"
+                app:layout_constraintTop_toTopOf="@id/tv_sub_title">
+
+                <RadioButton
+                    android:id="@+id/radio_aman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8ssp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/aman" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_valu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8ssp"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/valu" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_your_mobile"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/phone"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/spinner_payment_methods" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_egypt_flag"
+                android:drawablePadding="@dimen/_8ssp"
+                android:inputType="number"
+                android:maxLength="11"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_your_mobile" />
+
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="tv_lbl_work_address,tv_building,et_building,
+tv_street,et_street,tv_cities,spinner_areas,tv_areas,spinner_areas" />
+
+            <TextView
+                android:id="@+id/tv_lbl_work_address"
+                style="@style/textViewStyle.Title.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/address"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/et_mobile" />
+
+            <TextView
+                android:id="@+id/tv_building"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/building_finance"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl_work_address" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_building"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toStartOf="@id/et_street"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_building" />
+
+            <TextView
+                android:id="@+id/tv_street"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/street_finance"
+                app:layout_constraintStart_toStartOf="@id/et_street"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl_work_address" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_street"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toEndOf="@+id/et_building"
+                app:layout_constraintTop_toBottomOf="@+id/tv_street" />
+
+            <TextView
+                android:id="@+id/tv_cities"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_finance"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@+id/et_building" />
+
+            <Spinner
+                android:id="@+id/spinner_cities"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/et_building"
+                app:layout_constraintStart_toEndOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cities" />
+
+            <TextView
+                android:id="@+id/tv_areas"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area_finance"
+                app:layout_constraintStart_toStartOf="@id/spinner_areas"
+                app:layout_constraintTop_toBottomOf="@+id/et_building" />
+
+            <Spinner
+                android:id="@+id/spinner_areas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toEndOf="@id/spinner_cities"
+                app:layout_constraintTop_toTopOf="@id/spinner_cities" />
+
+            <TextView
+                android:id="@+id/tv_id_type"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bg_curved_top_light_blue"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/your_national_id"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/spinner_cities" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_expand_self_info"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/_16ssp"
+                android:layout_height="@dimen/_16ssp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_id_type"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintTop_toTopOf="@id/tv_id_type"
+                app:srcCompat="@drawable/ic_minimize" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_my_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/bg_curved_bottom_gray_border"
+                android:padding="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_16sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/tv_id_type">
+
+                <TextView
+                    android:id="@+id/tv_first_name"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:maxLength="30"
+                    android:text="@string/first_name"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_residential_status"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_first_name" />
+
+                <TextView
+                    android:id="@+id/tv_second_name"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    android:text="@string/second_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/et_second_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_second_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_third_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_second_name" />
+
+
+                <TextView
+                    android:id="@+id/tv_third_name"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/third_name"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_residential_status"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_first_name" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_third_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_third_name" />
+
+                <TextView
+                    android:id="@+id/tv_last_name"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/last_name_r"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/et_second_name"
+                    app:layout_constraintTop_toBottomOf="@id/et_first_name" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_third_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_last_name" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_third_name" />
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="0dp"-->
+                <!--                    android:text="aslkdjalskdj"-->
+                <!--                    android:background="@color/red"-->
+                <!--                    app:layout_constraintTop_toTopOf="@id/et_id"-->
+                <!--                    app:layout_constraintStart_toStartOf="@id/et_id"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="@id/et_id"-->
+                <!--                    app:layout_constraintEnd_toEndOf="@id/et_id"/>-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+
+                <TextView
+                    android:id="@+id/tv_expiry_date_lbl"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/expiry_date"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_residential_status"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_id" />
+
+
+                <EditText
+                    android:id="@+id/et_expiry_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:elevation="0dp"
+                    android:textAlignment="viewStart"
+                    app:drawableEndCompat="@drawable/ic_calendar"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_expiry_date_lbl" />
+
+                <!--                -->
+                <TextView
+                    android:id="@+id/tv_expiry_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_expiry_date_lbl" />
+
+
+                <TextView
+                    android:id="@+id/tv_residential_status"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marital_status"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="@id/et_second_name"
+                    app:layout_constraintTop_toTopOf="@id/tv_expiry_date_lbl" />
+
+                <Spinner
+                    android:id="@+id/spinner_marital_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/et_expiry_date"
+                    app:layout_constraintTop_toTopOf="@+id/et_expiry_date" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_image"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_id"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_id"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_marital_status" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_delete"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/iv_image"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image"
+                    app:layout_constraintStart_toEndOf="@id/iv_image"
+                    app:layout_constraintTop_toTopOf="@id/iv_image"
+                    app:srcCompat="@drawable/ic_close" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_image2"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_id_back"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_id_back"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_marital_status" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_delete2"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/iv_image2"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image2"
+                    app:layout_constraintStart_toEndOf="@id/iv_image2"
+                    app:layout_constraintTop_toTopOf="@id/iv_image2"
+                    app:srcCompat="@drawable/ic_close" />
+
+
+                <Button
+                    android:id="@+id/btn_upload_id"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:text="@string/scan_your_id"
+                    android:textSize="@dimen/text_size_small"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toStartOf="@id/btn_upload_id_back"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image"
+                    tools:ignore="RtlSymmetry" />
+
+                <Button
+                    android:id="@+id/btn_upload_id_back"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:text="@string/scan_id_back"
+                    android:textSize="@dimen/text_size_small"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/btn_upload_id"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--            -->
+
+            <TextView
+                android:id="@+id/tv_id_type_guarantor"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bg_curved_top_light_blue"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/guarantor_national_id"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/layout_my_info" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_expand_self_info_guarantor"
+                style="@style/ImageViewStyle"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_id_type_guarantor"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintTop_toTopOf="@id/tv_id_type_guarantor"
+                app:srcCompat="@drawable/ic_minimize" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_my_info_guarantor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/bg_curved_bottom_gray_border"
+                android:padding="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_16sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/tv_id_type_guarantor">
+
+                <TextView
+                    android:id="@+id/tv_first_name_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/first_name"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_residential_status_guarantor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_first_name_guarantor"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status_guarantor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_first_name_guarantor" />
+
+                <TextView
+                    android:id="@+id/tv_second_name_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/et_second_name_guarantor"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_second_name_guarantor"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_third_name_guarantor"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_second_name_guarantor" />
+
+
+                <TextView
+                    android:id="@+id/tv_third_name_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/third_name"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_residential_status_guarantor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_first_name_guarantor" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_third_name_guarantor"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status_guarantor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_third_name_guarantor" />
+
+                <TextView
+                    android:id="@+id/tv_last_name_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/last_name_r"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/et_second_name_guarantor"
+                    app:layout_constraintTop_toBottomOf="@id/et_first_name_guarantor" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_last_name_guarantor"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/et_third_name_guarantor"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_last_name_guarantor" />
+
+                <TextView
+                    android:id="@+id/tv_id_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/id_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_third_name_guarantor" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_id_guarantor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_id_guarantor" />
+
+                <TextView
+                    android:id="@+id/tv_your_mobile_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/phone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_id_guarantor" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_mobile_guarantor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_your_mobile_guarantor" />
+
+                <TextView
+                    android:id="@+id/tv_expiry_date_lbl_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/expiry_date"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_residential_status_guarantor"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_mobile_guarantor" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_expiry_date_guarantor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:elevation="0dp"
+                    android:maxLength="30"
+                    android:textAlignment="viewStart"
+                    android:textDirection="ltr"
+                    app:drawableEndCompat="@drawable/ic_calendar"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner_marital_status_guarantor"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_expiry_date_lbl_guarantor" />
+
+                <TextView
+                    android:id="@+id/tv_expiry_date_guarantor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:background="@color/transparent"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="viewStart"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="@id/et_expiry_date_guarantor"
+                    app:layout_constraintStart_toStartOf="@id/et_expiry_date_guarantor"
+                    app:layout_constraintTop_toTopOf="@id/et_expiry_date_guarantor" />
+
+
+                <TextView
+                    android:id="@+id/tv_residential_status_guarantor"
+                    style="@style/textViewStyleEditFieldLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marital_status"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="@id/et_second_name_guarantor"
+                    app:layout_constraintTop_toTopOf="@id/tv_expiry_date_lbl_guarantor" />
+
+                <Spinner
+                    android:id="@+id/spinner_marital_status_guarantor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/et_expiry_date_guarantor"
+                    app:layout_constraintTop_toTopOf="@+id/et_expiry_date_guarantor" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_image_guarantor"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_id_guarantor"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_id_guarantor"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_marital_status_guarantor" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_delete_guarantor"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/iv_image_guarantor"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image_guarantor"
+                    app:layout_constraintStart_toEndOf="@id/iv_image_guarantor"
+                    app:layout_constraintTop_toTopOf="@id/iv_image_guarantor"
+                    app:srcCompat="@drawable/ic_close" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_image2_guarantor"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/btn_upload_id_back_guarantor"
+                    app:layout_constraintStart_toStartOf="@id/btn_upload_id_back_guarantor"
+                    app:layout_constraintTop_toTopOf="@id/iv_image_guarantor" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_delete2_guarantor"
+                    style="@style/ImageViewStyle"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/iv_image2_guarantor"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image2_guarantor"
+                    app:layout_constraintStart_toEndOf="@id/iv_image2_guarantor"
+                    app:layout_constraintTop_toTopOf="@id/iv_image2_guarantor"
+                    app:srcCompat="@drawable/ic_close" />
+
+
+                <Button
+                    android:id="@+id/btn_upload_id_guarantor"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:text="@string/scan_your_id"
+                    android:textSize="@dimen/text_size_small"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toStartOf="@id/btn_upload_id_back_guarantor"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image_guarantor" />
+
+                <Button
+                    android:id="@+id/btn_upload_id_back_guarantor"
+                    style="@style/buttonStyle.PrimaryBorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:text="@string/scan_id_back"
+                    android:textSize="@dimen/text_size_small"
+                    app:drawableStartCompat="@drawable/ic_attachment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/btn_upload_id_guarantor"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image2_guarantor" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/next"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end1"
+                app:layout_constraintStart_toStartOf="@id/guideline_start1"
+                app:layout_constraintTop_toBottomOf="@id/layout_my_info_guarantor" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

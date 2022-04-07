@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.salamtak.app"
+    android:targetSandboxVersion="1">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeMaterial2"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme,android:label,android:name,allowBackup">
+        <activity
+            android:name=".ui.component.finishing.FullScreenZoomImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.component.main.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.component.financialinfo.step3.FinancialInfoStep3Activity" />
+        <activity android:name="com.livechatinc.inappchat.ChatWindowActivity" />
+        <activity android:name=".ui.component.financialinfo.step2.FinancialInfoStep2Activity" />
+        <activity android:name=".ui.component.premiumcard.PremiumActivity" />
+        <activity android:name=".ui.component.premiumcard.VerifyPremiumCardActivity" />
+        <activity android:name=".ui.component.premiumcard.PremiumCardStatusActivity" />
+        <activity android:name=".ui.component.education.universities.collages.UniversityInstituteDetailsActivity" />
+        <activity android:name=".ui.component.education.schools.schooldetails.SchoolDetailsActivity" />
+        <activity android:name=".ui.component.education.schools.SchoolsActivity" />
+        <activity android:name=".ui.component.health.subcategory.MoreProvidersActivity" />
+        <activity android:name=".ui.component.comingsoon.ComingSoonActivity" />
+        <activity android:name=".ui.component.education.custom.EducationActivity" />
+        <activity android:name=".ui.component.insurance.InsuranceActivity" />
+        <activity android:name=".ui.component.financialinfo.ImageActivity" />
+        <activity
+            android:name=".ui.component.health.operationslist.OperationsActivity"
+            android:exported="true"
+            tools:ignore="AppLinkUrlError">
+
+            <!-- android:exported="false" -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="adjustExample" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.component.financialinfo.step1.FinancialInfoStep1Activity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.component.offers.OffersHistoryActivity" />
+        <activity android:name=".ui.component.congratulations.CongratulationsActivity" />
+        <activity android:name=".ui.component.medicalnetwork.MedicalNetworkOperationsActivity" />
+        <activity android:name=".ui.component.medicalnetwork.MedicalNetworkActivity" />
+        <activity android:name=".ui.component.health.customoperations.OtherOperationActivity" />
+        <activity android:name=".ui.component.offers.LandingActivity" />
+        <activity android:name=".ui.component.offers.ProviderOffersActivity" />
+        <activity android:name=".ui.component.aboutus.AboutUsActivity" />
+        <activity android:name=".ui.component.more.ContactUsActivity" />
+        <activity android:name=".ui.component.more.WebViewActivity" />
+        <activity android:name=".ui.component.notifications.NotificationsActivity" />
+        <activity android:name=".ui.component.financialinfo.FinancialProfileCompletedActivity" /> <!-- <activity android:name="ReviewsActivity" /> -->
+        <activity android:name=".ui.component.paymentmethods.PaymentMethodsActivity" />
+        <activity android:name=".ui.component.paymentmethods.AddCardActivity" />
+        <activity android:name=".ui.component.password.ForgotPasswordActivity" />
+        <activity android:name=".ui.component.password.ChangePasswordActivity" />
+        <activity android:name=".ui.component.profile.ChooseLanguageActivity" />
+        <activity android:name=".ui.component.profile.edit.EditProfileActivity" />
+        <activity android:name=".ui.component.health.favourites.FavouritesActivity" />
+        <activity android:name=".ui.component.health.search.OperationsSearchActivity" />
+        <activity android:name=".ui.component.finishing.details.FullScreenImageActivity" />
+        <activity android:name=".ui.component.more.MoreActivity" /> <!-- <activity android:name=".ui.component.register.TermsAndConditionsActivity" /> -->
+        <activity android:name=".ui.component.health.medicalprovider.MedicalProviderActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.component.health.doctor.DoctorActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.component.verifynumber.VerifyNumberActivity" />
+        <activity android:name=".ui.component.profile.ProfileActivity" />
+        <activity android:name=".ui.component.medicalhistory.MedicalProfileQuestionActivity" />
+        <activity android:name=".ui.component.register.RegisterActivity" />
+        <activity android:name=".ui.component.successrequest.RequestSubmittedSuccessfullyActivity" />
+        <activity android:name=".ui.component.login.LoginActivity" />
+        <activity android:name=".ui.component.finishing.packagedetails.FinishingPackageDetailsActivity" />
+        <activity
+            android:name=".ui.component.home.HomeActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="salamtakapp.page.link"
+                    android:pathPrefix="/asd14"
+                    android:scheme="http" />
+                <data
+                    android:host="salamtakapp.page.link"
+                    android:pathPrefix="/asd14"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.component.gettingstarted.GettingStartedActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.component.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.component.TestActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- <activity android:name=".ui.component.fawry.FawryActivity"></activity> -->
+        <activity android:name=".ui.component.health.categories.CategoriesActivity" />
+        <activity android:name=".ui.component.bookingrequests.BookedRequestsActivity" />
+        <activity android:name=".ui.component.home.HealthHomeActivity" />
+        <activity android:name=".ui.component.medicalhistory.MedicalProfileActivity" />
+        <activity android:name=".ui.component.health.subcategory.SubcategoryActivity" />
+        <activity android:name=".ui.component.health.filter.OperationsFilterActivity" /> <!-- android:theme="@style/AppThemeMaterial" -->
+        <activity android:name=".ui.component.health.bookoperation.BookHealthRequestActivity" />
+        <activity android:name=".ui.component.weddings.WeddingRequestActivity" />
+        <activity android:name=".ui.component.education.categories.EducationCategoriesActivity" />
+        <activity android:name=".ui.component.education.universities.UniversitiesInstitutesActivity" />
+        <activity android:name=".ui.component.education.universities.booking.UniversityBookingActivity" />
+        <activity android:name=".ui.component.finishing.providers.FinishingProvidersActivity" />
+        <activity
+            android:name=".ui.component.finishing.custom.CustomFinishingActivity"
+            android:exported="false" />
+        <activity android:name=".ui.component.carservices.CarsCategoriesActivity" />
+        <activity android:name=".ui.component.carservices.details.CarProviderDetailsRequestActivity" />
+        <activity android:name=".ui.component.finishing.details.FinishingProviderRequestActivity" />
+        <activity
+            android:name=".ui.component.carservices.providers.CarServicesProvidersActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.component.carservices.custom.CustomCarActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <receiver
+            android:name=".utils.MySMSBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".ui.component.firebase.MyFirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false">
+
+            <!--  -->
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name=".firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" /> <!-- <meta-data -->
+        <!-- android:name="firebase_crashlytics_collection_enabled" -->
+        <!-- android:value="${crashlyticsCollectionEnabled}" /> -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_not" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

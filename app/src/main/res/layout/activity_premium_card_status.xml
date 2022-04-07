@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:layoutDirection="locale"
+    tools:context=".ui.component.premiumcard.PremiumActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close_white" />
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_circle"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_circle_white" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_circle"
+        app:layout_constraintEnd_toEndOf="@id/iv_circle"
+        app:layout_constraintStart_toStartOf="@id/iv_circle"
+        app:layout_constraintTop_toTopOf="@id/iv_circle"
+        app:srcCompat="@drawable/ic_invoice" />
+
+    <!--    <com.uphyca.creditcardedittext.CreditCardNumberEditText-->
+    <!--        android:id="@+id/credit_card_number"-->
+    <!--        style="@style/textViewStyle.Light"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/_16sdp"-->
+    <!--        android:layout_marginEnd="@dimen/_16sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_8sdp"-->
+    <!--        android:hint="XXXX-XXXX-XXXX-XXXX"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/credit_card_date"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/card"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/card" />-->
+
+    <!--    <com.uphyca.creditcardedittext.CreditCardDateEditText-->
+    <!--        android:id="@+id/credit_card_date"-->
+    <!--        style="@style/textViewStyle.Light"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_32sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_16sdp"-->
+    <!--        android:hint="XX/XX"-->
+    <!--        android:maxLength="5"-->
+    <!--        android:maxLines="1"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/card"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/credit_card_number" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_title"-->
+    <!--        style="@style/textViewStyle.Title.Normal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/_16sdp"-->
+    <!--        android:text="amount"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/card" />-->
+
+    <!--    <TextView-->
+    <!--        style="@style/textViewStyle.Light"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/_16sdp"-->
+    <!--        android:layout_marginTop="@dimen/_8sdp"-->
+    <!--        android:text="1000"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/tv_title" />-->
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/textViewStyle.Title.Big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="@string/booking_submitted"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_larger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_circle" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="@dimen/_32sdp"
+        android:paddingEnd="@dimen/_32sdp"
+        android:text="@string/expect_call"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/textViewStyle.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:text="ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

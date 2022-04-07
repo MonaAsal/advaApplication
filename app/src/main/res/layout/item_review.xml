@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:paddingStart="@dimen/_8ssp"
+    android:paddingTop="@dimen/_8ssp"
+    android:paddingEnd="@dimen/_8ssp"
+    android:paddingBottom="@dimen/_8ssp">
+
+  <androidx.appcompat.widget.AppCompatImageView
+      style="@style/ImageViewStyle"
+      android:id="@+id/iv_review_owner_image"
+      android:layout_width="@dimen/_40sdp"
+      android:layout_height="@dimen/_40sdp"
+      app:srcCompat="@drawable/ic_profile"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/tv_review_owner_name"
+      style="@style/textViewStyle.Title.Normal"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_8sdp"
+      android:gravity="start"
+      android:text="Ahmed Abdelrehiem"
+      android:textAlignment="viewStart"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/iv_review_owner_image"
+      app:layout_constraintTop_toTopOf="@+id/iv_review_owner_image" />
+
+
+  <TextView
+      android:id="@+id/tv_review_time"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_8sdp"
+      android:gravity="end"
+      android:paddingTop="0dp"
+      android:text="3 Days Ago"
+      android:textColor="@color/textColorLight"
+      android:textSize="@dimen/text_size_small"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tv_review_owner_name" />
+
+  <RatingBar
+      android:id="@+id/rb_operation"
+      style="@style/RatingBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:numStars="5"
+      android:rating="3"
+      app:layout_constraintStart_toStartOf="@+id/tv_review_owner_name"
+      app:layout_constraintTop_toBottomOf="@id/tv_review_owner_name" />
+
+  <TextView
+      android:id="@+id/tv_review_text"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+
+      android:text="I was very pleased with my experience at Doctors Care."
+      android:textAlignment="viewStart"
+      android:textColor="@color/textColorLight"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/tv_review_owner_name"
+      app:layout_constraintTop_toBottomOf="@+id/rb_operation" />
+
+  <!--    <View-->
+  <!--        android:id="@+id/separator"-->
+  <!--        android:layout_width="0dp"-->
+  <!--        android:layout_height="1dp"-->
+  <!--        android:visibility="gone"-->
+  <!--        android:layout_marginTop="@dimen/_8sdp"-->
+  <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+  <!--        app:layout_constraintEnd_toEndOf="parent"-->
+  <!--        android:background="@color/separator"-->
+  <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

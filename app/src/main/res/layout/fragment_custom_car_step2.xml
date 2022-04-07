@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    android:scrollbars="vertical"
+    tools:context=".ui.component.finishing.custom.CustomFinishingStep2Fragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".ui.component.finishing.custom.CustomFinishingStep2Fragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tv_lbl_provider_name"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/provider_name"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/et_provider_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/et_provider_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toTopOf="@id/tv_lbl_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_lbl_provider_name" />
+
+            <TextView
+                android:id="@+id/tv_lbl_phone"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/phone_r"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/et_phone_step2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_provider_name" />
+
+            <!--            android:text="e.mohamed"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phone_step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toTopOf="@id/tv_lbl_more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl_phone" />
+
+
+            <TextView
+                android:id="@+id/tv_lbl_more"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/additional_info"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/et_more_into"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_phone_step2" />
+
+            <!--            android:text="e.mohamed"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_more_into"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="60"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl_more" />
+
+            <TextView
+                android:id="@+id/tv_car_model_lbl"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/car_model"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toBottomOf="@id/et_more_into" />
+
+            <!--            <AutoCompleteTextView-->
+            <!--                android:id="@+id/et_car_model"-->
+            <!--                style="@style/editTextStyle.Bordered"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:completionHint="@string/search_salamtak"-->
+            <!--                android:hint="@string/search"-->
+            <!--                android:imeOptions="actionDone"-->
+            <!--                android:inputType="textAutoComplete"-->
+            <!--                android:lines="1"-->
+            <!--                android:maxLines="1"-->
+            <!--                android:visibility="gone"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tv_car_model_lbl" />-->
+
+            <Spinner
+                android:id="@+id/spinner_car_model"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_car_model_lbl" />
+
+            <EditText
+                android:id="@+id/et_car_model_error"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_car_model"
+                app:layout_constraintEnd_toEndOf="@id/spinner_car_model"
+                app:layout_constraintTop_toTopOf="@id/spinner_car_model" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                style="@style/textViewStyleEditFieldLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/location"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_car_model" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_area"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                android:text="Area"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintStart_toStartOf="@id/spinner_area"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/et_car_model" />-->
+
+            <Spinner
+                android:id="@+id/spinner_cities"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toStartOf="@id/spinner_areas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_city" />
+
+            <EditText
+                android:id="@+id/et_cities_error"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_cities"
+                app:layout_constraintEnd_toEndOf="@id/spinner_cities"
+                app:layout_constraintTop_toTopOf="@id/spinner_cities" />
+
+
+            <Spinner
+                android:id="@+id/spinner_areas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/spinner_cities"
+                app:layout_constraintTop_toTopOf="@id/spinner_cities" />
+
+
+            <EditText
+                android:id="@+id/et_areas_error"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_areas"
+                app:layout_constraintEnd_toEndOf="@id/spinner_areas"
+                app:layout_constraintTop_toTopOf="@id/spinner_areas" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/orange"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/et_provider_name"
+                app:layout_constraintStart_toStartOf="@id/tv_lbl_provider_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_note"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                android:text="@string/custom_finishing_step2_disclaimer"-->
+            <!--                android:textColor="@color/textColorLight"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:textAlignment="viewStart"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/rv_filter_types" />-->
+
+
+            <!--        <Button-->
+            <!--            android:id="@+id/btn_next"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="@dimen/_4sdp"-->
+            <!--            android:layout_marginTop="@dimen/_50ssp"-->
+            <!--            android:text="@string/next"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/rv_filter_types" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/btn_next"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="@dimen/_32sdp"-->
+    <!--        app:backgroundTint="@color/colorPrimary"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:srcCompat="@drawable/ic_next" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

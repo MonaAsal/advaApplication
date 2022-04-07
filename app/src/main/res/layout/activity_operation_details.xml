@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="locale"
+    tools:context=".ui.component.health.details.OperationDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar_back_fav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_operation_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+            <!--app:layout_constraintBottom_toTopOf="@+id/guideline_image"            -->
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_operation_image"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_operation_name"
+                style="@style/textViewStyle.Title.Big"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="asdl;kas;ldkal;sdk"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toTopOf="@id/rb_operation"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/iv_operation_image" />
+
+            <RatingBar
+                android:id="@+id/rb_operation"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                app:layout_constraintBottom_toTopOf="@+id/v_separator1"
+                app:layout_constraintStart_toStartOf="@+id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_name" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_cost_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                app:srcCompat="@drawable/ic_cost"
+                app:layout_constraintBottom_toBottomOf="@id/v_separator1"
+                app:layout_constraintStart_toEndOf="@+id/tv_operation_name"
+                app:layout_constraintTop_toBottomOf="@+id/iv_operation_image" />
+
+            <TextView
+                android:id="@+id/tv_operation_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toEndOf="@+id/iv_cost_icon"
+                app:layout_constraintTop_toTopOf="@+id/tv_operation_name"
+                tools:text="@string/operation_Installment_cost" />
+
+            <TextView
+                android:id="@+id/tv_operation_installment_duration"
+                style="@style/textViewStyle.Light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/_12_36_months_conditions_apply"
+                android:textSize="@dimen/text_size_small"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toEndOf="@+id/iv_cost_icon"
+                app:layout_constraintTop_toBottomOf="@+id/tv_operation_cost" />
+
+
+            <View
+                android:id="@+id/v_separator1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_installment_duration" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_operation_branch_image"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="@id/tv_operation_name"
+                app:layout_constraintTop_toBottomOf="@+id/v_separator1" />
+
+            <TextView
+                android:id="@+id/tv_operation_hospital"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:gravity="center"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/iv_operation_branch_image"
+                app:layout_constraintTop_toTopOf="@+id/iv_operation_branch_image"
+                tools:text="@string/by_hospital" />
+
+            <TextView
+                android:id="@+id/tv_operation_owner"
+                style="@style/textViewStyle.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="viewStart"
+                app:layout_constraintStart_toStartOf="@+id/tv_operation_hospital"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_hospital"
+                tools:text="@string/with_dr" />
+
+            <View
+                android:id="@+id/v_separator2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_owner" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_operation_icon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:srcCompat="@drawable/ic_location"
+                app:layout_constraintBottom_toTopOf="@+id/v_separator3"
+                app:layout_constraintStart_toStartOf="@+id/iv_operation_branch_image"
+                app:layout_constraintTop_toBottomOf="@+id/v_separator2" />
+
+
+            <TextView
+                android:id="@+id/tv_operation_location_lbl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="@string/location"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/iv_operation_icon"
+                app:layout_constraintTop_toBottomOf="@id/v_separator2" />
+
+
+            <TextView
+                android:id="@+id/tv_operation_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toTopOf="@id/v_separator3"
+                app:layout_constraintEnd_toStartOf="@+id/btn_view_location"
+                app:layout_constraintStart_toEndOf="@+id/iv_operation_icon"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_location_lbl"
+                tools:text="Maadi" />
+
+            <Button
+                android:id="@+id/btn_view_location"
+                style="@style/buttonStyle.Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:text="@string/view_location"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toTopOf="@+id/v_separator3"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintTop_toBottomOf="@+id/v_separator2" />
+
+            <View
+                android:id="@+id/v_separator3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_location" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_info_icon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:srcCompat="@drawable/ic_info"
+                app:layout_constraintStart_toStartOf="@+id/iv_operation_branch_image"
+                app:layout_constraintTop_toBottomOf="@id/v_separator3" />
+
+            <TextView
+                android:id="@+id/tv_overview_lbl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/overview"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/iv_info_icon"
+                app:layout_constraintTop_toTopOf="@id/iv_info_icon" />
+
+            <TextView
+                android:id="@+id/tv_operation_details"
+                style="@style/textViewStyle.Light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
+                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toEndOf="@+id/iv_info_icon"
+                app:layout_constraintTop_toBottomOf="@id/tv_overview_lbl" />
+
+            <!--            android:maxLines="8"-->
+            <View
+                android:id="@+id/v_separator4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_operation_details" />
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="v_review,v_complete_top_of_rounding,v_load_more_reviews,tv_num_more,tv_load_more" />
+
+            <include
+                android:id="@+id/v_review"
+                layout="@layout/item_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/v_separator4" />
+
+            <View
+                android:id="@+id/v_complete_top_of_rounding"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:background="@color/grayBg"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/v_review" />
+
+            <View
+                android:id="@+id/v_load_more_reviews"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_curved_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_load_more"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@+id/v_review" />
+
+            <TextView
+                android:id="@+id/tv_num_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+20 more"
+                app:layout_constraintEnd_toEndOf="@id/v_load_more_reviews"
+                app:layout_constraintStart_toStartOf="@id/v_load_more_reviews"
+                app:layout_constraintTop_toBottomOf="@id/v_review" />
+
+            <TextView
+                android:id="@+id/tv_load_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_more"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/v_load_more_reviews"
+                app:layout_constraintStart_toStartOf="@id/v_load_more_reviews"
+                app:layout_constraintTop_toBottomOf="@id/tv_num_more" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/btn_operation_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="@string/book_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

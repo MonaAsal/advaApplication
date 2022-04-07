@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="locale"
+    android:layout_height="wrap_content">
+
+  <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+      android:id="@+id/iv_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/ic_no_notification"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+  <TextView
+      android:id="@+id/tv_1"
+      style="@style/textViewStyle.Title.Big"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_16sdp"
+      android:text="@string/no_notification_added"
+      android:textSize="@dimen/text_size_larger"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+  <TextView
+      android:id="@+id/text"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_32ssp"
+      android:layout_marginEnd="@dimen/_32ssp"
+      android:gravity="center"
+      android:paddingStart="@dimen/_32sdp"
+      android:paddingEnd="@dimen/_32sdp"
+      android:text="@string/you_will_receive_all_your_notifications_from_adva_here"
+      android:textColor="@color/textColorLight"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+
+  <Button
+      android:id="@+id/btn_browse"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_55sdp"
+      android:layout_marginTop="@dimen/_32ssp"
+      android:layout_marginEnd="@dimen/_55sdp"
+      android:visibility="invisible"
+      android:text="@string/browse_now"
+      android:layout_marginBottom="@dimen/_8sdp"
+      app:layout_constraintTop_toBottomOf="@id/text"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

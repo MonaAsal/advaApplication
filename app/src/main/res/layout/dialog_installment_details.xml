@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentBg"
+    android:gravity="center"
+    android:layoutDirection="locale"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_curved_white"
+        android:layoutDirection="locale"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/iv_doctor_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:srcCompat="@drawable/ic_avatar"
+            app:layout_constraintEnd_toEndOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_operation_name"
+            style="@style/textViewStyle.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/iv_doctor_image"
+            tools:text="Operation name" />
+
+
+        <TextView
+            android:id="@+id/tv_id"
+            style="@style/textViewStyle.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="6dp"
+            android:text="ID: 1298729837"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_operation_name" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_curved_primary_light"
+            app:layout_constraintBottom_toBottomOf="@id/tv_by"
+            app:layout_constraintEnd_toEndOf="@id/tv_operation_owner"
+            app:layout_constraintStart_toStartOf="@id/tv_by"
+            app:layout_constraintTop_toTopOf="@id/tv_by" />
+
+        <TextView
+            android:id="@+id/tv_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/by"
+            android:textColor="@color/textColorLight"
+            app:layout_constraintEnd_toStartOf="@id/tv_operation_owner"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+        <TextView
+            android:id="@+id/tv_operation_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="@id/tv_by"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toEndOf="@id/tv_by"
+            app:layout_constraintTop_toTopOf="@+id/tv_by"
+            tools:text="asdl;kas;ldkal;sdk lkj lasjd" />
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/iv_duration"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/bg_curved_gray_border_medium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_lbl_remaining"
+            app:layout_constraintEnd_toStartOf="@id/iv_health"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/tv_operation_owner" />
+
+
+        <TextView
+            android:id="@+id/lbl_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration in Month"
+            app:layout_constraintEnd_toEndOf="@id/iv_duration"
+            app:layout_constraintStart_toStartOf="@id/iv_duration"
+            app:layout_constraintTop_toTopOf="@id/iv_duration" />
+
+        <View
+            android:id="@+id/view_separator_duration"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/separator"
+            app:layout_constraintEnd_toEndOf="@+id/iv_duration"
+            app:layout_constraintStart_toStartOf="@id/iv_duration"
+            app:layout_constraintTop_toBottomOf="@id/lbl_duration" />
+
+
+        <TextView
+            android:id="@+id/tv_total_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="24"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toStartOf="@id/view_separator_duration1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/view_separator_duration"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_duration" />
+
+        <View
+            android:id="@+id/view_separator_duration1"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/separator"
+            app:layout_constraintBottom_toBottomOf="@id/iv_duration"
+            app:layout_constraintEnd_toStartOf="@+id/tv_remaining_duration"
+            app:layout_constraintStart_toEndOf="@id/tv_total_duration"
+            app:layout_constraintTop_toTopOf="@id/tv_total_duration" />
+
+        <TextView
+            android:id="@+id/tv_remaining_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:paddingBottom="0dp"
+            android:text="12"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toEndOf="@id/iv_duration"
+            app:layout_constraintStart_toEndOf="@id/view_separator_duration1"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_duration" />
+
+        <TextView
+            android:id="@+id/tv_lbl_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintEnd_toEndOf="@id/tv_remaining_duration"
+            app:layout_constraintStart_toStartOf="@id/tv_remaining_duration"
+            app:layout_constraintTop_toBottomOf="@id/tv_remaining_duration" />
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/iv_health"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_curved_gray_border_medium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_lbl_remaining_installment"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/iv_duration"
+            app:layout_constraintTop_toTopOf="@id/iv_duration" />
+
+
+        <TextView
+            android:id="@+id/lbl_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/installment"
+            app:layout_constraintEnd_toEndOf="@id/iv_health"
+            app:layout_constraintStart_toStartOf="@id/iv_health"
+            app:layout_constraintTop_toTopOf="@id/iv_health" />
+
+        <View
+            android:id="@+id/view_separator_installment"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/separator"
+            app:layout_constraintEnd_toEndOf="@+id/iv_health"
+            app:layout_constraintStart_toStartOf="@id/iv_health"
+            app:layout_constraintTop_toBottomOf="@id/lbl_installment" />
+
+
+        <TextView
+            android:id="@+id/tv_total_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="24"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toStartOf="@id/view_separator_installment1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/iv_health"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_installment" />
+
+        <View
+            android:id="@+id/view_separator_installment1"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/separator"
+            app:layout_constraintBottom_toBottomOf="@id/iv_health"
+            app:layout_constraintEnd_toStartOf="@+id/tv_remaining_installment"
+            app:layout_constraintStart_toEndOf="@id/tv_total_installment"
+            app:layout_constraintTop_toTopOf="@id/tv_total_installment" />
+
+        <TextView
+            android:id="@+id/tv_remaining_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:paddingBottom="0dp"
+            android:text="12"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toEndOf="@id/iv_health"
+            app:layout_constraintStart_toEndOf="@id/view_separator_installment1"
+            app:layout_constraintTop_toBottomOf="@+id/view_separator_installment" />
+
+        <TextView
+            android:id="@+id/tv_lbl_remaining_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintEnd_toEndOf="@id/tv_remaining_installment"
+            app:layout_constraintStart_toStartOf="@id/tv_remaining_installment"
+            app:layout_constraintTop_toBottomOf="@id/tv_remaining_installment" />
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:paddingTop="@dimen/_8sdp"
+            app:srcCompat="@drawable/ic_close"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_next_installment"
+            style="@style/textViewStyle.Title.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:drawableStartCompat="@drawable/ic_calendar1"
+            android:text="Next installment"
+            app:layout_constraintStart_toStartOf="@id/iv_duration"
+            app:layout_constraintTop_toBottomOf="@+id/iv_duration" />
+
+        <TextView
+            android:id="@+id/tv_installment_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="@string/pay_your_monthly_installment_at_any_of_aman_stores_incase_you_are_an_aman_customer"
+            app:layout_constraintEnd_toStartOf="@id/iv_calendar"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_next_installment" />
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/iv_calendar"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            app:srcCompat="@drawable/ic_calendar3"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_installment_message"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/tv_installment_message"
+            app:layout_constraintTop_toTopOf="@id/tv_next_installment" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="22"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_larger"
+            app:layout_constraintBottom_toTopOf="@id/tv_month"
+            app:layout_constraintEnd_toEndOf="@id/iv_calendar"
+            app:layout_constraintStart_toStartOf="@id/iv_calendar"
+            app:layout_constraintTop_toTopOf="@id/iv_calendar"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sept"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintBottom_toBottomOf="@id/iv_calendar"
+            app:layout_constraintEnd_toEndOf="@id/iv_calendar"
+            app:layout_constraintStart_toStartOf="@id/iv_calendar"
+            app:layout_constraintTop_toBottomOf="@id/tv_day" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="View Aman stores"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_installment_message" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/toolbar_layout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_school_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_130sdp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_school_logo"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/iv_school_image"
+                app:srcCompat="@drawable/ic_avatar" />
+
+            <TextView
+                android:id="@+id/tv_school_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toTopOf="@id/rb_school"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toEndOf="@id/iv_school_logo"
+                app:layout_constraintTop_toTopOf="@+id/iv_school_logo"
+                tools:text="school name" />
+
+            <RatingBar
+                android:id="@+id/rb_school"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                app:layout_constraintBottom_toBottomOf="@id/iv_school_logo"
+                app:layout_constraintStart_toStartOf="@id/tv_school_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_school_name" />
+
+            <TextView
+                android:id="@+id/tv_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_curved_primary_light"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/rb_school"
+                app:layout_constraintStart_toEndOf="@id/rb_school"
+                app:layout_constraintTop_toTopOf="@id/rb_school"
+                tools:text="@string/num_reviews" />
+
+            <View
+                android:id="@+id/v_separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/iv_school_logo" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/tv_about_school_lbl"
+                style="@style/textViewStyle.Title.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/about_the_department"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/v_separator" />
+
+            <TextView
+                android:id="@+id/tv_school_details"
+                style="@style/textViewStyle.Light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/tv_about_school_lbl"
+                tools:text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, Contrary to popular beliefContrary to popular beliefContrary" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/see_more"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/tv_school_details"
+                app:layout_constraintTop_toBottomOf="@id/tv_school_details" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_bg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/colorPrimaryLight"
+                app:layout_constraintBottom_toTopOf="@id/tv_preferred_plan_lbl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_more" />
+
+            <TextView
+                android:id="@+id/tv_choose_branch_lbl"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/choose_location"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toTopOf="@id/iv_bg" />
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_32sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_choose_branch_lbl" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_branch_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_location"
+                app:layout_constraintStart_toStartOf="@id/spinner_location"
+                app:layout_constraintTop_toTopOf="@id/spinner_location"
+                app:srcCompat="@drawable/ic_branches" />
+
+            <TextView
+                android:id="@+id/tv_student1"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/student1_details"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/spinner_location" />
+
+            <Spinner
+                android:id="@+id/spinner_grade_student1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_36sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_student1" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_student1_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_grade_student1"
+                app:layout_constraintStart_toStartOf="@id/spinner_grade_student1"
+                app:layout_constraintTop_toTopOf="@id/spinner_grade_student1"
+                app:srcCompat="@drawable/ic_school" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_student1_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:drawableStartCompat="@drawable/ic_pen"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="@string/student_name"
+                android:maxLength="100"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_grade_student1" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_student2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="iv_remove_student_2,et_student2_name,tv_student2,spinner_grade_student2, iv_student2_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_remove_student_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                app:srcCompat="@drawable/ic_close_gray"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tv_student2"
+                app:layout_constraintEnd_toEndOf="@id/guideline2" />
+
+            <TextView
+                android:id="@+id/tv_student2"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/student_2_details"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/et_student1_name" />
+
+            <Spinner
+                android:id="@+id/spinner_grade_student2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_36sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_student2" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_student2_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_grade_student2"
+                app:layout_constraintStart_toStartOf="@id/spinner_grade_student2"
+                app:layout_constraintTop_toTopOf="@id/spinner_grade_student2"
+                app:srcCompat="@drawable/ic_school" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_student2_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:drawableStartCompat="@drawable/ic_pen"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="@string/student_name"
+                android:maxLength="100"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_grade_student2" />
+
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_student3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="iv_remove_student_3,et_student3_name,tv_student3,spinner_grade_student3, iv_student3_icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_remove_student_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                app:srcCompat="@drawable/ic_close_gray"
+                app:layout_constraintBottom_toBottomOf="@id/tv_student3"
+                app:layout_constraintEnd_toEndOf="@id/guideline2" />
+
+            <TextView
+                android:id="@+id/tv_student3"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/student_3_details"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/et_student2_name" />
+
+            <Spinner
+                android:id="@+id/spinner_grade_student3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_36sdp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_student3" />
+
+            <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+                android:id="@+id/iv_student3_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_grade_student3"
+                app:layout_constraintStart_toStartOf="@id/spinner_grade_student3"
+                app:layout_constraintTop_toTopOf="@id/spinner_grade_student3"
+                app:srcCompat="@drawable/ic_school" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_student3_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:drawableStartCompat="@drawable/ic_pen"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="@string/student_name"
+                android:maxLength="100"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_grade_student3" />
+
+            <Button
+                android:id="@+id/btn_another_student"
+                style="@style/buttonStyle.White"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="@string/add_another_student"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/et_student3_name" />
+            <!---->
+            <TextView
+                android:id="@+id/tv_preferred_plan_lbl"
+                style="@style/textViewStyle.Title.Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:text="@string/school_fees"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/btn_another_student" />
+
+            <TextView
+                android:id="@+id/tv_down_payment_lbl"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/down_payment_min"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_down_payment"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toTopOf="@id/tv_down_payment" />
+
+            <EditText
+                android:id="@+id/tv_down_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_curved_primary_light"
+                android:enabled="false"
+                android:hint="@string/down_payment"
+                android:minWidth="@dimen/_60sdp"
+                android:padding="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_40sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintTop_toBottomOf="@id/tv_preferred_plan_lbl" />
+
+
+            <TextView
+                android:id="@+id/tv_egp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="@string/Egp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_down_payment"
+                app:layout_constraintEnd_toEndOf="@+id/tv_down_payment"
+                app:layout_constraintTop_toTopOf="@id/tv_down_payment" />
+
+            <View
+                android:id="@+id/view_separator_2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/tv_down_payment" />
+
+            <CheckBox
+                android:id="@+id/cb_bus_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/ic_bus"
+                android:drawablePadding="@dimen/_8sdp"
+                android:text="@string/bus_fees"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toTopOf="@id/tv_bus_fees" />
+
+            <TextView
+                android:id="@+id/tv_bus_fees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:enabled="false"
+                android:hint="@string/bus_fees"
+                android:inputType="number"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toEndOf="@id/cb_bus_fees"
+                app:layout_constraintTop_toBottomOf="@+id/view_separator_2" />
+
+            <View
+                android:id="@+id/view_separator_3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/separator"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/tv_bus_fees" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_installment_types_list"
+                style="@style/recyclerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/view_separator_3"
+                tools:listitem="@layout/item_installment_type" />
+
+
+            <TextView
+                android:id="@+id/tv_monthly_installment_lbl"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/monthly_installment_fees"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/view_separator_3" />
+
+
+            <TextView
+                android:id="@+id/tv_monthly_installment"
+                style="@style/textViewStyle.Title.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_installment_fees"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintTop_toTopOf="@id/tv_monthly_installment_lbl" />
+
+            <TextView
+                android:id="@+id/tv_payment_plans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_4sdp"
+                android:text="@string/disclaimer_message"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/rv_installment_types_list" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_payment_plans" />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

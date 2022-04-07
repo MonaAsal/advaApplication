@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/wishListFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.salamtak.app.ui.component.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"></fragment>
+
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.salamtak.app.ui.component.services.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services">
+        <action
+            android:id="@+id/action_servicesFragment_to_healthFragment"
+            app:destination="@id/healthFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_carServicesProvidersFragment"
+            app:destination="@id/carServicesProvidersFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_educationFormFragment"
+            app:destination="@id/educationFormFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_weddingRequestFragment"
+            app:destination="@id/weddingRequestFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_insuranceFragment"
+            app:destination="@id/insuranceFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_comingSoonFragment"
+            app:destination="@id/comingSoonFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_finishingProvidersFragment"
+            app:destination="@id/finishingProvidersFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_finishingCategoriesFragment"
+            app:destination="@id/finishingCategoriesFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.salamtak.app.ui.component.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.salamtak.app.ui.component.requests.RequestsFragment"
+        android:label="fragment_booking"
+
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.salamtak.app.ui.component.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_wishListFragment"
+            app:destination="@id/wishListFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_requestsFragment"
+            app:destination="@id/requestsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_HelpFragment"
+            app:destination="@id/HelpFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_AboutUsFragment"
+            app:destination="@id/AboutUsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.salamtak.app.ui.component.wishlist.WishListFragment"
+        android:label="WishListFragment"
+        tools:layout="@layout/fragment_wish_list" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.salamtak.app.ui.component.profile.edit.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.salamtak.app.ui.component.health.categories.HealthFragment"
+        android:label="HealthFragment"
+        tools:layout="@layout/fragment_health">
+        <action
+            android:id="@+id/action_healthFragment_to_subcategoryHealthFragment"
+            app:destination="@id/subcategoryHealthFragment">
+            <argument
+                android:name="CATEGORY_ITEM_KEY"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_healthFragment_to_medicalNetworkFragment"
+            app:destination="@id/medicalNetworkFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subcategoryHealthFragment"
+        android:name="com.salamtak.app.ui.component.health.subcategory.SubCategoryHealthFragment"
+        android:label="fragment_subcategory_health"
+        tools:layout="@layout/fragment_subcategory_health">
+        <action
+            android:id="@+id/action_subcategoryHealthFragment_to_operationsFragment"
+            app:destination="@id/operationFragment" />
+
+        <action
+            android:id="@+id/action_subcategoryHealthFragment_to_medicalProviderFragment"
+            app:destination="@id/medicalProviderFragment"></action>
+        <action
+            android:id="@+id/action_subcategoryHealthFragment_to_doctorFragment"
+            app:destination="@id/doctorFragment" />
+        <action
+            android:id="@+id/action_subcategoryHealthFragment_to_SubCategoryViewAllFragment"
+            app:destination="@id/SubCategoryViewAllFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/medicalNetworkFragment"
+        android:name="com.salamtak.app.ui.component.medicalnetwork.MedicalNetworkFragment"
+        android:label="MedicalNetworkFragment"
+        tools:layout="@layout/fragment_medical_network">
+        <action
+            android:id="@+id/action_medicalNetworkFragment_to_otherOperationFragment"
+            app:destination="@id/otherOperationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherOperationFragment"
+        android:name="com.salamtak.app.ui.component.health.customoperations.CustomOperationFragment"
+        android:label="fragment_other_operation"
+        tools:layout="@layout/fragment_other_operation" />
+    <fragment
+        android:id="@+id/operationFragment"
+        android:name="com.salamtak.app.ui.component.health.operationslist.OperationFragment"
+        android:label="OperationsFragment"
+        tools:layout="@layout/fragment_operation">
+        <action
+            android:id="@+id/action_operationFragment_to_doctorFragment"
+            app:destination="@id/doctorFragment" />
+        <action
+            android:id="@+id/action_operationFragment_to_medicalProviderFragment"
+            app:destination="@id/medicalProviderFragment" />
+        <action
+            android:id="@+id/action_operationFragment_to_moreProvidersFragment"
+            app:destination="@id/moreProvidersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorFragment"
+        android:name="com.salamtak.app.ui.component.health.doctor.DoctorFragment"
+        android:label="fragment_doctor"
+        tools:layout="@layout/fragment_doctor" />
+    <fragment
+        android:id="@+id/medicalProviderFragment"
+        android:name="com.salamtak.app.ui.component.health.medicalprovider.MedicalProviderFragment"
+        android:label="fragment_medical_provider"
+        tools:layout="@layout/fragment_medical_provider">
+
+    </fragment>
+    <fragment
+        android:id="@+id/moreProvidersFragment"
+        android:name="com.salamtak.app.ui.component.health.subcategory.providers.MoreProvidersFragment"
+        android:label="fragment_more_providers"
+        tools:layout="@layout/fragment_more_providers" />
+    <fragment
+        android:id="@+id/carServicesProvidersFragment"
+        android:name="com.salamtak.app.ui.component.carservices.providers.CarServicesProvidersFragment"
+        android:label="CarServicesProvidersFragment"
+        tools:layout="@layout/fragment_car_services_providers"
+        >
+        <action
+            android:id="@+id/action_carServicesProvidersFragment_to_CarProviderDetailsRequestFragment"
+            app:destination="@id/CarProviderDetailsRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CarProviderDetailsRequestFragment"
+        android:name="com.salamtak.app.ui.component.carservices.details.CarProviderDetailsRequestFragment"
+        android:label="CarProviderDetailsRequestFragment"
+        tools:layout="@layout/fragment_car_provider_details_request"
+        />
+    <fragment
+        android:id="@+id/educationFormFragment"
+        android:name="com.salamtak.app.ui.component.education.custom.EducationFormFragment"
+        android:label="EducationFormFragment"
+        tools:layout="@layout/fragment_education_form"
+        />
+    <fragment
+        android:id="@+id/weddingRequestFragment"
+        android:name="com.salamtak.app.ui.component.weddings.WeddingRequestFragment"
+        android:label="WeddingRequestFragment"
+        tools:layout="@layout/fragment_wedding_request"
+        />
+    <fragment
+        android:id="@+id/insuranceFragment"
+        android:name="com.salamtak.app.ui.component.insurance.InsuranceFragment"
+        android:label="InsuranceFragment"
+        tools:layout="@layout/fragment_insurance"
+        />
+    <fragment
+        android:id="@+id/comingSoonFragment"
+        android:name="com.salamtak.app.ui.component.comingsoon.ComingSoonFragment"
+        android:label="ComingSoonFragment"
+        tools:layout="@layout/fragment_coming_soon"
+        />
+    <fragment
+        android:id="@+id/finishingProvidersFragment"
+        android:name="com.salamtak.app.ui.component.finishing.providers.FinishingProvidersFragment"
+        android:label="fragment_finishing_providers"
+        tools:layout="@layout/fragment_finishing_providers" >
+        <action
+            android:id="@+id/action_finishingProvidersFragment_to_finishingProviderRequestFragment"
+            app:destination="@id/finishingProviderRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishingProviderRequestFragment"
+        android:name="com.salamtak.app.ui.component.finishing.details.FinishingProviderRequestFragment"
+        android:label="FinishingProviderRequestFragment"
+        tools:layout="@layout/fragment_finishing_provider_request"
+        />
+    <fragment
+        android:id="@+id/HelpFragment"
+        android:name="com.salamtak.app.ui.component.more.MoreFragment"
+        android:label="HelpFragment"
+        tools:layout="@layout/fragment_more"
+        />
+    <fragment
+        android:id="@+id/AboutUsFragment"
+        android:name="com.salamtak.app.ui.component.aboutus.AboutUsFragment"
+        android:label="AboutUsFragment"
+        tools:layout="@layout/fragment_about_us"
+        />
+
+    <fragment
+        android:id="@+id/SubCategoryViewAllFragment"
+        android:name="com.salamtak.app.ui.component.health.subcategory.operations.OperationsViewAllFragment"
+        android:label="View All"
+        tools:layout="@layout/fragment_operations_new"
+        />
+    <fragment
+        android:id="@+id/AccountSettings"
+        android:name="com.salamtak.app.ui.component.profile.AccountSettingsFragment"
+        android:label="AccountSettings"
+        tools:layout="@layout/fragment_account_settings"
+        />
+    <fragment
+        android:id="@+id/finishingCategoriesFragment"
+        android:name="com.salamtak.app.ui.component.finishing.providers.FinishingCategoriesFragment"
+        android:label="FinishingCategoriesFragment"
+        tools:layout="@layout/fragment_finishing_categories"
+        />
+
+    <fragment
+        android:id="@+id/carServicesProvidersViewAllfragment"
+        android:name="com.salamtak.app.ui.component.carservices.providers.CarServicesProvidersViewAllfragment"
+        android:label="CarServicesProvidersViewAllfragment"
+        tools:layout="@layout/fragment_car_services_providers"
+        />
+
+    <fragment
+        android:id="@+id/EducationCategoriesFragment"
+        android:name="com.salamtak.app.ui.component.education.categories.EducationCategoriesFragment"
+        android:label="EducationCategoriesFragment"
+        tools:layout="@layout/fragment_education_categories"
+        />
+
+
+</navigation>
+

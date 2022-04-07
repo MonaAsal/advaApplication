@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    <item android:drawable="@drawable/bg_curved_small_primary_border" android:state_focused="true" />-->
+    <!--    <item android:drawable="@drawable/bg_curved_small_primary_border" android:state_pressed="true" />-->
+    <!--    <item android:drawable="@drawable/bg_curved_small_primary_border" android:state_active="true" />-->
+    <!--    <item android:drawable="@drawable/bg_curved_small_primary_border" android:state_selected="true" />-->
+
+
+    <item android:drawable="@drawable/bg_curved_gray_border_small" android:state_focused="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/bg_curved_gray_border_small" android:state_focused="false" android:state_pressed="true" />
+    <item android:drawable="@drawable/bg_curved_gray_border_small" android:state_focused="true" />
+    <item android:drawable="@drawable/bg_spinner" android:state_focused="false" android:state_pressed="false" />
+
+
+    <!--    <item android:drawable="@drawable/bg_spinner" />-->
+</selector>

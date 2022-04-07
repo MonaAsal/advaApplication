@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.component.health.customoperations.OtherOperationActivity">
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+            android:id="@+id/ic_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
+            app:srcCompat="@drawable/ic_custom_operation1" />
+
+        <TextView
+            android:id="@+id/tv_title1"
+            style="@style/textViewStyle.Title.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/operation_request"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_icon" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="0pt"
+            android:layout_marginEnd="@dimen/_55sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_55sdp"
+            android:text="@string/custom_operation_button_text"
+            android:textColor="@color/textColorLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title1" />
+
+        <TextView
+            android:id="@+id/tv_lbl_dr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            style="@style/textViewStyleEditFieldLabel"
+            android:layout_marginTop="@dimen/_24ssp"
+            android:text="@string/doctor_name_r"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title2" />
+
+        <!--            android:text="e.mohamed"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_doctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@id/spinner_speciality"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_dr" />
+
+        <TextView
+            android:id="@+id/tv_lbl_specialities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewStyleEditFieldLabel"
+            android:text="@string/doctor_speciality"
+            app:layout_constraintStart_toStartOf="@id/spinner_speciality"
+            app:layout_constraintTop_toTopOf="@id/tv_lbl_dr" />
+
+
+        <Spinner
+            android:id="@+id/spinner_speciality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@id/et_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_doctor"
+            app:layout_constraintTop_toTopOf="@id/et_doctor" />
+
+
+        <EditText
+            android:id="@+id/et_speciality"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/spinner_speciality"
+            app:layout_constraintEnd_toEndOf="@id/spinner_speciality"
+            app:layout_constraintTop_toTopOf="@id/spinner_speciality" />
+
+        <TextView
+            android:id="@+id/tv_lbl_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            style="@style/textViewStyleEditFieldLabel"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="@string/operation_name_r"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_doctor" />
+
+        <!--            android:text="e.mohamed"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_operation" />
+
+
+        <TextView
+            android:id="@+id/tv_lbl_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="@string/hospital_name_r"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_operation" />
+
+        <!--            android:text="e.mohamed"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_hospital" />
+
+
+        <TextView
+            android:id="@+id/tv_lbl_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            style="@style/textViewStyleEditFieldLabel"
+            android:text="@string/total_cost"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_hospital" />
+
+        <!--            android:text="e.mohamed"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toStartOf="@+id/tv_down_payment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_price" />
+
+
+        <TextView
+            android:id="@+id/tv_lbl_down_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/down_payment_r"
+            style="@style/textViewStyleEditFieldLabel"
+            app:layout_constraintStart_toStartOf="@id/tv_down_payment"
+            app:layout_constraintTop_toTopOf="@id/tv_lbl_price" />
+
+
+        <TextView
+            android:id="@+id/tv_lbl_down_payment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@string/_10_min"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintStart_toEndOf="@id/tv_lbl_down_payment"
+            app:layout_constraintTop_toTopOf="@+id/tv_lbl_down_payment" />
+
+        <!--            android:text="e.mohamed"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_down_payment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_price"
+            app:layout_constraintTop_toTopOf="@+id/et_price" />
+
+
+        <TextView
+            android:id="@+id/tv_lbl_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            style="@style/textViewStyleEditFieldLabel"
+            android:text="@string/installment_plan"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_price" />
+
+        <!--            android:text="e.mohamed"-->
+        <Spinner
+            android:id="@+id/spinner_installment_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@id/et_monthly_installment"
+            app:layout_constraintEnd_toStartOf="@+id/tv_down_payment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_installment" />
+
+
+        <TextView
+            android:id="@+id/tv_lbl_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly_installment"
+            style="@style/textViewStyleEditFieldLabel"
+            app:layout_constraintStart_toStartOf="@id/et_monthly_installment"
+            app:layout_constraintTop_toTopOf="@id/tv_lbl_installment" />
+
+        <!--            android:text="e.mohamed"-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_monthly_installment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:enabled="false"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinner_installment_plan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl_monthly" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="0dp"
+            android:text="@string/wedding_request_note"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_monthly_installment" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_note" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_submit"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

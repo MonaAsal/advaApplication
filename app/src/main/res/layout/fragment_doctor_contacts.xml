@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context=".ui.component.health.doctor.DoctorOverviewFragment">
+
+    <TextView
+        android:id="@+id/tv_lbl"
+        style="@style/textViewStyle.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_information"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/corner_small"
+        app:cardElevation="1dp"
+
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lbl">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/iceBlue"
+
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/recyclerStyle"
+                android:id="@+id/rv_contacts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/item_contact" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_phone_lbl"-->
+            <!--                style="@style/textViewStyle.Title.Medium"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                app:drawableStartCompat="@drawable/ic_location"-->
+            <!--                 -->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="@string/phone_number"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_phone"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/_32ssp"-->
+            <!--                 -->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="0123456789"-->
+            <!--                android:textColor="@color/textColorLight"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tv_phone_lbl" />-->
+
+
+            <!--            <View-->
+            <!--                android:id="@+id/v_separator"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                android:background="@color/separator"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tv_phone" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_website_lbl"-->
+            <!--                style="@style/textViewStyle.Title.Medium"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_8sdp"-->
+            <!--                app:drawableStartCompat="@drawable/ic_location"-->
+            <!--                 -->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="@string/website"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/v_separator" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_website"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/_32ssp"-->
+            <!--                 -->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="www.salamtek.com"-->
+            <!--                android:textColor="@color/textColorLight"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tv_website_lbl" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context=".ui.component.health.doctor.DoctorActivity">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/toolbar_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/layout_provider_header"
+        layout="@layout/item_provider_header"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_provider_header">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_8sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_8sdp" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_doctor_name"-->
+        <!--            style="@style/textViewStyle.Title.Medium"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/guideline_end"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/iv_doctor_image"-->
+        <!--            tools:text="username" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_doctor_title"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="@dimen/_8sdp"-->
+        <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:paddingTop="0dp"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/guideline_end"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tv_doctor_name"-->
+        <!--            tools:text="title lkjsdfk lskdjflskd jflksdfj  lskdjflsdkjflskdfjs lkdjf  lkjsdf kjdfkdjfkdfjdkfj dfhjdfhjd sjdhf kjsd fh" />-->
+
+        <!--        <RatingBar-->
+        <!--            android:id="@+id/rb_doctor"-->
+        <!--            style="@style/RatingBar"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_4sdp"-->
+        <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+        <!--            android:numStars="5"-->
+        <!--            android:rating="3"-->
+        <!--            app:layout_constraintEnd_toStartOf="@id/tv_reviews"-->
+        <!--            app:layout_constraintHorizontal_chainStyle="packed"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tv_doctor_title" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_reviews"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_4sdp"-->
+        <!--            android:background="@drawable/bg_curved_gray"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:visibility="gone"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/guideline_end"-->
+        <!--            app:layout_constraintStart_toEndOf="@id/rb_doctor"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tv_doctor_title"-->
+        <!--            tools:text="@string/no_reviews_yet" />-->
+
+        <!--        <androidx.constraintlayout.widget.Group-->
+        <!--            android:id="@+id/group_home_visit_price"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:visibility="gone"-->
+        <!--            app:constraint_referenced_ids="tv_price,view_visit_price_bg,tv_price_lbl" />-->
+
+        <!--        <View-->
+        <!--            android:id="@+id/view_visit_price_bg"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:background="@drawable/bg_curved_info"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/tv_price_lbl"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/tv_price"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/tv_price_lbl"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/tv_price_lbl" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_price_lbl"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_4sdp"-->
+        <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:paddingStart="@dimen/_8sdp"-->
+        <!--            android:paddingTop="2dp"-->
+        <!--            android:paddingBottom="2dp"-->
+        <!--            android:text="@string/visit_price"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:drawableStartCompat="@drawable/ic_home_red"-->
+        <!--            app:layout_constraintEnd_toStartOf="@id/tv_price"-->
+        <!--            app:layout_constraintHorizontal_chainStyle="packed"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/rb_doctor" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_price"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:paddingEnd="@dimen/_8sdp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/tv_price_lbl"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/guideline_end"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/tv_price_lbl"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/tv_price_lbl"-->
+        <!--            tools:text="@string/price" />-->
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            style="@style/NavigationTab3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            tools:layout_editor_absoluteY="254dp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_8ssp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    </androidx.core.widget.NestedScrollView>-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

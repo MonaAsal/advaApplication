@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.chauthai.swipereveallayout.SwipeRevealLayout
+xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/swipe_reveal_container"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:clickable="true"-->
+<!--    android:focusable="true"-->
+<!--    app:dragEdge="right"-->
+<!--    app:mode="same_level">-->
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@android:color/holo_red_light">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_delete"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/holo_red_light"-->
+<!--        android:text="Delete"-->
+<!--        android:textSize="@dimen/text_size_small"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:background="@drawable/bg_curved_gray_small_corner"
+    android:layoutDirection="locale"
+    android:paddingStart="@dimen/_16ssp"
+    android:paddingTop="@dimen/_16ssp"
+    android:paddingEnd="@dimen/_16ssp"
+    android:paddingBottom="@dimen/_16ssp">
+
+    <!--        android:background="@drawable/bg_curved_gray_border"-->
+
+    <androidx.appcompat.widget.AppCompatImageView style="@style/ImageViewStyle"
+        android:id="@+id/iv_notification_icon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        app:srcCompat="@drawable/ic_installments"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_notification_type"
+        style="@style/textViewStyle.Title.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:gravity="start"
+        android:paddingTop="0dp"
+        android:text="Operationcccccccccccccccccccccccccccfff"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintEnd_toStartOf="@+id/tv_notification_time"
+        app:layout_constraintStart_toEndOf="@id/iv_notification_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_notification_icon" />
+
+    <TextView
+        android:id="@+id/tv_notification_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:gravity="end"
+        android:paddingTop="0dp"
+        android:text="300 min ago"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_notification_icon" />
+
+    <TextView
+        android:id="@+id/tv_notification_text"
+        style="@style/textViewStyle.Title.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="ntification te"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_notification_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notification_type" />
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--</androidx.cardview.widget.CardView>-->
+
+    <!--</com.chauthai.swipereveallayout.SwipeRevealLayout>-->
